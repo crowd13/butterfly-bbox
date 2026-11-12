@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Butterfly BBox — проверка фотографий</title>
+<style>
+*{box-sizing:border-box}[hidden]{display:none!important}
+body{font:15px system-ui,sans-serif;background:#f3f5f8;color:#17233b;margin:0}
+header{position:sticky;top:0;background:#fff;border-bottom:1px solid #ccd3df;padding:14px 22px;z-index:2}
+h1{font-size:21px;margin:0 0 6px}h2{font-size:20px;margin:0 0 8px}p{margin:6px 0}
+button,select,input{font:inherit;padding:7px 9px;border:1px solid #b8c2d2;border-radius:6px;background:white}
+button{cursor:pointer;background:#e9efff}button:disabled{opacity:.45;cursor:default}button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #5478e7;outline-offset:2px}
+nav,.toolbar,.actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:10px}
+nav label{display:flex;gap:6px;align-items:center;margin:0}.upload{font-size:13px}.upload input{max-width:240px}
+main{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:16px;padding:20px}
+article{background:#fff;border:2px solid transparent;border-radius:12px;padding:14px;scroll-margin-top:220px}
+article.keep{border-color:#45956a}article.exclude{border-color:#ce6672}article.active{outline:3px solid #5478e7;outline-offset:2px}
+.picture{display:flex;height:230px;align-items:center;justify-content:center;background:#edf0f4;border-radius:8px}
+.picture a{display:flex;justify-content:center;align-items:center;width:100%;height:100%}
+img{max-width:100%;max-height:230px;object-fit:contain}
+label{display:block;margin-top:10px}article label select,article label input{display:block;width:100%;margin-top:4px}
+.meta{font-size:12px;color:#536078;overflow-wrap:anywhere;margin-top:9px}.bad{color:#a32932}a{color:#244fc2}
+.single{display:block;max-width:1200px;margin:auto}.single article{display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:22px}
+.single .picture{height:min(62vh,620px);min-height:320px}.single img{max-height:min(62vh,620px)}
+.summary{font-size:13px;color:#536078}.hint{font-size:13px;color:#43546e}kbd{font:12px ui-monospace,monospace;padding:2px 5px;background:#eef1f7;border:1px solid #cbd3df;border-radius:4px}
+#position{font-weight:650}#notice{min-height:20px;color:#244fc2}.keep-button{background:#e4f5eb;border-color:#74ae8c}.exclude-button{background:#fff0f0;border-color:#dca0a6}
+details{margin-top:8px;font-size:13px}summary{cursor:pointer}#empty{text-align:center;padding:35px}
+@media(max-width:780px){header{position:static;padding:12px}main{padding:12px}.single article{display:block}.single .picture{height:42vh;min-height:220px}.single img{max-height:42vh}.editor{margin-top:18px}nav{align-items:flex-start}}
+</style>
+<header><h1>Проверка фотографий</h1>
+<div class="hint"><kbd>Пробел</kbd> оставить → дальше · <kbd>X</kbd> исключить → дальше · <kbd>←</kbd> <kbd>→</kbd> навигация · <kbd>1</kbd>/<kbd>2</kbd>/<kbd>3</kbd> класс · <kbd>U</kbd> отмена · <kbd>S</kbd> скачать CSV</div>
+<nav>
+<label>Класс <select id="classFilter"><option value="">Все</option><option value="butterfly">Бабочка</option><option value="lookalike">Похожий объект</option><option value="unrelated">Непохожий объект / фон</option></select></label>
+<label>Решение <select id="decisionFilter"><option value="">Все</option><option value="pending">Не проверено</option><option value="keep">Оставить</option><option value="exclude">Исключить</option></select></label>
+<label><input type="checkbox" id="singleMode" checked> По одной</label>
+<button id="export">Скачать decisions.csv</button><button id="undo" disabled>Отменить (U)</button>
+<label class="upload">Продолжить из CSV <input type="file" id="import" accept=".csv"></label>
+</nav>
+<div class="toolbar"><span id="position"></span><span id="stats" class="summary"></span></div>
+<div id="notice" role="status" aria-live="polite"></div>
+<details><summary>Правила и остальные клавиши</summary>
+<p><kbd>T</kbd> — редактировать группы; <kbd>Esc</kbd> — закончить ввод; <kbd>O</kbd> — оригинал онлайн. Буквенные клавиши работают по физическому положению, в том числе в русской раскладке: X/Ч, U/Г, S/Ы, T/Е, O/Щ.</p>
+<p>1 — бабочка; 2 — похожий объект; 3 — непохожий объект / фон. При смене класса предлагается новая группа — проверь её.</p>
+<p>Для бабочек: ordinary; cropped; multiple; small; occluded. Для похожих объектов: moth; other_insect; immature. Для остальных: plant; mammal; other.</p>
+<p>Группы разделяй точкой с запятой. Если взрослая бабочка есть хотя бы одна — класс «Бабочка». Категория источника требует визуальной проверки.</p>
+<p>Стрелки учитывают фильтры и не меняют решения. Пробел и X сохраняют решение и переходят к следующей подходящей фотографии. На последней фотографии переход останавливается. U отменяет последнее изменение в текущем сеансе.</p>
+<p>Во время ввода текста горячие клавиши решений отключены. Нажми Esc, чтобы вернуться к проверке. Периодически скачивай CSV: память браузера не заменяет сохранённый файл.</p>
+</details>
+</header><p id="empty" hidden>В выбранном фильтре фотографий нет. Измени фильтр или отмени последнее действие.</p><main id="cards" class="single"></main>
+<script>
+const photos = __PHOTOS__;
+const classNames={butterfly:'Бабочка',lookalike:'Похожий объект',unrelated:'Непохожий объект / фон'};
+const decisions={},elements={},undoStack=[];
+const storageKey='butterfly-review:'+photos.map(p=>p.photo_id).join(',');
+const byId=Object.fromEntries(photos.map(p=>[String(p.photo_id),p]));
+const refs=Object.fromEntries(['cards','stats','position','notice','empty','singleMode','classFilter','decisionFilter','export','import','undo'].map(id=>[id,document.getElementById(id)]));
+let activeId=null;
+try{Object.assign(decisions,JSON.parse(localStorage.getItem(storageKey)||'{}'));activeId=localStorage.getItem(storageKey+':active');}catch(e){}
+const el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n;};
+const visibleIds=()=>photos.filter(p=>(!refs.classFilter.value||decisions[p.photo_id].class===refs.classFilter.value)&&(!refs.decisionFilter.value||decisions[p.photo_id].decision===refs.decisionFilter.value)).map(p=>String(p.photo_id));
+function persist(){try{localStorage.setItem(storageKey,JSON.stringify(decisions));localStorage.setItem(storageKey+':active',activeId||'');}catch(e){}}
+function notice(text){refs.notice.textContent=text;}
+function remember(ids){undoStack.push(ids.map(id=>({id:String(id),before:{...decisions[id]}})));if(undoStack.length>100)undoStack.shift();}
+function syncControls(id){for(const key of ['class','groups','decision','notes'])elements[id].controls[key].value=decisions[id][key]||'';}
+function update(){
+ const ids=visibleIds();if(!ids.includes(activeId))activeId=ids[0]||null;
+ let kept=0,excluded=0;const counts={butterfly:0,lookalike:0,unrelated:0};
+ for(const p of photos){const id=String(p.photo_id),d=decisions[id],entry=elements[id];
+  if(d.decision==='keep'){kept++;counts[d.class]++;}if(d.decision==='exclude')excluded++;
+  entry.card.className=d.decision+(id===activeId?' active':'');
+  entry.card.hidden=!ids.includes(id)||(refs.singleMode.checked&&id!==activeId);
+  entry.card.setAttribute('aria-current',id===activeId?'true':'false');
+  entry.status.textContent={pending:'Не проверено',keep:'Оставить',exclude:'Исключить'}[d.decision];
+ }
+ refs.cards.className=refs.singleMode.checked?'single':'';refs.empty.hidden=ids.length>0;
+ refs.position.textContent=activeId?`Фото ${ids.indexOf(activeId)+1} из ${ids.length} · #${activeId}`:'Нет фотографий';
+ refs.stats.textContent=`Оставлено ${kept} (бабочки ${counts.butterfly}, похожие ${counts.lookalike}, остальные ${counts.unrelated}); исключено ${excluded}; не проверено ${photos.length-kept-excluded}`;
+ refs.undo.disabled=undoStack.length===0;persist();
+}
+function scrollActive(){if(activeId){const rect=elements[activeId].card.getBoundingClientRect(),header=document.querySelector('header');window.scrollTo({top:Math.max(0,window.scrollY+rect.top-header.getBoundingClientRect().height-15),behavior:'auto'});}}
+function activate(id,scroll=true){activeId=String(id);update();if(scroll)scrollActive();}
+function move(step){const ids=visibleIds(),index=ids.indexOf(activeId),next=index+step;if(next>=0&&next<ids.length){activate(ids[next]);notice('');}else notice(step>0?'Это последняя фотография в фильтре.':'Это первая фотография в фильтре.');}
+function changeField(id,key,value){
+ if(decisions[id][key]===value)return;
+ remember([id]);decisions[id][key]=value;
+ if(key==='class')decisions[id].groups={butterfly:'ordinary',lookalike:'other_insect',unrelated:'other'}[value];
+ syncControls(id);update();
+}
+function decide(value,id=activeId){
+ if(!id)return;
+ // Pick the next item BEFORE a pending-only filter hides the current card.
+ const before=visibleIds(),index=before.indexOf(String(id));
+ remember([id]);decisions[id].decision=value;syncControls(id);
+ const after=visibleIds();activeId=before.slice(index+1).find(key=>after.includes(key))||after[index]||after.at(-1)||null;
+ update();scrollActive();notice(`#${id}: ${value==='keep'?'оставлено':'исключено'}.`+(before[index+1]?'':' Дошли до конца фильтра.'));
+}
+function undo(){const last=undoStack.pop();if(!last){notice('Пока нечего отменять.');return;}for(const item of last){decisions[item.id]={...item.before};syncControls(item.id);}activeId=last[0].id;update();scrollActive();notice('Последнее изменение отменено.');}
+for(const p of photos){
+ const id=String(p.photo_id),suggested={butterflies:'ordinary',moths:'moth',other_insects:'other_insect',plants:'plant',mammals:'mammal'};
+ const saved=decisions[id];
+ decisions[id]=saved&&classNames[saved.class]&&['pending','keep','exclude'].includes(saved.decision)?{photo_id:id,class:saved.class,groups:saved.groups||'',decision:saved.decision,notes:saved.notes||''}:{photo_id:id,class:p.proposed_class,groups:suggested[p.source_bucket]||'',decision:'pending',notes:''};
+ const card=el('article'),media=el('div'),editor=el('div'),picture=el('div');media.className='media';editor.className='editor';picture.className='picture';
+ card.addEventListener('click',event=>{if(!card.hidden&&activeId!==id&&!event.target.closest('button,select'))activate(id,false);});
+ card.addEventListener('focusin',()=>{if(activeId!==id)activate(id,false);});
+ if(p.thumbnail){const link=el('a');link.href=p.original||p.image_url;link.target='_blank';link.rel='noopener';const img=el('img');img.src=p.thumbnail;img.loading='lazy';img.alt='Фото '+id;link.append(img);picture.append(link);}else picture.append(el('p','Изображение недоступно: '+p.status));
+ media.append(picture);
+ const source=el('a','Наблюдение iNaturalist');source.href=p.observation_url;source.target='_blank';source.rel='noopener';
+ const remote=el('a',' · Оригинал онлайн (O)');remote.href=p.image_url;remote.target='_blank';remote.rel='noopener';media.append(source,remote);
+ const meta=el('p',`${p.source_bucket} · ${p.observation_taxon} · CC0 · ${p.attribution}`);meta.className='meta';media.append(meta);
+ if(p.error){const msg=el('p',p.error);msg.className='bad';media.append(msg);}
+ editor.append(el('h2','#'+id));const status=el('p');status.className='summary';editor.append(status);
+ const controls={};
+ for(const [key,title,options] of [['class','Основной класс (1 / 2 / 3)',classNames],['groups','Группы (T → ввод → Esc)',null],['decision','Решение',{pending:'Не проверено',keep:'Оставить',exclude:'Исключить'}],['notes','Примечание',null]]){
+  const label=el('label',title),control=el(options?'select':'input');
+  if(options){for(const [value,text] of Object.entries(options)){const option=el('option',text);option.value=value;control.append(option);}}
+  control.value=decisions[id][key]||'';
+  control.addEventListener('change',()=>{if(key==='decision'){if(control.value==='pending')changeField(id,key,'pending');else decide(control.value,id);}else changeField(id,key,control.value);if(options)control.blur();});
+  label.append(control);editor.append(label);controls[key]=control;
+ }
+ const actions=el('div');actions.className='actions';
+ for(const [value,title] of [['keep','Оставить (пробел)'],['exclude','Исключить (X)']]){const button=el('button',title);button.className=value+'-button';button.onclick=event=>{event.stopPropagation();button.blur();decide(value,id);};actions.append(button);}
+ editor.append(actions);card.append(media,editor);elements[id]={card,controls,status};refs.cards.append(card);
+}
+// Resume at a saved position, or at the first still-pending photo.
+if(!byId[activeId])activeId=String((photos.find(p=>decisions[p.photo_id].decision==='pending')||photos[0]||{}).photo_id||'')||null;
+for(const filter of [refs.classFilter,refs.decisionFilter])filter.onchange=()=>{activeId=null;update();scrollActive();filter.blur();notice('');};
+refs.singleMode.onchange=()=>{update();scrollActive();refs.singleMode.blur();};
+refs.undo.onclick=()=>{refs.undo.blur();undo();};
+const fields=['photo_id','class','groups','decision','notes'];
+const escapeCSV=s=>'"'+String(s??'').replaceAll('"','""')+'"';
+function exportCSV(){const lines=[fields.join(','),...photos.map(p=>fields.map(k=>escapeCSV(decisions[p.photo_id][k])).join(','))];const blob=new Blob(['\uFEFF'+lines.join('\r\n')+'\r\n'],{type:'text/csv;charset=utf-8'}),url=URL.createObjectURL(blob),a=el('a');a.href=url;a.download='decisions.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);notice('CSV скачан. Сохрани его последнюю версию для продолжения работы.');}
+refs.export.onclick=()=>{refs.export.blur();exportCSV();};
+function parseCSV(text){const rows=[];let row=[],field='',quoted=false;text=text.replace(/^\uFEFF/,'');
+ for(let i=0;i<text.length;i++){const c=text[i];if(c==='"'){if(quoted&&text[i+1]==='"'){field+='"';i++;}else quoted=!quoted;}
+ else if(c===','&&!quoted){row.push(field);field='';}else if((c==='\n'||c==='\r')&&!quoted){if(c==='\r'&&text[i+1]==='\n')i++;row.push(field);if(row.some(Boolean))rows.push(row);row=[];field='';}else field+=c;}
+ if(quoted)throw Error('Незакрытая кавычка в CSV');if(field||row.length){row.push(field);rows.push(row);}return rows;
+}
+refs.import.onchange=async event=>{if(!event.target.files[0])return;try{
+ const rows=parseCSV(await event.target.files[0].text()),header=rows.shift();if(!header||fields.some(k=>!header.includes(k)))throw Error('Не хватает столбцов');
+ const imported={},seen=new Set();for(const values of rows){const d=Object.fromEntries(header.map((k,i)=>[k,values[i]||'']));
+  if(!elements[d.photo_id]||seen.has(d.photo_id)||!classNames[d.class]||!['keep','exclude','pending'].includes(d.decision))throw Error('Некорректный ID, класс или решение: '+d.photo_id);
+  seen.add(d.photo_id);imported[d.photo_id]=d;
+ }
+ if(!seen.size)throw Error('Нет строк с решениями');
+ remember([...seen]);for(const [id,d] of Object.entries(imported)){decisions[id]=d;syncControls(id);}
+ activeId=String((photos.find(p=>decisions[p.photo_id].decision==='pending')||photos[0]).photo_id);update();scrollActive();notice('Решения загружены. Выбрана первая непроверенная фотография.');
+ }catch(e){alert('Не удалось импортировать CSV: '+e.message);}finally{refs.import.blur();refs.import.value='';}};
+function keyboard(event){
+ const target=event.target||document.activeElement;
+ if(event.key==='Escape'&&target&&target.matches('input,textarea,select,[contenteditable]')){target.blur();event.preventDefault();return;}
+ // Text editing and native controls keep their own keyboard behavior.
+ if(event.ctrlKey||event.metaKey||event.altKey||event.isComposing||(target&&target.closest('input,textarea,select,button,a,[contenteditable]')))return;
+ const code=event.code||({' ':'Space',x:'KeyX',u:'KeyU',s:'KeyS',t:'KeyT',o:'KeyO','1':'Digit1','2':'Digit2','3':'Digit3'}[event.key]||event.key);
+ if(!['Space','KeyX','KeyU','KeyS','KeyT','KeyO','ArrowLeft','ArrowRight','Digit1','Digit2','Digit3'].includes(code))return;
+ event.preventDefault();if(event.repeat)return;
+ if(code==='Space')decide('keep');else if(code==='KeyX')decide('exclude');else if(code==='ArrowLeft')move(-1);else if(code==='ArrowRight')move(1);
+ else if(code==='KeyU')undo();else if(code==='KeyS')exportCSV();
+ else if(activeId&&code==='KeyT'){elements[activeId].controls.groups.focus();elements[activeId].controls.groups.select();notice('Редактирование групп. Нажми Esc, чтобы вернуться к горячим клавишам.');}
+ else if(activeId&&code==='KeyO')window.open(byId[activeId].image_url,'_blank','noopener');
+ else if(activeId&&code.startsWith('Digit')){const value=['butterfly','lookalike','unrelated'][Number(code.slice(-1))-1];changeField(activeId,'class',value);notice('Класс изменён. Проверь предложенную группу.');}
+}
+document.addEventListener('keydown',keyboard);
+update();
+</script></html>
