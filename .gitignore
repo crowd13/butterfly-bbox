@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+data/cache/
+data/images/
+data/thumbnails/
+data/downloads.csv
+data/review.html
+data/decisions*.csv
+data/*.tmp
+data/*.part
