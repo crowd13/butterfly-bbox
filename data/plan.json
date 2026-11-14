@@ -3,10 +3,37 @@
   "per_page": 200,
   "max_pages_per_source": 10,
   "sources": [
-    {"name": "butterflies", "proposed_class": "butterfly", "count": 450, "taxon_id": 47224},
-    {"name": "moths", "proposed_class": "lookalike", "count": 45, "taxon_id": 47157, "without_taxon_id": 47224},
-    {"name": "other_insects", "proposed_class": "lookalike", "count": 45, "taxon_id": 47158, "without_taxon_id": 47157},
-    {"name": "plants", "proposed_class": "unrelated", "count": 30, "taxon_id": 47126},
-    {"name": "mammals", "proposed_class": "unrelated", "count": 30, "taxon_id": 40151}
+    {
+      "name": "butterflies",
+      "proposed_class": "butterfly",
+      "count": 450,
+      "taxon_id": 47224
+    },
+    {
+      "name": "moths",
+      "proposed_class": "butterfly",
+      "count": 45,
+      "taxon_id": 47157,
+      "without_taxon_id": 47224
+    },
+    {
+      "name": "other_insects",
+      "proposed_class": "lookalike",
+      "count": 45,
+      "taxon_id": 47158,
+      "without_taxon_id": 47157
+    },
+    {
+      "name": "plants",
+      "proposed_class": "unrelated",
+      "count": 30,
+      "taxon_id": 47126
+    },
+    {
+      "name": "mammals",
+      "proposed_class": "unrelated",
+      "count": 30,
+      "taxon_id": 40151
+    }
   ]
 }

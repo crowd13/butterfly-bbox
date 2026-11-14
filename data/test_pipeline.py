@@ -66,5 +66,21 @@ class PipelineTests(unittest.TestCase):
                 inspect_image(path)
 
 
+class MothTargetTests(unittest.TestCase):
+    def test_old_moth_export_is_positive(self):
+        candidate = {"photo_id": "1", "license_code": "cc0"}
+        download = {"photo_id": "1", "status": "ok", "width": "100", "height": "80", "exif_orientation": "1"}
+        decision = {"photo_id": "1", "decision": "keep", "class": "lookalike", "groups": "moth;small", "notes": "kept"}
+        result = finalize([candidate], [download], [decision])
+        self.assertEqual(result[0]["class"], "butterfly")
+        self.assertEqual(result[0]["groups"], "moth;small")
+        self.assertEqual(decision["class"], "lookalike")
+
+    def test_immature_stays_negative(self):
+        from common import normalize_target
+        decision = {"photo_id": "2", "class": "lookalike", "groups": "immature", "decision": "keep"}
+        self.assertEqual(normalize_target(decision), decision)
+
+
 if __name__ == "__main__":
     unittest.main()
