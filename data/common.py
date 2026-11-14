@@ -20,6 +20,16 @@ DECISION_FIELDS = ["photo_id", "class", "groups", "decision", "notes"]
 CLASSES = {"butterfly", "lookalike", "unrelated"}
 
 
+def normalize_target(row):
+    """All adult Lepidoptera, including moths, are targets (organizers' clarification)."""
+    groups = {g.strip() for g in row.get("groups", "").split(";") if g.strip()}
+    if "moth" in groups and "immature" in groups:
+        raise ValueError(f"{row.get('photo_id')}: moth + immature needs manual review")
+    if "moth" in groups and row.get("class") == "lookalike":
+        return {**row, "class": "butterfly"}
+    return row
+
+
 def read_csv(path):
     with Path(path).open(encoding="utf-8-sig", newline="") as stream:
         return list(csv.DictReader(stream))
