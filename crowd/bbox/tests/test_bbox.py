@@ -9,7 +9,13 @@ from unittest.mock import patch
 
 from crowd.bbox.api import ApiError, TasksApi
 from crowd.bbox.budget import check_commitment, plan
-from crowd.bbox.dataset import SCENARIOS, select_manifest, validate_inputs
+from crowd.bbox.dataset import (
+    SCENARIOS,
+    is_difficult,
+    read_manifest,
+    select_manifest,
+    validate_inputs,
+)
 from crowd.bbox.export import answers
 from crowd.bbox.quality import control_windows, evaluate, match_count, validate_solution
 from crowd.bbox.render import ROOT, project_body
@@ -233,13 +239,17 @@ class InputTests(unittest.TestCase):
         self.assertIn(bank["practice"][0]["image_url"], body)
         self.assertNotIn(bank["exam"][0]["image_url"], body)
         self.assertNotIn(bank["controls"][0]["image_url"], body)
+        instructions = snapshot["assets"]["instructions"]
+        self.assertIn("включая мотыльков и молей", instructions)
+        self.assertNotIn("Не выделяйте моль", instructions)
 
     def test_selection_deterministic(self):
         rows = []
         for label, count, group in [
             ("butterfly", 368, "ordinary"),
             ("butterfly", 61, "small"),
-            ("lookalike", 106, "moth"),
+            ("butterfly", 33, "moth"),
+            ("lookalike", 73, "other_insect"),
             ("unrelated", 58, "plant"),
         ]:
             rows.extend(
@@ -250,6 +260,45 @@ class InputTests(unittest.TestCase):
         self.assertEqual(chosen, select_manifest(rows))
         self.assertEqual(len(chosen), 400)
         self.assertEqual(sum(r["groups"] == "small" for r in chosen), 61)
+        self.assertEqual(sum(r["class"] == "butterfly" for r in chosen), 303)
+        self.assertEqual(sum(r["class"] == "lookalike" for r in chosen), 57)
+        self.assertTrue(any(r["groups"] == "moth" for r in chosen[:40]))
+        self.assertFalse(is_difficult({"class": "butterfly", "groups": "moth"}))
+        self.assertTrue(is_difficult({"class": "butterfly", "groups": "moth;small"}))
+
+    def test_current_source_and_frozen_dataset(self):
+        source = read_manifest(ROOT.parents[1] / "data/manifest.csv")
+        chosen = select_manifest(source)
+        self.assertEqual(len(chosen), 400)
+        self.assertEqual(sum(is_difficult(r) for r in chosen), 61)
+        bank = read_json(ROOT / "fixtures/gold-draft/gold_draft.json")
+        work = read_manifest(ROOT / "fixtures/gold-draft/working_manifest.csv")
+        index = {r["photo_id"]: r for r in source}
+        for row in work:
+            self.assertEqual(row, index[row["photo_id"]])
+        all_rows = work + sum(bank.values(), [])
+        for key in ("photo_id", "image_url", "observation_id"):
+            self.assertEqual(len({r[key] for r in all_rows}), 510)
+        for rows in bank.values():
+            self.assertTrue(SCENARIOS <= {s for r in rows for s in r["scenarios"]})
+            for row in rows:
+                validate_solution(row["solution"])
+                if "moth" in row["scenarios"]:
+                    self.assertEqual(row["class"], "butterfly")
+                    self.assertEqual(row["solution"]["status"], "boxes")
+
+    def test_old_moth_rules_rejected(self):
+        with self.assertRaisesRegex(ValueError, "Adult moths must be targets"):
+            select_manifest([{"photo_id": "1", "class": "lookalike", "groups": "moth"}])
+        rows, bank, config = inputs()
+        bank["practice"][0]["solution"] = copy.deepcopy(EMPTY)
+        with self.assertRaisesRegex(ValueError, "Adult moth gold requires bounding boxes"):
+            validate_inputs(rows, bank, config)
+        bank["practice"][0].update(
+            {"class": "lookalike", "source_groups": "moth", "scenarios": ["empty"]}
+        )
+        with self.assertRaisesRegex(ValueError, "Adult moths must be targets"):
+            validate_inputs(rows, bank, config)
 
 
 class WorkflowTests(unittest.TestCase):

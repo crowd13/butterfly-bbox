@@ -105,7 +105,7 @@
       "height": 2048,
       "exif_orientation": "1",
       "class": "lookalike",
-      "groups": "lookalike|empty",
+      "groups": "lookalike;empty",
       "notes": "",
       "scenarios": [
         "lookalike",
@@ -182,22 +182,29 @@
       "source_taxon_id": "47157",
       "observation_taxon": "Spoladea recurvalis",
       "source_bucket": "moths",
-      "proposed_class": "lookalike",
+      "proposed_class": "butterfly",
       "width": 2048,
       "height": 1457,
       "exif_orientation": "1",
-      "class": "lookalike",
-      "groups": "lookalike|empty",
+      "class": "butterfly",
+      "groups": "ordinary;moth",
       "notes": "",
       "scenarios": [
-        "lookalike",
-        "empty"
+        "ordinary",
+        "moth"
       ],
       "solution": {
-        "status": "no_butterflies",
-        "boxes": []
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.015,
+            "top": 0.005,
+            "width": 0.975,
+            "height": 0.97
+          }
+        ]
       },
-      "hint": "На фотографии моль; по правилам проекта её не размечаем.",
+      "hint": "Взрослая моль тоже относится к целевым бабочкам. Одна рамка включает крылья, тело, усики и лапки; тень на стене не включаем.",
       "independent_reviews": [],
       "resolution": "",
       "annotation_source": "ai_visual_draft",
@@ -205,7 +212,8 @@
       "source_groups": "moth",
       "draft_provenance": {
         "source": "initial",
-        "annotation_index": 4
+        "annotation_index": 4,
+        "policy_update": "include-moths-policy:v1"
       }
     },
     {
@@ -260,7 +268,7 @@
       "source_bucket": "butterflies",
       "proposed_class": "butterfly",
       "class": "butterfly",
-      "groups": "multiple|occluded",
+      "groups": "multiple;occluded",
       "notes": "Additional CC0 image; AI visual draft, human review pending",
       "width": 750,
       "height": 747,
@@ -541,7 +549,7 @@
       "height": 2048,
       "exif_orientation": "1",
       "class": "lookalike",
-      "groups": "lookalike|empty",
+      "groups": "lookalike;empty",
       "notes": "",
       "scenarios": [
         "lookalike",
@@ -574,22 +582,29 @@
       "source_taxon_id": "47157",
       "observation_taxon": "Agrochola lota",
       "source_bucket": "moths",
-      "proposed_class": "lookalike",
+      "proposed_class": "butterfly",
       "width": 1200,
       "height": 1600,
       "exif_orientation": "1",
-      "class": "lookalike",
-      "groups": "lookalike|empty",
+      "class": "butterfly",
+      "groups": "ordinary;moth",
       "notes": "",
       "scenarios": [
-        "lookalike",
-        "empty"
+        "ordinary",
+        "moth"
       ],
       "solution": {
-        "status": "no_butterflies",
-        "boxes": []
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.245,
+            "top": 0.205,
+            "width": 0.61,
+            "height": 0.415
+          }
+        ]
       },
-      "hint": "В кадре моль; её не включаем в целевую разметку.",
+      "hint": "Коричневая взрослая моль на ткани — целевой объект. Обводим видимые крылья, голову, усики и лапки; тёмную щель над ней не включаем.",
       "independent_reviews": [],
       "resolution": "",
       "annotation_source": "ai_visual_draft",
@@ -597,7 +612,8 @@
       "source_groups": "moth",
       "draft_provenance": {
         "source": "initial",
-        "annotation_index": 13
+        "annotation_index": 13,
+        "policy_update": "include-moths-policy:v1"
       }
     },
     {
@@ -740,7 +756,7 @@
       "source_bucket": "butterflies",
       "proposed_class": "butterfly",
       "class": "butterfly",
-      "groups": "multiple|occluded|cropped",
+      "groups": "multiple;occluded;cropped",
       "notes": "Additional CC0 image; AI visual draft, human review pending",
       "width": 1536,
       "height": 2048,
@@ -919,22 +935,29 @@
       "source_taxon_id": "47157",
       "observation_taxon": "Atteva aurea",
       "source_bucket": "moths",
-      "proposed_class": "lookalike",
+      "proposed_class": "butterfly",
       "width": 1280,
       "height": 880,
       "exif_orientation": "1",
-      "class": "lookalike",
-      "groups": "lookalike|empty",
+      "class": "butterfly",
+      "groups": "ordinary;moth",
       "notes": "",
       "scenarios": [
-        "lookalike",
-        "empty"
+        "ordinary",
+        "moth"
       ],
       "solution": {
-        "status": "no_butterflies",
-        "boxes": []
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.16,
+            "top": 0.14,
+            "width": 0.735,
+            "height": 0.78
+          }
+        ]
       },
-      "hint": "Ярко окрашенная моль на цветке не относится к целевым бабочкам проекта.",
+      "hint": "Яркая взрослая моль на цветке — целевой объект. Включаем длинные усики и лапки; цветок не размечаем.",
       "independent_reviews": [],
       "resolution": "",
       "annotation_source": "ai_visual_draft",
@@ -942,7 +965,8 @@
       "source_groups": "moth",
       "draft_provenance": {
         "source": "initial",
-        "annotation_index": 21
+        "annotation_index": 21,
+        "policy_update": "include-moths-policy:v1"
       }
     },
     {
@@ -1351,7 +1375,7 @@
       "height": 2048,
       "exif_orientation": "1",
       "class": "lookalike",
-      "groups": "lookalike|empty",
+      "groups": "lookalike;empty",
       "notes": "",
       "scenarios": [
         "lookalike",
@@ -1433,7 +1457,7 @@
       "height": 1567,
       "exif_orientation": "1",
       "class": "lookalike",
-      "groups": "lookalike|empty",
+      "groups": "lookalike;empty",
       "notes": "",
       "scenarios": [
         "lookalike",
@@ -1726,7 +1750,7 @@
       "source_bucket": "butterflies",
       "proposed_class": "butterfly",
       "class": "butterfly",
-      "groups": "multiple|occluded|cropped",
+      "groups": "multiple;occluded;cropped",
       "notes": "Additional CC0 image; AI visual draft, human review pending",
       "width": 462,
       "height": 580,
@@ -2087,7 +2111,7 @@
       "height": 2048,
       "exif_orientation": "1",
       "class": "lookalike",
-      "groups": "lookalike|empty",
+      "groups": "lookalike;empty",
       "notes": "",
       "scenarios": [
         "lookalike",
@@ -2343,22 +2367,29 @@
       "source_taxon_id": "47157",
       "observation_taxon": "Colotois pennaria",
       "source_bucket": "moths",
-      "proposed_class": "lookalike",
+      "proposed_class": "butterfly",
       "width": 1536,
       "height": 2048,
       "exif_orientation": "1",
-      "class": "lookalike",
-      "groups": "lookalike|empty",
+      "class": "butterfly",
+      "groups": "ordinary;moth",
       "notes": "",
       "scenarios": [
-        "lookalike",
-        "empty"
+        "ordinary",
+        "moth"
       ],
       "solution": {
-        "status": "no_butterflies",
-        "boxes": []
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.15,
+            "top": 0.145,
+            "width": 0.64,
+            "height": 0.52
+          }
+        ]
       },
-      "hint": "Коричневая моль на стене; по правилам проекта её не размечаем.",
+      "hint": "Взрослая моль на стене: включаем крылья, тело, усики и лапки. Тень справа и снизу не входит в рамку.",
       "independent_reviews": [],
       "resolution": "",
       "annotation_source": "ai_visual_draft",
@@ -2366,7 +2397,8 @@
       "source_groups": "moth",
       "draft_provenance": {
         "source": "initial",
-        "annotation_index": 54
+        "annotation_index": 54,
+        "policy_update": "include-moths-policy:v1"
       }
     },
     {
@@ -2583,22 +2615,29 @@
       "source_taxon_id": "47157",
       "observation_taxon": "Amblyptilia pica",
       "source_bucket": "moths",
-      "proposed_class": "lookalike",
+      "proposed_class": "butterfly",
       "width": 2048,
       "height": 1536,
       "exif_orientation": "1",
-      "class": "lookalike",
-      "groups": "lookalike|empty",
+      "class": "butterfly",
+      "groups": "ordinary;moth",
       "notes": "",
       "scenarios": [
-        "lookalike",
-        "empty"
+        "ordinary",
+        "moth"
       ],
       "solution": {
-        "status": "no_butterflies",
-        "boxes": []
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.27,
+            "top": 0.2,
+            "width": 0.475,
+            "height": 0.4
+          }
+        ]
       },
-      "hint": "В кадре пальцекрылка (моль), а не целевая бабочка проекта.",
+      "hint": "Пальцекрылка — взрослая моль, её размечаем. Одна рамка охватывает оба узких крыла, тело, усики и видимые лапки; цветки не включаем.",
       "independent_reviews": [],
       "resolution": "",
       "annotation_source": "ai_visual_draft",
@@ -2606,7 +2645,8 @@
       "source_groups": "moth",
       "draft_provenance": {
         "source": "initial",
-        "annotation_index": 60
+        "annotation_index": 60,
+        "policy_update": "include-moths-policy:v1"
       }
     },
     {
@@ -2714,7 +2754,7 @@
       "height": 2048,
       "exif_orientation": "1",
       "class": "lookalike",
-      "groups": "lookalike|empty",
+      "groups": "lookalike;empty",
       "notes": "",
       "scenarios": [
         "lookalike",
@@ -2916,22 +2956,29 @@
       "source_taxon_id": "47157",
       "observation_taxon": "Haritalodes derogata",
       "source_bucket": "moths",
-      "proposed_class": "lookalike",
+      "proposed_class": "butterfly",
       "width": 2048,
       "height": 1536,
       "exif_orientation": "1",
-      "class": "lookalike",
-      "groups": "lookalike|empty",
+      "class": "butterfly",
+      "groups": "ordinary;moth",
       "notes": "",
       "scenarios": [
-        "lookalike",
-        "empty"
+        "ordinary",
+        "moth"
       ],
       "solution": {
-        "status": "no_butterflies",
-        "boxes": []
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.12,
+            "top": 0.245,
+            "width": 0.77,
+            "height": 0.56
+          }
+        ]
       },
-      "hint": "На листе моль; рамки бабочек отсутствуют.",
+      "hint": "На листе взрослая моль. Рамка включает раскрытые крылья, тело, усики и лапки; тень не размечаем.",
       "independent_reviews": [],
       "resolution": "",
       "annotation_source": "ai_visual_draft",
@@ -2939,7 +2986,8 @@
       "source_groups": "moth",
       "draft_provenance": {
         "source": "initial",
-        "annotation_index": 68
+        "annotation_index": 68,
+        "policy_update": "include-moths-policy:v1"
       }
     },
     {
@@ -3086,22 +3134,29 @@
       "source_taxon_id": "47157",
       "observation_taxon": "Glaucocharis",
       "source_bucket": "moths",
-      "proposed_class": "lookalike",
+      "proposed_class": "butterfly",
       "width": 2048,
       "height": 1152,
       "exif_orientation": "1",
-      "class": "lookalike",
-      "groups": "lookalike|empty",
+      "class": "butterfly",
+      "groups": "ordinary;moth",
       "notes": "",
       "scenarios": [
-        "lookalike",
-        "empty"
+        "ordinary",
+        "moth"
       ],
       "solution": {
-        "status": "no_butterflies",
-        "boxes": []
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.515,
+            "top": 0.085,
+            "width": 0.325,
+            "height": 0.55
+          }
+        ]
       },
-      "hint": "На листе моль; взрослых бабочек нет.",
+      "hint": "Тёмная взрослая моль на листе — целевой объект. Включаем узкие крылья, тело, усики и видимые лапки.",
       "independent_reviews": [],
       "resolution": "",
       "annotation_source": "ai_visual_draft",
@@ -3109,7 +3164,8 @@
       "source_groups": "moth",
       "draft_provenance": {
         "source": "initial",
-        "annotation_index": 72
+        "annotation_index": 72,
+        "policy_update": "include-moths-policy:v1"
       }
     },
     {
@@ -3481,7 +3537,7 @@
       "height": 1200,
       "exif_orientation": "1",
       "class": "lookalike",
-      "groups": "lookalike|empty",
+      "groups": "lookalike;empty",
       "notes": "",
       "scenarios": [
         "lookalike",
@@ -3556,7 +3612,7 @@
       "height": 1749,
       "exif_orientation": "1",
       "class": "lookalike",
-      "groups": "lookalike|empty",
+      "groups": "lookalike;empty",
       "notes": "",
       "scenarios": [
         "lookalike",
@@ -3726,7 +3782,7 @@
       "height": 2048,
       "exif_orientation": "1",
       "class": "lookalike",
-      "groups": "lookalike|empty",
+      "groups": "lookalike;empty",
       "notes": "",
       "scenarios": [
         "lookalike",
@@ -3896,7 +3952,7 @@
       "height": 1536,
       "exif_orientation": "1",
       "class": "lookalike",
-      "groups": "lookalike|empty",
+      "groups": "lookalike;empty",
       "notes": "",
       "scenarios": [
         "lookalike",
@@ -4006,24 +4062,28 @@
       }
     },
     {
-      "photo_id": "762557330",
-      "observation_id": "414246007",
-      "observation_url": "https://www.inaturalist.org/observations/414246007",
-      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762557330/original.jpg",
-      "photo_page_url": "https://www.inaturalist.org/photos/762557330",
+      "photo_id": "699296200",
+      "observation_id": "382138609",
+      "observation_url": "https://www.inaturalist.org/observations/382138609",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/699296200/original.jpg",
+      "photo_page_url": "https://www.inaturalist.org/photos/699296200",
       "license_code": "cc0",
-      "attribution": "no rights reserved",
-      "observer_login": "kristinpiston",
-      "source_taxon_id": "47157",
-      "observation_taxon": "Lymantria dispar",
-      "source_bucket": "moths",
-      "proposed_class": "lookalike",
-      "width": 1536,
-      "height": 2048,
-      "exif_orientation": "1",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "no rights reserved, uploaded by Matteo",
+      "observer_login": "mattvasq",
+      "source_taxon_id": "47224",
+      "observation_taxon": "Danaus plexippus",
+      "source_bucket": "butterflies",
+      "proposed_class": "butterfly",
       "class": "lookalike",
-      "groups": "lookalike|empty",
-      "notes": "",
+      "groups": "lookalike;empty",
+      "notes": "CC0 candidate visually checked as a caterpillar; human review pending",
+      "width": 1752,
+      "height": 2048,
+      "pixels_sha256": "8539aaf53a9d1762df22e86636a7a4a68210a47cd879f75f1083bd48c2db8e93",
+      "sha256": "5bff42ab19676d292489e25bef786489a46952ee384f11aef76b2e1ab401c4d0",
+      "exif_orientation": "1",
+      "source_groups": "immature",
       "scenarios": [
         "lookalike",
         "empty"
@@ -4032,15 +4092,15 @@
         "status": "no_butterflies",
         "boxes": []
       },
-      "hint": "Светлый объект на коре не является взрослой целевой бабочкой; рамок нет.",
+      "hint": "На листе гусеница. Незрелые стадии, включая гусениц, не размечаем; взрослых бабочек в кадре нет.",
       "independent_reviews": [],
       "resolution": "",
       "annotation_source": "ai_visual_draft",
       "review_required": true,
-      "source_groups": "moth",
       "draft_provenance": {
-        "source": "initial",
-        "annotation_index": 94
+        "source": "extra",
+        "annotation_index": 20,
+        "policy_update": "include-moths-policy:v1"
       }
     },
     {
@@ -4055,22 +4115,29 @@
       "source_taxon_id": "47157",
       "observation_taxon": "Agriopis aurantiaria",
       "source_bucket": "moths",
-      "proposed_class": "lookalike",
+      "proposed_class": "butterfly",
       "width": 2048,
       "height": 1536,
       "exif_orientation": "1",
-      "class": "lookalike",
-      "groups": "lookalike|empty",
+      "class": "butterfly",
+      "groups": "ordinary;moth",
       "notes": "",
       "scenarios": [
-        "lookalike",
-        "empty"
+        "ordinary",
+        "moth"
       ],
       "solution": {
-        "status": "no_butterflies",
-        "boxes": []
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.325,
+            "top": 0.18,
+            "width": 0.49,
+            "height": 0.72
+          }
+        ]
       },
-      "hint": "На стекле моль с перистыми усиками; по правилам проекта её не размечаем.",
+      "hint": "Взрослая моль с перистыми усиками тоже размечается. Обводим насекомое вместе с усиками и лапками; отражения на стекле не включаем.",
       "independent_reviews": [],
       "resolution": "",
       "annotation_source": "ai_visual_draft",
@@ -4078,7 +4145,8 @@
       "source_groups": "moth",
       "draft_provenance": {
         "source": "initial",
-        "annotation_index": 95
+        "annotation_index": 95,
+        "policy_update": "include-moths-policy:v1"
       }
     },
     {
@@ -4137,22 +4205,29 @@
       "source_taxon_id": "47157",
       "observation_taxon": "Scopula",
       "source_bucket": "moths",
-      "proposed_class": "lookalike",
+      "proposed_class": "butterfly",
       "width": 2048,
       "height": 1365,
       "exif_orientation": "1",
-      "class": "lookalike",
-      "groups": "lookalike|empty",
+      "class": "butterfly",
+      "groups": "ordinary;moth",
       "notes": "",
       "scenarios": [
-        "lookalike",
-        "empty"
+        "ordinary",
+        "moth"
       ],
       "solution": {
-        "status": "no_butterflies",
-        "boxes": []
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.285,
+            "top": 0.31,
+            "width": 0.395,
+            "height": 0.31
+          }
+        ]
       },
-      "hint": "На листе светлая моль; целевых бабочек нет.",
+      "hint": "Светлая взрослая моль на листе — целевой объект. Обводим все видимые части одной рамкой; листья не включаем.",
       "independent_reviews": [],
       "resolution": "",
       "annotation_source": "ai_visual_draft",
@@ -4160,7 +4235,8 @@
       "source_groups": "moth",
       "draft_provenance": {
         "source": "initial",
-        "annotation_index": 97
+        "annotation_index": 97,
+        "policy_update": "include-moths-policy:v1"
       }
     },
     {
@@ -4362,7 +4438,7 @@
       "height": 2048,
       "exif_orientation": "1",
       "class": "lookalike",
-      "groups": "lookalike|empty",
+      "groups": "lookalike;empty",
       "notes": "",
       "scenarios": [
         "lookalike",
@@ -4667,7 +4743,7 @@
       "height": 2048,
       "exif_orientation": "1",
       "class": "lookalike",
-      "groups": "lookalike|empty",
+      "groups": "lookalike;empty",
       "notes": "",
       "scenarios": [
         "lookalike",

@@ -16,7 +16,7 @@
 .bbox-task details {margin:8px 0; padding:8px; border:1px solid #aaa;}
 .bbox-task summary {cursor:pointer;}
 @media (max-width:600px) {.bbox-viewport {height:360px;}}
-</style><h1>Предпросмотр bbox</h1><div id="task"><section class="bbox-task">
+</style><h1>Предпросмотр bbox</h1><p>Размечаем всех взрослых бабочек, включая мотыльков и молей. Гусениц, куколок и кладки яиц не размечаем.</p><div id="task"><section class="bbox-task">
   <details><summary>Практика: попробуйте инструмент перед экзаменом</summary>
     <p>Учебные ответы не отправляются и не влияют на экзамен. Зелёные рамки — эталон.</p>
     <div class="bbox-practice"></div>
@@ -253,5 +253,7 @@ document.getElementById('download').onclick=function(){
  var err=task.validate();if(err){alert(JSON.stringify(err));return;}
  var record={photo_id:"762669308",solution:task.getSolution().output_values};
  var url=URL.createObjectURL(new Blob([JSON.stringify(record,null,2)],{type:'application/json'}));
- var link=document.createElement('a');link.href=url;link.download='annotation-'+record.photo_id+'.json';link.click();setTimeout(function(){URL.revokeObjectURL(url);},1000);
+ var link=document.createElement('a');link.href=url;
+ link.download='annotation-'+record.photo_id+'.json';link.click();
+ setTimeout(function(){URL.revokeObjectURL(url);},1000);
 };</script></html>

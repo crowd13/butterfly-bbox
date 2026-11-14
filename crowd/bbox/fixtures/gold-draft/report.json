@@ -1,55 +1,58 @@
 {
   "ready_for_paid_work": false,
-  "source_sha256": "ed57cc5b7b2ddbfa631ff8cadd537c3ccc915ff0985b6fc6c8e3167c96b29488",
+  "source_sha256": "b205d57185c10eeb0a650d7495fd9c8a98d872b60548ef30645140e4498d8193",
   "seed": 42,
   "working_count": 400,
   "counts": {
     "practice": {
       "images": 10,
-      "boxes": 8,
+      "boxes": 9,
       "statuses": {
-        "boxes": 7,
-        "no_butterflies": 3
+        "boxes": 8,
+        "no_butterflies": 2
       },
       "scenarios": {
         "cropped": 1,
-        "ordinary": 3,
-        "lookalike": 2,
-        "empty": 3,
+        "ordinary": 4,
+        "lookalike": 1,
+        "empty": 2,
         "small": 1,
+        "moth": 1,
         "multiple": 1,
         "occluded": 2
       }
     },
     "exam": {
       "images": 10,
-      "boxes": 8,
+      "boxes": 9,
       "statuses": {
-        "boxes": 7,
-        "no_butterflies": 3
+        "boxes": 8,
+        "no_butterflies": 2
       },
       "scenarios": {
         "small": 1,
         "occluded": 2,
-        "lookalike": 2,
-        "empty": 3,
-        "ordinary": 3,
+        "lookalike": 1,
+        "empty": 2,
+        "ordinary": 4,
+        "moth": 1,
         "multiple": 1,
         "cropped": 2
       }
     },
     "controls": {
       "images": 90,
-      "boxes": 64,
+      "boxes": 71,
       "statuses": {
-        "no_butterflies": 27,
-        "boxes": 63
+        "no_butterflies": 20,
+        "boxes": 70
       },
       "scenarios": {
-        "empty": 27,
-        "lookalike": 18,
-        "ordinary": 55,
+        "empty": 20,
+        "ordinary": 62,
+        "moth": 7,
         "small": 4,
+        "lookalike": 11,
         "multiple": 1,
         "occluded": 2,
         "cropped": 3
@@ -80,20 +83,30 @@
       }
     }
   ],
-  "selection_note": "Initial seed=42 selection; 10 unsuitable images replaced with additional CC0 images, then split redistribution for scenario coverage. Final membership is in gold_draft.json. Exclusions: excluded_candidates.json; added sources: provenance/additional_sources.json.",
+  "selection_note": "Initial seed=42 selection under the original policy, followed by visual replacements. After include-moths-policy:v1, working 400 IDs and their order were retained, metadata refreshed from the current source, nine gold moth images annotated and one ambiguous control replaced with a caterpillar. Final membership: gold_draft.json and working_manifest.csv.",
   "checked_at": "2026-11-14T13:24:28.393471+00:00",
   "ai_draft_complete": true,
   "human_reviewed_count": 0,
   "annotation_source": "ai_visual_draft",
-  "excluded_candidate_count": 10,
-  "added_cc0_count": 10,
-  "gold_sha256": "1d6f9251749cec35165960f16c6420472740e364849d27e2df04cd28e4858d74",
+  "excluded_candidate_count": 11,
+  "added_cc0_count": 11,
+  "gold_sha256": "f34398a1b8bcec99b62767ca35dba4006187dcc4b4c05d67ddc6b4468e2f5b94",
   "draft_completed_at": "2026-11-14T13:47:34.379166+00:00",
   "verification": {
     "geometry_and_metadata": "passed for 110 records",
     "exact_pixel_duplicates": "none across 510 images",
-    "visual_overlay_pass": "AI inspected all 110; human checks pending",
-    "browser": "prefilled editor, blank editor and JSON download payload verified",
-    "project_check": "blocked as intended: Two independent human annotations are required"
-  }
+    "visual_overlay_pass": "AI inspected the nine new moth boxes and the replacement caterpillar; human checks pending.",
+    "browser": "Updated adult-moth and caterpillar editors load local images and validate the expected positive/negative answers.",
+    "project_check": "blocked as intended: Two independent human annotations are required",
+    "policy_checks": "26 bbox tests, 7 data tests, Ruff lint/format, CLI select and local hashes/geometry/CSV/link checks passed.",
+    "policy_checked_at": "2026-11-14T21:49:44.493055+00:00"
+  },
+  "annotation_policy": "include-moths-policy:v1",
+  "policy_updated_at": "2026-11-14T21:42:51.982537+00:00",
+  "working_classes": {
+    "butterfly": 303,
+    "lookalike": 57,
+    "unrelated": 40
+  },
+  "working_moths": 23
 }

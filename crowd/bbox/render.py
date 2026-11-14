@@ -57,7 +57,9 @@ def project_body(snapshot, marker):
     view = snapshot["assets"]
     return {
         "public_name": "Найдите бабочек на фотографиях",
-        "public_description": "Выделите всех взрослых бабочек рамками или отметьте их отсутствие.",
+        "public_description": (
+            "Выделите всех взрослых бабочек, включая мотыльков и молей, или отметьте их отсутствие."
+        ),
         "public_instructions": view["instructions"],
         "private_comment": marker,
         "assignments_issuing_type": "AUTOMATED",

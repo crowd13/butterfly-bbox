@@ -14,7 +14,24 @@ from PIL import Image, ImageOps
 from .budget import plan
 from .quality import evaluate, validate_solution
 
-SCENARIOS = {"ordinary", "small", "multiple", "occluded", "cropped", "lookalike", "empty"}
+DIFFICULT_SCENARIOS = {"small", "multiple", "occluded", "cropped"}
+SCENARIOS = DIFFICULT_SCENARIOS | {"ordinary", "moth", "lookalike", "empty"}
+
+
+def image_groups(row):
+    return {g.strip() for g in row.get("groups", "").split(";") if g.strip()}
+
+
+def is_difficult(row):
+    return row["class"] == "butterfly" and bool(image_groups(row) & DIFFICULT_SCENARIOS)
+
+
+def has_moth(row):
+    return "moth" in (
+        image_groups(row)
+        | set(row.get("source_groups", "").split(";"))
+        | set(row.get("scenarios", []))
+    )
 
 
 def read_manifest(path):
@@ -23,6 +40,8 @@ def read_manifest(path):
 
 
 def validate_image(row):
+    if has_moth(row) and row.get("class") != "butterfly":
+        raise ValueError("Adult moths must be targets; update the manifest")
     if not str(row.get("photo_id", "")).isdigit():
         raise ValueError("Missing numeric photo_id")
     if row.get("license_code") != "cc0":
@@ -40,16 +59,18 @@ def select_manifest(rows, seed=42):
     rng = random.Random(seed)
     strata = {"hard": [], "ordinary": [], "lookalike": [], "unrelated": []}
     for row in rows:
+        if has_moth(row) and row["class"] != "butterfly":
+            raise ValueError("Adult moths must be targets; update the manifest")
         key = row["class"]
         if key == "butterfly":
-            key = "ordinary" if row["groups"] == "ordinary" else "hard"
+            key = "hard" if is_difficult(row) else "ordinary"
         strata[key].append(row)
-    if len(strata["hard"]) > 280:
+    if len(strata["hard"]) > 303:
         raise ValueError("Too many difficult images for the agreed selection")
     targets = {
         "hard": len(strata["hard"]),
-        "ordinary": 280 - len(strata["hard"]),
-        "lookalike": 80,
+        "ordinary": 303 - len(strata["hard"]),
+        "lookalike": 57,
         "unrelated": 40,
     }
     chosen = []
@@ -58,17 +79,17 @@ def select_manifest(rows, seed=42):
             raise ValueError(f"Not enough images in {key}")
         chosen.extend(rng.sample(sorted(strata[key], key=lambda r: int(r["photo_id"])), count))
     # Start with rare scenarios; then interleave difficulty to avoid all-hard pages.
-    hard = [r for r in chosen if r["class"] == "butterfly" and r["groups"] != "ordinary"]
+    hard = [r for r in chosen if is_difficult(r)]
     easy = [r for r in chosen if r not in hard]
-    counts = Counter(g for r in hard for g in r["groups"].split(";"))
+    counts = Counter(g for r in hard for g in image_groups(r) & DIFFICULT_SCENARIOS)
     rng.shuffle(hard)
-    hard.sort(key=lambda r: min(counts[g] for g in r["groups"].split(";")))
+    hard.sort(key=lambda r: min(counts[g] for g in image_groups(r) & DIFFICULT_SCENARIOS))
     # Put a representative of each difficult scenario in the pilot, then retain
     # rarity order. Sampling alone can omit an entire scenario from the first 40.
     representatives = []
     covered = set()
     for row in hard:
-        scenarios = set(row["groups"].split(";"))
+        scenarios = image_groups(row) & DIFFICULT_SCENARIOS
         if scenarios - covered:
             representatives.append(row)
             covered.update(scenarios)
@@ -78,6 +99,9 @@ def select_manifest(rows, seed=42):
         next(r for r in easy if r["class"] == key)
         for key in ("butterfly", "lookalike", "unrelated")
     ]
+    moth = next((r for r in easy if "moth" in image_groups(r)), None)
+    if moth is not None and moth not in representatives:
+        representatives.append(moth)
     easy = representatives + [r for r in easy if r not in representatives]
     result = []
     while hard or easy:
@@ -147,6 +171,8 @@ def validate_inputs(manifest, bank, config):
         scenarios = set()
         for row in bank[split]:
             validate_solution(row["solution"])
+            if has_moth(row) and row["solution"]["status"] != "boxes":
+                raise ValueError("Adult moth gold requires bounding boxes")
             if row["solution"]["status"] not in {"boxes", "no_butterflies"}:
                 raise ValueError("Gold must be unambiguous")
             reviews = row.get("independent_reviews", [])
