@@ -144,8 +144,12 @@ function BBoxEditor(root, input, initial, changed) {
     status = select.value; error.textContent = ""; emit();
   });
   listen(img,"load",() => {
-    loaded = img.naturalWidth === Number(input.width) && img.naturalHeight === Number(input.height);
-    error.textContent = loaded ? "" : "Размер или ориентация изображения изменились. Выберите ошибку загрузки.";
+    const width = Number(input.width), height = Number(input.height);
+    const hasDimensions = Number.isInteger(width) && width > 0 && Number.isInteger(height) && height > 0;
+    loaded = hasDimensions && img.naturalWidth === width && img.naturalHeight === height;
+    error.textContent = loaded ? "" : (!hasDimensions
+      ? "В задании не переданы размеры фото. Выберите ошибку загрузки."
+      : "Размер или ориентация изображения изменились. Выберите ошибку загрузки.");
     size(); paint();
   });
   listen(img,"error",() => {loaded = false; error.textContent = "Фото не загрузилось. Повторите загрузку или отметьте ошибку.";});

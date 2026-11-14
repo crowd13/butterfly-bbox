@@ -70,10 +70,10 @@ def project_body(snapshot, marker):
         "assignments_automerge_enabled": False,
         "task_spec": {
             "input_spec": {
-                "photo_id": {"type": "string", "required": True, "hidden": True},
+                "photo_id": {"type": "string", "required": True, "hidden": False},
                 "image_url": {"type": "url", "required": True},
-                "width": {"type": "integer", "required": True, "hidden": True},
-                "height": {"type": "integer", "required": True, "hidden": True},
+                "width": {"type": "integer", "required": True, "hidden": False},
+                "height": {"type": "integer", "required": True, "hidden": False},
             },
             "output_spec": {
                 "status": {

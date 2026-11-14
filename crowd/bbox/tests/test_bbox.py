@@ -215,6 +215,19 @@ class GeometryTests(unittest.TestCase):
 
 
 class InputTests(unittest.TestCase):
+    def test_editor_inputs_survive_platform_hidden_field_filter(self):
+        schema = project_body(
+            {"assets": {"script": "", "markup": "", "styles": "", "instructions": ""}}, "test"
+        )["task_spec"]["input_spec"]
+        sample = {
+            "photo_id": "1",
+            "image_url": "https://example.org/1.jpg",
+            "width": 100,
+            "height": 200,
+        }
+        visible = {k: v for k, v in sample.items() if not schema[k].get("hidden", False)}
+        self.assertEqual(visible, sample)
+
     def test_default_budget(self):
         _, _, config = inputs()
         self.assertEqual(plan(config)["bbox_limit"], "430.50")
