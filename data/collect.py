@@ -15,7 +15,6 @@ from common import CANDIDATE_FIELDS, ROOT, request_json, write_csv
 def photo_candidate(observation, source, seen_photos, seen_observations):
     if observation["id"] in seen_observations:
         return None
-    # One CC0 photo per observation avoids filling the sample with a burst of one animal.
     for photo in observation.get("photos", []):
         if (photo.get("license_code") != "cc0" or photo.get("hidden")
                 or photo.get("id") in seen_photos):

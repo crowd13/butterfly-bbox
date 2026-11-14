@@ -4,7 +4,7 @@ import argparse
 from collections import Counter
 from pathlib import Path
 
-from common import CANDIDATE_FIELDS, CLASSES, ROOT, read_csv, unique_index, write_csv
+from common import CANDIDATE_FIELDS, CLASSES, ROOT, normalize_target, read_csv, unique_index, write_csv
 
 FINAL_FIELDS = CANDIDATE_FIELDS + ["width", "height", "exif_orientation", "class", "groups", "notes"]
 
@@ -20,7 +20,7 @@ def finalize(candidates, downloads, decisions):
         raise ValueError(f"Review unfinished: {len(unresolved)} candidates still pending")
     result = []
     for key, candidate in candidates.items():
-        decision, download = decisions[key], downloads.get(key, {})
+        decision, download = normalize_target(decisions[key]), downloads.get(key, {})
         if decision["decision"] == "exclude":
             continue
         if candidate["license_code"] != "cc0" or download.get("status") != "ok":

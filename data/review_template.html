@@ -28,7 +28,7 @@ details{margin-top:8px;font-size:13px}summary{cursor:pointer}#empty{text-align:c
 <header><h1>Проверка фотографий</h1>
 <div class="hint"><kbd>Пробел</kbd> оставить → дальше · <kbd>X</kbd> исключить → дальше · <kbd>←</kbd> <kbd>→</kbd> навигация · <kbd>1</kbd>/<kbd>2</kbd>/<kbd>3</kbd> класс · <kbd>U</kbd> отмена · <kbd>S</kbd> скачать CSV</div>
 <nav>
-<label>Класс <select id="classFilter"><option value="">Все</option><option value="butterfly">Бабочка</option><option value="lookalike">Похожий объект</option><option value="unrelated">Непохожий объект / фон</option></select></label>
+<label>Класс <select id="classFilter"><option value="">Все</option><option value="butterfly">Бабочка / мотылёк</option><option value="lookalike">Похожий объект</option><option value="unrelated">Непохожий объект / фон</option></select></label>
 <label>Решение <select id="decisionFilter"><option value="">Все</option><option value="pending">Не проверено</option><option value="keep">Оставить</option><option value="exclude">Исключить</option></select></label>
 <label><input type="checkbox" id="singleMode" checked> По одной</label>
 <button id="export">Скачать decisions.csv</button><button id="undo" disabled>Отменить (U)</button>
@@ -37,17 +37,23 @@ details{margin-top:8px;font-size:13px}summary{cursor:pointer}#empty{text-align:c
 <div class="toolbar"><span id="position"></span><span id="stats" class="summary"></span></div>
 <div id="notice" role="status" aria-live="polite"></div>
 <details><summary>Правила и остальные клавиши</summary>
-<p><kbd>T</kbd> — редактировать группы; <kbd>Esc</kbd> — закончить ввод; <kbd>O</kbd> — оригинал онлайн. Буквенные клавиши работают по физическому положению, в том числе в русской раскладке: X/Ч, U/Г, S/Ы, T/Е, O/Щ.</p>
-<p>1 — бабочка; 2 — похожий объект; 3 — непохожий объект / фон. При смене класса предлагается новая группа — проверь её.</p>
-<p>Для бабочек: ordinary; cropped; multiple; small; occluded. Для похожих объектов: moth; other_insect; immature. Для остальных: plant; mammal; other.</p>
-<p>Группы разделяй точкой с запятой. Если взрослая бабочка есть хотя бы одна — класс «Бабочка». Категория источника требует визуальной проверки.</p>
-<p>Стрелки учитывают фильтры и не меняют решения. Пробел и X сохраняют решение и переходят к следующей подходящей фотографии. На последней фотографии переход останавливается. U отменяет последнее изменение в текущем сеансе.</p>
-<p>Во время ввода текста горячие клавиши решений отключены. Нажми Esc, чтобы вернуться к проверке. Периодически скачивай CSV: память браузера не заменяет сохранённый файл.</p>
+<p><kbd>T</kbd> — редактировать группы; <kbd>Esc</kbd> — закончить ввод; <kbd>O</kbd> — оригинал онлайн. Буквенные клавиши работают и в русской раскладке.</p>
+<p>1 — взрослая бабочка, мотылёк или моль; 2 — похожий объект; 3 — непохожий объект / фон. При смене класса предлагается новая группа — проверь её.</p>
+<p>Для бабочек и мотыльков: ordinary; cropped; multiple; small; occluded; moth. Для похожих объектов: other_insect; immature. Для остальных: plant; mammal; other.</p>
+<p>Группы разделяй точкой с запятой. Если есть хотя бы одна взрослая бабочка, мотылёк или моль — положительный класс «Бабочка / мотылёк». Гусеницы и куколки: lookalike + immature. Категория источника требует визуальной проверки.</p>
+<p>Стрелки учитывают фильтры. Пробел/X — решение и переход, U — отмена.</p>
+<p>Во время ввода горячие клавиши отключены. Esc — закончить ввод. Сохраняй CSV.</p>
 </details>
 </header><p id="empty" hidden>В выбранном фильтре фотографий нет. Измени фильтр или отмени последнее действие.</p><main id="cards" class="single"></main>
 <script>
 const photos = __PHOTOS__;
-const classNames={butterfly:'Бабочка',lookalike:'Похожий объект',unrelated:'Непохожий объект / фон'};
+const classNames={butterfly:'Бабочка / мотылёк',lookalike:'Похожий объект',unrelated:'Непохожий объект / фон'};
+
+function normalizeTarget(row){
+ const groups=new Set(String(row.groups||'').split(';').map(g=>g.trim()));
+ if(groups.has('moth')&&groups.has('immature'))throw Error('moth + immature: '+row.photo_id);
+ return groups.has('moth')&&row.class==='lookalike'?{...row,class:'butterfly'}:row;
+}
 const decisions={},elements={},undoStack=[];
 const storageKey='butterfly-review:'+photos.map(p=>p.photo_id).join(',');
 const byId=Object.fromEntries(photos.map(p=>[String(p.photo_id),p]));
@@ -81,12 +87,11 @@ function move(step){const ids=visibleIds(),index=ids.indexOf(activeId),next=inde
 function changeField(id,key,value){
  if(decisions[id][key]===value)return;
  remember([id]);decisions[id][key]=value;
- if(key==='class')decisions[id].groups={butterfly:'ordinary',lookalike:'other_insect',unrelated:'other'}[value];
+ if(key==='class')decisions[id].groups=value==='butterfly'&&byId[id].source_bucket==='moths'?'moth':{butterfly:'ordinary',lookalike:'other_insect',unrelated:'other'}[value];
  syncControls(id);update();
 }
 function decide(value,id=activeId){
  if(!id)return;
- // Pick the next item BEFORE a pending-only filter hides the current card.
  const before=visibleIds(),index=before.indexOf(String(id));
  remember([id]);decisions[id].decision=value;syncControls(id);
  const after=visibleIds();activeId=before.slice(index+1).find(key=>after.includes(key))||after[index]||after.at(-1)||null;
@@ -95,8 +100,8 @@ function decide(value,id=activeId){
 function undo(){const last=undoStack.pop();if(!last){notice('Пока нечего отменять.');return;}for(const item of last){decisions[item.id]={...item.before};syncControls(item.id);}activeId=last[0].id;update();scrollActive();notice('Последнее изменение отменено.');}
 for(const p of photos){
  const id=String(p.photo_id),suggested={butterflies:'ordinary',moths:'moth',other_insects:'other_insect',plants:'plant',mammals:'mammal'};
- const saved=decisions[id];
- decisions[id]=saved&&classNames[saved.class]&&['pending','keep','exclude'].includes(saved.decision)?{photo_id:id,class:saved.class,groups:saved.groups||'',decision:saved.decision,notes:saved.notes||''}:{photo_id:id,class:p.proposed_class,groups:suggested[p.source_bucket]||'',decision:'pending',notes:''};
+ const saved=decisions[id]?normalizeTarget(decisions[id]):null;
+ decisions[id]=saved&&classNames[saved.class]&&['pending','keep','exclude'].includes(saved.decision)?{photo_id:id,class:saved.class,groups:saved.groups||'',decision:saved.decision,notes:saved.notes||''}:{photo_id:id,class:p.source_bucket==='moths'?'butterfly':p.proposed_class,groups:suggested[p.source_bucket]||'',decision:'pending',notes:''};
  const card=el('article'),media=el('div'),editor=el('div'),picture=el('div');media.className='media';editor.className='editor';picture.className='picture';
  card.addEventListener('click',event=>{if(!card.hidden&&activeId!==id&&!event.target.closest('button,select'))activate(id,false);});
  card.addEventListener('focusin',()=>{if(activeId!==id)activate(id,false);});
@@ -119,7 +124,6 @@ for(const p of photos){
  for(const [value,title] of [['keep','Оставить (пробел)'],['exclude','Исключить (X)']]){const button=el('button',title);button.className=value+'-button';button.onclick=event=>{event.stopPropagation();button.blur();decide(value,id);};actions.append(button);}
  editor.append(actions);card.append(media,editor);elements[id]={card,controls,status};refs.cards.append(card);
 }
-// Resume at a saved position, or at the first still-pending photo.
 if(!byId[activeId])activeId=String((photos.find(p=>decisions[p.photo_id].decision==='pending')||photos[0]||{}).photo_id||'')||null;
 for(const filter of [refs.classFilter,refs.decisionFilter])filter.onchange=()=>{activeId=null;update();scrollActive();filter.blur();notice('');};
 refs.singleMode.onchange=()=>{update();scrollActive();refs.singleMode.blur();};
@@ -137,7 +141,7 @@ refs.import.onchange=async event=>{if(!event.target.files[0])return;try{
  const rows=parseCSV(await event.target.files[0].text()),header=rows.shift();if(!header||fields.some(k=>!header.includes(k)))throw Error('Не хватает столбцов');
  const imported={},seen=new Set();for(const values of rows){const d=Object.fromEntries(header.map((k,i)=>[k,values[i]||'']));
   if(!elements[d.photo_id]||seen.has(d.photo_id)||!classNames[d.class]||!['keep','exclude','pending'].includes(d.decision))throw Error('Некорректный ID, класс или решение: '+d.photo_id);
-  seen.add(d.photo_id);imported[d.photo_id]=d;
+  seen.add(d.photo_id);imported[d.photo_id]=normalizeTarget(d);
  }
  if(!seen.size)throw Error('Нет строк с решениями');
  remember([...seen]);for(const [id,d] of Object.entries(imported)){decisions[id]=d;syncControls(id);}
@@ -146,7 +150,6 @@ refs.import.onchange=async event=>{if(!event.target.files[0])return;try{
 function keyboard(event){
  const target=event.target||document.activeElement;
  if(event.key==='Escape'&&target&&target.matches('input,textarea,select,[contenteditable]')){target.blur();event.preventDefault();return;}
- // Text editing and native controls keep their own keyboard behavior.
  if(event.ctrlKey||event.metaKey||event.altKey||event.isComposing||(target&&target.closest('input,textarea,select,button,a,[contenteditable]')))return;
  const code=event.code||({' ':'Space',x:'KeyX',u:'KeyU',s:'KeyS',t:'KeyT',o:'KeyO','1':'Digit1','2':'Digit2','3':'Digit3'}[event.key]||event.key);
  if(!['Space','KeyX','KeyU','KeyS','KeyT','KeyO','ArrowLeft','ArrowRight','Digit1','Digit2','Digit3'].includes(code))return;
