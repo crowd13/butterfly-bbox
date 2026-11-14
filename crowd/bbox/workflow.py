@@ -723,9 +723,10 @@ class Run:
                 expected["quality_control"], pool.get("quality_control"), "quality_control"
             )
         project = self.api.request("GET", f"/projects/{self.state['resources']['project']}")
-        require_fields(
-            project_body(self.snapshot, "bbox:" + self.state["run_id"]), project, "project"
-        )
+        expected_project = project_body(self.snapshot, "bbox:" + self.state["run_id"])
+        # The saved project ID establishes identity; its private comment is editable.
+        expected_project.pop("private_comment")
+        require_fields(expected_project, project, "project")
         suites = list(self.api.items("/task-suites", pool_id=batch["pool_id"]))
         retired = set(batch.get("retired_suite_ids", []))
         if any(s["overlap"] != 0 or s["infinite_overlap"] for s in suites if s["id"] in retired):
