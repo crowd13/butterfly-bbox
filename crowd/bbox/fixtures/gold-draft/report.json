@@ -1,0 +1,99 @@
+{
+  "ready_for_paid_work": false,
+  "source_sha256": "ed57cc5b7b2ddbfa631ff8cadd537c3ccc915ff0985b6fc6c8e3167c96b29488",
+  "seed": 42,
+  "working_count": 400,
+  "counts": {
+    "practice": {
+      "images": 10,
+      "boxes": 8,
+      "statuses": {
+        "boxes": 7,
+        "no_butterflies": 3
+      },
+      "scenarios": {
+        "cropped": 1,
+        "ordinary": 3,
+        "lookalike": 2,
+        "empty": 3,
+        "small": 1,
+        "multiple": 1,
+        "occluded": 2
+      }
+    },
+    "exam": {
+      "images": 10,
+      "boxes": 8,
+      "statuses": {
+        "boxes": 7,
+        "no_butterflies": 3
+      },
+      "scenarios": {
+        "small": 1,
+        "occluded": 2,
+        "lookalike": 2,
+        "empty": 3,
+        "ordinary": 3,
+        "multiple": 1,
+        "cropped": 2
+      }
+    },
+    "controls": {
+      "images": 90,
+      "boxes": 64,
+      "statuses": {
+        "no_butterflies": 27,
+        "boxes": 63
+      },
+      "scenarios": {
+        "empty": 27,
+        "lookalike": 18,
+        "ordinary": 55,
+        "small": 4,
+        "multiple": 1,
+        "occluded": 2,
+        "cropped": 3
+      }
+    }
+  },
+  "required_before_launch": [
+    "Two independent human annotations per image; reconcile boxes, labels and explanations",
+    "Human check of cross-split visual near duplicates, including working set",
+    "Run check and fresh preflight; test platform interface before paid launch"
+  ],
+  "image_checks": {
+    "checked": 510,
+    "failures": [],
+    "exact_duplicate_groups": [],
+    "downloaded_candidates": 110
+  },
+  "excluded_duplicates": [
+    {
+      "photo_id": "761337763",
+      "duplicate_of": "761350448",
+      "replacement": "760425692",
+      "original_check": {
+        "photo_id": "761337763",
+        "sha256": "7f827c480187cf1be0f1a54ed5c383986ee79a86f9a7949416c62099caf6f3d6",
+        "pixels_sha256": "35ee6883ddda80d9f4c88b84e4bb5525c1110fd7c82847edda687529b3d8feb9",
+        "ok": true
+      }
+    }
+  ],
+  "selection_note": "Initial seed=42 selection; 10 unsuitable images replaced with additional CC0 images, then split redistribution for scenario coverage. Final membership is in gold_draft.json. Exclusions: excluded_candidates.json; added sources: provenance/additional_sources.json.",
+  "checked_at": "2026-11-14T13:24:28.393471+00:00",
+  "ai_draft_complete": true,
+  "human_reviewed_count": 0,
+  "annotation_source": "ai_visual_draft",
+  "excluded_candidate_count": 10,
+  "added_cc0_count": 10,
+  "gold_sha256": "1d6f9251749cec35165960f16c6420472740e364849d27e2df04cd28e4858d74",
+  "draft_completed_at": "2026-11-14T13:47:34.379166+00:00",
+  "verification": {
+    "geometry_and_metadata": "passed for 110 records",
+    "exact_pixel_duplicates": "none across 510 images",
+    "visual_overlay_pass": "AI inspected all 110; human checks pending",
+    "browser": "prefilled editor, blank editor and JSON download payload verified",
+    "project_check": "blocked as intended: Two independent human annotations are required"
+  }
+}
