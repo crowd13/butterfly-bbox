@@ -32,6 +32,10 @@ def assets(bank, iou_threshold=0.85):
         .replace(
             "__PRACTICE_JSON__", json.dumps(practice, ensure_ascii=False).replace("<", "\\u003c")
         )
+        .replace(
+            "__EXAM_PHOTO_IDS__",
+            json.dumps([str(r["photo_id"]) for r in bank.get("exam", [])]).replace("<", "\\u003c"),
+        )
     )
     instructions = (ROOT / "instruction.html").read_text()
     examples = []
