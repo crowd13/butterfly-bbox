@@ -113,7 +113,7 @@ def select_manifest(rows, seed=42):
     return result
 
 
-def validate_inputs(manifest, bank, config):
+def validate_inputs(manifest, bank, config, *, require_reviews=True):
     for field in (
         "dataset_size",
         "seed",
@@ -176,7 +176,9 @@ def validate_inputs(manifest, bank, config):
             if row["solution"]["status"] not in {"boxes", "no_butterflies"}:
                 raise ValueError("Gold must be unambiguous")
             reviews = row.get("independent_reviews", [])
-            if len(reviews) != 2 or len({r.get("reviewer") for r in reviews}) != 2:
+            if require_reviews and (
+                len(reviews) != 2 or len({r.get("reviewer") for r in reviews}) != 2
+            ):
                 raise ValueError("Two independent human annotations are required")
             for review in reviews:
                 if not review.get("reviewer", "").strip():

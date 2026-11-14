@@ -1,15 +1,32 @@
 /* The builder inserts only public practice examples here, never exam/control solutions. */
 var BBOX_PRACTICE = __PRACTICE_JSON__;
-function ButterflyTask(options) { Task.call(this, options); }
-ButterflyTask.prototype = Object.create(Task.prototype);
+function ButterflyTask(options) { TolokaTask.call(this, options); }
+ButterflyTask.prototype = Object.create(TolokaTask.prototype);
 ButterflyTask.prototype.constructor = ButterflyTask;
 ButterflyTask.prototype.onRender = function () {
   var self = this;
   var root = this.getDOMElement();
+  var example = BBOX_PRACTICE.find(function (row) {
+    return String(row.photo_id) === String(self.getTask().input_values.photo_id);
+  });
   this.bboxEditor = BBoxEditor(root.querySelector(".bbox-host"), this.getTask().input_values,
-    (this.getSolution() || {}).output_values, function (value) { self.setSolutionOutputValues(value); });
+    (this.getSolution() || {}).output_values, function (value) {
+      // Native training compares exact values. Normalize only a correct practice drawing.
+      self.setSolutionOutputValues(example && bboxTrainingMatches(value, example.solution)
+        ? structuredClone(example.solution) : value);
+    });
   var practice = root.querySelector(".bbox-practice");
   this.practiceEditors = [];
+  if (example) {
+    var reveal = document.createElement("button"); reveal.type = "button";
+    reveal.textContent = "Показать эталон и объяснение";
+    var hint = document.createElement("p");
+    reveal.addEventListener("click", function () {
+      self.bboxEditor.reveal(example.solution); hint.textContent = example.hint;
+    });
+    practice.appendChild(reveal); practice.appendChild(hint);
+    return;
+  }
   BBOX_PRACTICE.forEach(function (example, index) {
     var item = document.createElement("details");
     var title = document.createElement("summary");
@@ -34,7 +51,7 @@ ButterflyTask.prototype.onRender = function () {
 ButterflyTask.prototype.validate = function () {
   var message = this.bboxEditor ? this.bboxEditor.validate() : "Дождитесь загрузки редактора";
   if (message) return {task_id:this.getTask().id, errors:{status:{code:"INVALID",message:message}}};
-  return Task.prototype.validate.apply(this, arguments);
+  return TolokaTask.prototype.validate.apply(this, arguments);
 };
 ButterflyTask.prototype.onDestroy = function () {
   if (this.bboxEditor) this.bboxEditor.destroy();

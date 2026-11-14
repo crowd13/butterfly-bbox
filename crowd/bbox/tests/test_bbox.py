@@ -19,6 +19,7 @@ from crowd.bbox.dataset import (
 from crowd.bbox.export import answers
 from crowd.bbox.quality import control_windows, evaluate, match_count, validate_solution
 from crowd.bbox.render import ROOT, project_body
+from crowd.bbox.staging import stage
 from crowd.bbox.storage import digest, read_json, write_json
 from crowd.bbox.workflow import Run, now, prepare
 
@@ -67,6 +68,8 @@ class FakeApi:
     def __init__(self):
         self.objects = {
             "/projects": [],
+            "/trainings": [],
+            "/tasks": [],
             "/skills": [],
             "/pools": [],
             "/task-suites": [],
@@ -94,6 +97,19 @@ class FakeApi:
             if key not in self.operations:
                 raise ApiError("not found", 404)
             return self.operations[key]
+        if path.startswith("/task-suites/") and method == "PATCH":
+            row = next(r for r in self.objects["/task-suites"] if r["id"] == path.split("/")[-1])
+            row.update(body)
+            return copy.deepcopy(row)
+        if path == "/tasks" and method == "POST":
+            key = query["operation_id"]
+            if key not in self.operations:
+                for row in body:
+                    self.objects[path].append(
+                        {**copy.deepcopy(row), "id": "task" + str(len(self.objects[path]))}
+                    )
+                self.operations[key] = {"id": key, "status": "SUCCESS", "type": "TASK.BATCH_CREATE"}
+            return self.operations[key]
         if path == "/task-suites" and method == "POST":
             key = query["operation_id"]
             if key not in self.operations:
@@ -112,7 +128,9 @@ class FakeApi:
                 self.lose_upload_response = False
                 raise ApiError("timeout")
             return self.operations[key]
-        if method == "POST" and path in {"/projects", "/skills", "/pools"}:
+        if method == "POST" and path in {"/projects", "/skills", "/pools", "/trainings"}:
+            if path == "/skills" and body["name"] != body["public_name"]["EN"]:
+                raise ApiError("name must match public_name.EN", 400)
             row = {
                 **copy.deepcopy(body),
                 "id": path[1:] + str(len(self.objects[path])),
@@ -302,6 +320,77 @@ class InputTests(unittest.TestCase):
 
 
 class WorkflowTests(unittest.TestCase):
+    def test_test_only_run_creates_closed_resources_but_cannot_launch(self):
+        with tempfile.TemporaryDirectory() as directory:
+            manifest, bank, config = inputs()
+            for rows in bank.values():
+                for row in rows:
+                    row["independent_reviews"] = []
+            with self.assertRaisesRegex(ValueError, "Two independent"):
+                prepare(directory, manifest, bank, config)
+            prepare(directory, manifest, bank, config, test_only=True)
+            api = FakeApi()
+            run = Run(directory, api)
+            run.create()
+            self.assertEqual(len(run.state["batches"]), 1)
+            self.assertTrue(run.state["batches"][0]["uploaded"])
+            self.assertTrue(api.objects["/projects"][0]["public_name"].startswith("ТЕСТ"))
+            # Recover a created skill after losing the local resource reference.
+            exam_id = run.state["resources"].pop("exam")
+            run.create()
+            self.assertEqual(run.state["resources"]["exam"], exam_id)
+            self.assertEqual(len(api.objects["/skills"]), 2)
+            for action in (run.open, run.require_production, lambda: run.ready({})):
+                with self.assertRaisesRegex(ValueError, "Test-only"):
+                    action()
+            self.assertEqual(run.snapshot["bank"]["exam"][0]["independent_reviews"], [])
+
+    def test_native_training_and_staged_pools(self):
+        with tempfile.TemporaryDirectory() as directory:
+            manifest, bank, config = inputs()
+            prepare(directory, manifest, bank, config, with_training=True)
+            api = FakeApi()
+            run = Run(directory, api)
+            stage(run)
+            stage(run)
+            self.assertEqual(len(api.objects["/trainings"]), 1)
+            self.assertEqual(len(api.objects["/tasks"]), 10)
+            self.assertEqual(len(api.objects["/pools"]), 3)
+            self.assertEqual(len(api.objects["/task-suites"]), 101)
+            self.assertEqual([len(b["work_ids"]) for b in run.state["staged_batches"]], [40, 360])
+            self.assertEqual(run.state["batches"][-1]["kind"], "exam")
+            self.assertEqual(
+                api.objects["/pools"][0]["quality_control"]["training_requirement"][
+                    "training_pool_id"
+                ],
+                run.state["resources"]["training"],
+            )
+            with self.assertRaisesRegex(ValueError, "No qualified"):
+                run.next_batch()
+            api.finish(run.state["batches"][0], ("w1", "w2", "w3", "w4"))
+            run.score_exam()
+            pilot_id = run.state["staged_batches"][0]["pool_id"]
+            api.lose_upload_response = True
+            with self.assertRaises(ApiError):
+                run.next_batch()
+            run.next_batch()
+            self.assertEqual(run.state["batches"][-1]["pool_id"], pilot_id)
+            self.assertEqual(len(api.objects["/pools"]), 3)
+            run.verify_remote(run.state["batches"][-1])
+            self.assertEqual(len(run.state["staged_batches"]), 1)
+            self.assertTrue(all(s["reserved_for"] for s in run.state["batches"][-1]["suites"]))
+            self.assertFalse(any(c[1].endswith("/open") for c in api.calls))
+
+    def test_draft_gold_cannot_pass_readiness(self):
+        with tempfile.TemporaryDirectory() as directory:
+            manifest, bank, config = inputs()
+            for rows in bank.values():
+                for row in rows:
+                    row["independent_reviews"] = []
+            prepare(directory, manifest, bank, config, draft_gold=True)
+            with self.assertRaisesRegex(ValueError, "Two independent"):
+                Run(directory).ready({})
+
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)

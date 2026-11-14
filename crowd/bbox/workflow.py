@@ -18,17 +18,21 @@ def now():
     return datetime.now(timezone.utc).isoformat()
 
 
-def prepare(directory, manifest, bank, config):
+def prepare(
+    directory, manifest, bank, config, *, test_only=False, draft_gold=False, with_training=False
+):
     path = Path(directory) / "state.json"
     if path.exists():
         raise ValueError("Run already exists; keep its inputs immutable")
-    validate_inputs(manifest, bank, config)
+    validate_inputs(manifest, bank, config, require_reviews=not (test_only or draft_gold))
     snapshot = {
         "manifest": manifest,
         "bank": bank,
         "config": config,
-        "assets": assets(bank),
+        "assets": assets(bank, config["iou_threshold"]),
         "manifest_hash": digest(manifest),
+        "test_only": test_only,
+        "native_training": with_training,
     }
     snapshot["instruction_hash"] = digest(snapshot["assets"])
     write_json(Path(directory) / "inputs.json", snapshot)
@@ -81,6 +85,8 @@ class Run:
         self.save()
 
     def ready(self, record):
+        self.require_production()
+        validate_inputs(self.snapshot["manifest"], self.snapshot["bank"], self.config)
         if record.get("input_hash") != self.state["input_hash"]:
             raise ValueError("Readiness must refer to this run's input_hash")
         for field in ("interface_checked", "visual_duplicates_checked", "gold_reviewed"):
@@ -92,6 +98,10 @@ class Run:
             raise ValueError("Name the reviewer and record what was checked")
         self.state["readiness"] = {**record, "recorded_at": now()}
         self.save()
+
+    def require_production(self):
+        if self.snapshot.get("test_only"):
+            raise ValueError("Test-only run: moderation and paid launch are disabled")
 
     def ensure_resource(self, key, path, payload, marker_field, marker):
         if key in self.state["resources"]:
@@ -121,16 +131,23 @@ class Run:
 
     def create(self):
         prefix = "bbox:" + self.state["run_id"]
-        self.ensure_resource(
-            "project", "/projects", project_body(self.snapshot, prefix), "private_comment", prefix
-        )
+        body = project_body(self.snapshot, prefix)
+        if self.snapshot.get("test_only"):
+            body["public_name"] = "ТЕСТ — " + body["public_name"]
+            body["public_instructions"] = (
+                "<p><strong>Тестовый проект. Черновые эталоны ИИ; "
+                "не для платной выдачи.</strong></p>" + body["public_instructions"]
+            )
+        self.ensure_resource("project", "/projects", body, "private_comment", prefix)
         for name in ("exam", "access"):
             marker = prefix + ":" + name
             self.ensure_resource(
                 name,
                 "/skills",
                 {
-                    "name": marker,
+                    # The API requires name to match public_name.EN.
+                    "name": "Butterflies: " + name,
+                    "private_comment": marker,
                     "hidden": name == "access",
                     "public_name": {"RU": "Бабочки: " + name, "EN": "Butterflies: " + name},
                     "public_requester_description": {
@@ -138,9 +155,13 @@ class Run:
                         "EN": "Qualification for annotation",
                     },
                 },
-                "name",
+                "private_comment",
                 marker,
             )
+        if self.snapshot.get("native_training"):
+            from .staging import create_training
+
+            create_training(self)
         if not self.state["batches"]:
             suites = [
                 {
@@ -184,7 +205,7 @@ class Run:
                     "value": 100,
                 },
             ]
-        return {
+        body = {
             "project_id": self.state["resources"]["project"],
             "private_name": "bbox:" + self.state["run_id"] + ":" + batch["key"],
             "will_expire": (datetime.now(timezone.utc) + timedelta(days=14)).strftime(
@@ -198,6 +219,15 @@ class Run:
             "filter": {"and": filters},
             "defaults": {"default_overlap_for_new_task_suites": batch["overlap"]},
         }
+
+        if batch["kind"] == "exam" and self.snapshot.get("native_training"):
+            body["quality_control"] = {
+                "training_requirement": {
+                    "training_pool_id": self.state["resources"]["training"],
+                    "training_passing_skill_value": 0,
+                }
+            }
+        return body
 
     def upload(self, batch):
         payload = self.pool_body(batch)
@@ -225,7 +255,11 @@ class Run:
                 },
             )
         self.api.wait(operation)
-        remote = list(self.api.items("/task-suites", pool_id=pool_id))
+        remote = [
+            s
+            for s in self.api.items("/task-suites", pool_id=pool_id)
+            if s["id"] not in batch.get("retired_suite_ids", [])
+        ]
 
         def signature(suite):
             return digest([t["input_values"] for t in suite["tasks"]])
@@ -565,6 +599,27 @@ class Run:
             raise ValueError("No images to issue")
         if kind == "main" and len(workers) < self.config["min_workers"]:
             raise ValueError("At least four qualified workers required for main annotation")
+        staged = self.state.get("staged_batches", [])
+        existing = next((b for b in staged if b["kind"] == kind), None)
+        if existing:
+            from .staging import activate_staged
+
+            activate_staged(self, existing, workers, assignments)
+            return
+        batch = self.build_batch(rows, kind, workers, assignments, repeat_reason)
+        check_commitment(
+            self.state["batches"] + self.state.get("staged_batches", []) + [batch], self.config
+        )
+        self.state["batches"].append(batch)
+        self.save()
+        self.upload(batch)
+
+    def build_batch(self, rows, kind, workers, assignments, repeat_reason=None, index=None):
+        index = (
+            len(self.state["batches"]) + len(self.state.get("staged_batches", []))
+            if index is None
+            else index
+        )
         seen = {}
         for a in assignments:
             if not a.get("tasks"):
@@ -572,7 +627,7 @@ class Run:
             for task in a["tasks"]:
                 pid = str(task["input_values"]["photo_id"])
                 seen.setdefault(pid, set()).add(a["user_id"])
-        rng = random.Random(self.config["seed"] + len(self.state["batches"]))
+        rng = random.Random(self.config["seed"] + index)
         controls = list(self.snapshot["bank"]["controls"])
         rng.shuffle(controls)
         suites = []
@@ -584,7 +639,11 @@ class Run:
                 else set()
             )
             control = next(
-                (r for r in controls if workers - authors - seen.get(str(r["photo_id"]), set())),
+                (
+                    r
+                    for r in controls
+                    if workers is None or workers - authors - seen.get(str(r["photo_id"]), set())
+                ),
                 None,
             )
             if control is None:
@@ -600,13 +659,13 @@ class Run:
                     "overlap": 1,
                     "infinite_overlap": False,
                     "reserved_for": sorted(
-                        workers - authors - seen.get(str(control["photo_id"]), set())
+                        (workers or set()) - authors - seen.get(str(control["photo_id"]), set())
                     ),
                     "unavailable_for": sorted(authors | seen.get(str(control["photo_id"]), set())),
                 }
             )
         batch = {
-            "key": f"batch-{len(self.state['batches']):03}",
+            "key": f"batch-{index:03}",
             "kind": kind,
             "repeat_reason": repeat_reason,
             "suites": suites,
@@ -616,10 +675,7 @@ class Run:
             "uploaded": False,
             "work_ids": [str(r["photo_id"]) for r in rows],
         }
-        check_commitment(self.state["batches"] + [batch], self.config)
-        self.state["batches"].append(batch)
-        self.save()
-        self.upload(batch)
+        return batch
 
     def verify_remote(self, batch):
         def require_fields(expected, actual, location):
@@ -644,11 +700,19 @@ class Run:
             require_fields(expected[field], pool.get(field), field)
         if pool.get("dynamic_pricing_config") or pool.get("dynamic_overlap_config"):
             raise ValueError("Unexpected dynamic price/overlap")
+        if "quality_control" in expected:
+            require_fields(
+                expected["quality_control"], pool.get("quality_control"), "quality_control"
+            )
         project = self.api.request("GET", f"/projects/{self.state['resources']['project']}")
         require_fields(
             project_body(self.snapshot, "bbox:" + self.state["run_id"]), project, "project"
         )
         suites = list(self.api.items("/task-suites", pool_id=batch["pool_id"]))
+        retired = set(batch.get("retired_suite_ids", []))
+        if any(s["overlap"] != 0 or s["infinite_overlap"] for s in suites if s["id"] in retired):
+            raise ValueError("Retired staged pages must have zero overlap")
+        suites = [s for s in suites if s["id"] not in retired]
         local = {s["remote_id"]: s for s in batch["suites"]}
         if {s["id"] for s in suites} != set(local):
             raise ValueError("Unexpected or missing remote task suites")
@@ -664,6 +728,7 @@ class Run:
                     raise ValueError("Private gold unexpectedly attached to a public task")
 
     def open(self):
+        self.require_production()
         batch = self.state["batches"][-1]
         if not batch["uploaded"] or not self.state["readiness"] or not self.state["preflight"]:
             raise ValueError("Need uploaded tasks, preflight and human readiness record")
@@ -729,8 +794,15 @@ class Run:
             "run_id": self.state["run_id"],
             "input_hash": self.state["input_hash"],
             "plan": plan(self.config),
-            "committed_with_commission": str(committed(self.state["batches"], self.config)),
+            "committed_with_commission": str(
+                committed(self.state["batches"] + self.state.get("staged_batches", []), self.config)
+            ),
             "paid_rewards": str(paid),
+            "training": self.state.get("resources", {}).get("training"),
+            "staged_batches": [
+                {"kind": b["kind"], "pool_id": b.get("pool_id"), "uploaded": b["uploaded"]}
+                for b in self.state.get("staged_batches", [])
+            ],
             "workers": self.state["workers"],
             "pilot": self.state["pilot"],
             "batches": [

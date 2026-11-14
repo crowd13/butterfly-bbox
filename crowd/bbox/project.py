@@ -25,11 +25,28 @@ def parser():
     for name in ("plan", "check", "prepare"):
         command = sub.add_parser(name)
         command.add_argument("--config", type=Path, default=ROOT / "config.json")
+        if name == "prepare":
+            command.add_argument(
+                "--draft-gold",
+                action="store_true",
+                help="Upload draft gold; readiness still requires human review",
+            )
+            command.add_argument(
+                "--with-training",
+                action="store_true",
+                help="Create a native training pool before the exam",
+            )
+            command.add_argument(
+                "--test-only",
+                action="store_true",
+                help="Allow draft gold; permanently disable moderation and launch for this run",
+            )
         if name != "plan":
             command.add_argument("--manifest", type=Path, required=True)
             command.add_argument("--fixtures", type=Path, required=True)
     for name in (
         "create",
+        "stage",
         "moderate",
         "open",
         "close",
@@ -73,9 +90,18 @@ def execute(args):
     if args.command in {"check", "prepare"}:
         config, bank = read_json(args.config), read_json(args.fixtures)
         manifest = read_manifest(args.manifest)
-        validate_inputs(manifest, bank, config)
         if args.command == "prepare":
-            prepare(args.run, manifest, bank, config)
+            prepare(
+                args.run,
+                manifest,
+                bank,
+                config,
+                test_only=args.test_only,
+                draft_gold=args.draft_gold,
+                with_training=args.with_training,
+            )
+        else:
+            validate_inputs(manifest, bank, config)
         return {"validated_images": len(manifest), "plan": plan(config)}
     if args.command == "preview" and args.manifest:
         rows = read_manifest(args.manifest)
@@ -95,6 +121,10 @@ def execute(args):
         return {"preview": str(args.output)}
     if args.command == "ready":
         run.ready(read_json(args.file))
+    elif args.command == "stage":
+        from .staging import stage
+
+        stage(run)
     elif args.command == "audit":
         run.import_audit(read_json(args.file))
     elif args.command == "next-batch":
@@ -106,6 +136,7 @@ def execute(args):
     elif args.command in {"moderate", "close"}:
         batch = run.state["batches"][-1]
         if args.command == "moderate":
+            run.require_production()
             run.api.request(
                 "PUT", f"/api/new/requester/poolModeration/{batch['pool_id']}", {"status": "READY"}
             )

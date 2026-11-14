@@ -16,12 +16,16 @@ def public_image(row):
     }
 
 
-def assets(bank):
+def assets(bank, iou_threshold=0.85):
     practice = [
         {**public_image(r), "solution": r["solution"], "hint": r["hint"]} for r in bank["practice"]
     ]
     script = (
         (ROOT / "interface/editor.js").read_text()
+        + "\n"
+        + (ROOT / "interface/training.js")
+        .read_text()
+        .replace("__TRAINING_IOU__", str(iou_threshold))
         + "\n"
         + (ROOT / "interface/task.js")
         .read_text()
@@ -104,12 +108,12 @@ def preview(snapshot, path):
     assets_ = snapshot["assets"]
     sample = public_image(snapshot["manifest"][0])
     mock = """var exports = {}; var previewInput = __INPUT__;
-function Task(options) { this.element = options.element; this.solution = {output_values:{}}; }
-Task.prototype.getDOMElement = function(){return this.element;};
-Task.prototype.getTask = function(){return {id:'preview',input_values:previewInput};};
-Task.prototype.getSolution = function(){return this.solution;};
-Task.prototype.setSolutionOutputValues = function(value){this.solution.output_values=value;};
-Task.prototype.validate = function(){return null;};
+function TolokaTask(options) { this.element = options.element; this.solution = {output_values:{}}; }
+TolokaTask.prototype.getDOMElement = function(){return this.element;};
+TolokaTask.prototype.getTask = function(){return {id:'preview',input_values:previewInput};};
+TolokaTask.prototype.getSolution = function(){return this.solution;};
+TolokaTask.prototype.setSolutionOutputValues = function(value){this.solution.output_values=value;};
+TolokaTask.prototype.validate = function(){return null;};
 """.replace("__INPUT__", json.dumps(sample).replace("<", "\\u003c"))
     page = '<!doctype html><html lang="ru"><meta charset="utf-8"><title>Bbox preview</title>'
     page += f'<style>{assets_["styles"]}</style><h1>Предпросмотр bbox</h1><div id="task">'

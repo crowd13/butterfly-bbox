@@ -43,7 +43,7 @@ cp -n crowd/bbox/fixtures/gold-draft/working_manifest.csv data/manifest_bbox.csv
 
 ```bash
 bbox check --manifest data/manifest_bbox.csv --fixtures "$BBOX_RUN/gold.json"
-bbox prepare --manifest data/manifest_bbox.csv --fixtures "$BBOX_RUN/gold.json"
+bbox prepare --with-training --manifest data/manifest_bbox.csv --fixtures "$BBOX_RUN/gold.json"
 bbox preflight
 bbox preview
 ```
@@ -68,6 +68,50 @@ python3 -m http.server 8765 --bind 127.0.0.1
 
 ## 3. Загрузка и проверка проекта
 
+### Тест без модерации и выдачи
+
+Для проверки API с черновыми эталонами создайте отдельный запуск:
+
+```bash
+export BBOX_RUN='crowd/bbox/runs/api-test'
+bbox prepare --test-only \
+  --manifest crowd/bbox/fixtures/gold-draft/working_manifest.csv \
+  --fixtures crowd/bbox/fixtures/gold-draft/gold_draft.json
+bbox create
+bbox status
+```
+
+Перед `create` задайте `YANDEX_TASKS_OAUTH`. Это реальные ресурсы в аккаунте:
+проект с пометкой «ТЕСТ», обучение на 10 примерах внутри интерфейса и закрытый
+экзаменационный пул. Отдельный обучающий пул не создаётся.
+Режим допускает отсутствие человеческой проверки черновых эталонов,
+но блокирует команды `ready`, `moderate` и `open`.
+Для платного запуска подготовьте проверенные эталоны и новый каталог запуска
+без `--test-only`. Не открывайте тестовый пул вручную в кабинете.
+
+### Полная загрузка проекта
+
+Чтобы загрузить отдельное обучение, экзамен и два закрытых рабочих пула:
+
+```bash
+export BBOX_RUN='crowd/bbox/runs/production'
+bbox prepare --with-training --draft-gold \
+  --manifest crowd/bbox/fixtures/gold-draft/working_manifest.csv \
+  --fixtures crowd/bbox/fixtures/gold-draft/gold_draft.json
+bbox stage
+bbox status
+```
+
+`--draft-gold` разрешает загрузить черновые эталоны, но `ready` всё равно требует
+двух независимых проверок каждого эталона. Такой запуск нужен для предпросмотра;
+после проверки эталонов подготовьте новый запуск без этого флага.
+Для проверенного запуска из шага 2 сразу выполните `bbox stage`.
+Повтор команды продолжает загрузку без создания дубликатов.
+В `status` обучение находится в `training`, будущие пулы — в `staged_batches`.
+Все ресурсы остаются закрытыми; `stage` не отправляет их на модерацию.
+
+### Рабочий запуск
+
 Задайте OAuth-токен в переменной окружения `YANDEX_TASKS_OAUTH`, затем:
 
 ```bash
@@ -75,7 +119,8 @@ bbox create
 bbox status
 ```
 
-`create` загружает проект, навыки и **закрытый экзаменационный пул**.
+`create` загружает проект, навыки, обучение (если указан `--with-training`)
+и **закрытый экзаменационный пул**. `stage` дополнительно загружает рабочие пулы.
 ID проекта — в `state.json → resources.project`, пулов — в `status → batches`.
 
 **Проверьте предпросмотр на платформе:** инструкцию, практику, рисование,
@@ -93,7 +138,11 @@ bbox moderate
 **Дождитесь модерации в кабинете:** команда только отправляет пул на проверку.
 Перед каждым `open` повторяйте `preflight`, если его результат старше суток.
 
-## 4. Экзамен
+## 4. Обучение и экзамен
+
+После проверки готовности откройте обучение в кабинете Яндекс Заданий.
+Проверьте прохождение всех 10 примеров и переход к экзамену.
+Ошибки обучения можно исправлять; рабочий допуск назначает только экзамен.
 
 ```bash
 bbox open
@@ -118,6 +167,10 @@ bbox export
 его до `next-batch`. При нехватке допущенных людей пересмотрите план набора.
 
 ## 5. Пилот
+
+Если пулы загружены через `stage`, команда `next-batch` выбирает существующий
+пул и готовит страницы с допусками. Предварительные страницы остаются в нём
+с перекрытием 0; повторно они не выдаются.
 
 ```bash
 bbox next-batch
@@ -227,6 +280,8 @@ bbox restore --worker 'ID' --reviewer 'Имя' --reason 'Основание во
 ```bash
 python3 -m pip install -r crowd/bbox/requirements-dev.txt
 python3 -m unittest discover -s crowd/bbox/tests -v
+node crowd/bbox/tests/test_training.cjs
+node crowd/bbox/tests/test_adapter.cjs
 ruff check crowd/bbox
 ruff format --check crowd/bbox
 ```
