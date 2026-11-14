@@ -107,7 +107,15 @@ class Run:
         if key in self.state["resources"]:
             return self.state["resources"][key]
         # Reconcile only our own stable marker before retrying creation.
-        matches = [x for x in self.api.items(path) if x.get(marker_field) == marker]
+        markers = {marker}
+        if marker_field == "private_name":
+            markers.add("bbox:" + self.state["run_id"] + ":" + key)
+        matches = [
+            x
+            for x in self.api.items(path)
+            if x.get(marker_field) in markers
+            and ("project_id" not in payload or x.get("project_id") == payload["project_id"])
+        ]
         if len(matches) > 1:
             raise ValueError(f"Duplicate resource marker {marker}; reconcile manually")
         if matches:
@@ -188,6 +196,16 @@ class Run:
             self.save()
         self.upload(self.state["batches"][-1])
 
+    def pool_name(self, batch):
+        title = {
+            "exam": "Экзамен",
+            "pilot": "Пилот",
+            "main": "Основной",
+            "repeat": "Повторная разметка",
+        }[batch["kind"]]
+        suffix = f" №{int(batch['key'].split('-')[-1])}" if batch["kind"] == "repeat" else ""
+        return title + suffix
+
     def pool_body(self, batch):
         filters = [{"category": "profile", "key": "languages", "operator": "IN", "value": "RU"}]
         if batch["kind"] != "exam":
@@ -207,7 +225,7 @@ class Run:
             ]
         body = {
             "project_id": self.state["resources"]["project"],
-            "private_name": "bbox:" + self.state["run_id"] + ":" + batch["key"],
+            "private_name": self.pool_name(batch),
             "will_expire": (datetime.now(timezone.utc) + timedelta(days=14)).strftime(
                 "%Y-%m-%dT%H:%M:%S"
             ),

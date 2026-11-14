@@ -9,7 +9,7 @@ from .render import public_image
 
 
 def create_training(run):
-    marker = "bbox:" + run.state["run_id"] + ":training"
+    marker = "Обучение"
     training_id = run.ensure_resource(
         "training",
         "/trainings",
