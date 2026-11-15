@@ -76,7 +76,7 @@
           {
             "left": 0.395,
             "top": 0.22,
-            "width": 0.365,
+            "width": 0.44,
             "height": 0.39
           }
         ]
@@ -84,8 +84,9 @@
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
       "team_approval": {
         "approved": true,
-        "reviewer": "Команда проекта",
-        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+        "reviewer": "Пользователь — представитель команды",
+        "reviewed_at": "2026-11-15T16:45:21.829608+00:00",
+        "basis": "Пользователь указал пропущенный усик и поручил расширить рамку."
       },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
@@ -94,7 +95,25 @@
       "draft_provenance": {
         "source": "initial",
         "annotation_index": 1
-      }
+      },
+      "corrections": [
+        {
+          "at": "2026-11-15T16:45:21.829608+00:00",
+          "reason": "По замечанию пользователя правая граница расширена до кончика видимого усика.",
+          "previous_solution": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.395,
+                "top": 0.22,
+                "width": 0.365,
+                "height": 0.39
+              }
+            ]
+          },
+          "source": "assistant_visual_correction_requested_by_user"
+        }
+      ]
     },
     {
       "photo_id": "761904711",

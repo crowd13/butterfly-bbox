@@ -88,7 +88,7 @@
   "annotation_source": "ai_visual_draft",
   "excluded_candidate_count": 11,
   "added_cc0_count": 11,
-  "gold_sha256": "e2c7e6db3a7280ae67846db82f9768b1822aaea14bc5495d7b96dc7244fbe0bf",
+  "gold_sha256": "d02846caf527f5def9af86745f47e8994070cdfaa2884b06d9f009a330b3cfdc",
   "draft_completed_at": "2026-11-14T13:47:34.379166+00:00",
   "verification": {
     "geometry_and_metadata": "passed for 110 records",
@@ -113,5 +113,12 @@
     "reviewer": "Команда проекта",
     "reviewed_at": "2026-11-15T16:19:12.067074+00:00",
     "basis": "Пользователь подтвердил в чате: «Команда все подтвердила, все ок»; время означает фиксацию подтверждения."
-  }
+  },
+  "corrections": [
+    {
+      "photo_id": "761310164",
+      "at": "2026-11-15T16:45:21.829608+00:00",
+      "reason": "Right bbox edge expanded to include the visible antenna; user-requested correction."
+    }
+  ]
 }

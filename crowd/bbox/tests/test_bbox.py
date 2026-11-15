@@ -18,7 +18,7 @@ from crowd.bbox.dataset import (
 )
 from crowd.bbox.export import answers
 from crowd.bbox.quality import control_windows, evaluate, match_count, validate_solution
-from crowd.bbox.render import ROOT, project_body
+from crowd.bbox.render import ROOT, assets, project_body
 from crowd.bbox.staging import stage
 from crowd.bbox.storage import digest, read_json, write_json
 from crowd.bbox.workflow import Run, now, prepare
@@ -287,6 +287,20 @@ class InputTests(unittest.TestCase):
         instructions = snapshot["assets"]["instructions"]
         self.assertIn("включая мотыльков и молей", instructions)
         self.assertNotIn("Не выделяйте моль", instructions)
+
+    def test_instruction_images_use_only_current_training_answers(self):
+        bank = read_json(ROOT / "fixtures/gold/gold.json")
+        instructions = assets(bank)["instructions"]
+        self.assertEqual(instructions.count("<img "), 6)
+        self.assertNotIn("<svg", instructions)
+        published = read_json(ROOT / "instruction-examples/manifest.json")
+        practice_ids = {r["photo_id"] for r in bank["practice"]}
+        for example in published["examples"]:
+            self.assertIn(example["photo_id"], practice_ids)
+            self.assertIn(published["base_url"] + example["filename"], instructions)
+        bank["practice"][0]["solution"]["boxes"][0]["width"] *= 0.9
+        with self.assertRaisesRegex(ValueError, "Instruction image is stale"):
+            assets(bank)
 
     def test_selection_deterministic(self):
         rows = []

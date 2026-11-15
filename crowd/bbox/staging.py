@@ -60,7 +60,11 @@ def create_training(run):
             },
         )
     run.api.wait(operation)
-    remote = list(run.api.items("/tasks", pool_id=training_id))
+    remote = [
+        task
+        for task in run.api.items("/tasks", pool_id=training_id)
+        if task["id"] not in training.get("retired_task_ids", [])
+    ]
     expected = {row["input_values"]["photo_id"]: row for row in tasks}
     if len(remote) != len(expected):
         raise ValueError("Training task count differs")

@@ -1,0 +1,53 @@
+{
+  "base_url": "https://raw.githubusercontent.com/crowd13/butterfly-bbox/f044480a873459cbc40fe988b20ae113d6ddbbd9/crowd/bbox/instruction-examples/",
+  "examples": [
+    {
+      "photo_id": "761310164",
+      "source_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761310164/original.jpg",
+      "solution_hash": "11251e8bd7bcdd8fb79fc565bd348349173f8598d89188206dd9692e0f94aebd",
+      "title": "Одна бабочка",
+      "caption": "Одна рамка плотно охватывает видимые крылья, тело, лапки и усики.",
+      "filename": "761310164.jpg"
+    },
+    {
+      "photo_id": "760354796",
+      "source_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/760354796/original.jpg",
+      "solution_hash": "2d58457860a242973c3dd90ca2d4e632e5d8fe7d00032982b460e39db95435e7",
+      "title": "Несколько бабочек",
+      "caption": "Каждую бабочку выделяем отдельно, даже если рамки пересекаются.",
+      "filename": "760354796.jpg"
+    },
+    {
+      "photo_id": "760853346",
+      "source_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/760853346/original.jpg",
+      "solution_hash": "00a412689c9b17415ba4bc71b6c4bfc8639f3780ac176088dd9df95429315861",
+      "title": "Мелкий объект",
+      "caption": "Увеличьте фото и обведите бабочку, не включая окружающую траву.",
+      "filename": "760853346.jpg"
+    },
+    {
+      "photo_id": "762240560",
+      "source_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762240560/original.jpg",
+      "solution_hash": "1804154b7945ae8ef34a3a50d31d5bc2ba5a3a0fdb60791d4b3181b0190c00f1",
+      "title": "Объект обрезан краем кадра",
+      "caption": "Доведите рамку до края фото; скрытую часть крыла не достраивайте.",
+      "filename": "762240560.jpg"
+    },
+    {
+      "photo_id": "762688955",
+      "source_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762688955/original.jpg",
+      "solution_hash": "4d5f1ddbb2935008508f019209de83d4a857e95e09c68219d4f4a706d7737529",
+      "title": "Взрослая моль",
+      "caption": "Взрослую моль тоже размечаем: рамка включает её видимые части, но не тень.",
+      "filename": "762688955.jpg"
+    },
+    {
+      "photo_id": "761904711",
+      "source_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761904711/original.jpg",
+      "solution_hash": "09881f52032989bb3a562a7d06e1c1b26ba1bbf3d942186ea0bedb2c5631b685",
+      "title": "Похожее насекомое",
+      "caption": "Это не бабочка: рамок нет, выбираем «Бабочек нет».",
+      "filename": "761904711.jpg"
+    }
+  ]
+}

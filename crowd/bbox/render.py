@@ -4,6 +4,8 @@ import html
 import json
 from pathlib import Path
 
+from .storage import digest, read_json
+
 ROOT = Path(__file__).resolve().parent
 
 
@@ -35,19 +37,22 @@ def assets(bank, iou_threshold=0.85):
     )
     instructions = (ROOT / "instruction.html").read_text()
     examples = []
-    for r in practice:
-        boxes = "".join(
-            f'<rect x="{b["left"] * r["width"]}" y="{b["top"] * r["height"]}" '
-            f'width="{b["width"] * r["width"]}" height="{b["height"] * r["height"]}" '
-            'fill="none" stroke="red" stroke-width="3"/>'
-            for b in r["solution"]["boxes"]
-        )
+    published = read_json(ROOT / "instruction-examples/manifest.json")
+    by_id = {row["photo_id"]: row for row in practice}
+    for example in published["examples"]:
+        row = by_id.get(example["photo_id"])
+        if row is None:
+            continue
+        if example["source_url"] != row["image_url"] or example["solution_hash"] != digest(
+            row["solution"]
+        ):
+            raise ValueError("Instruction image is stale; rebuild and publish training examples")
+        url = html.escape(published["base_url"] + example["filename"], quote=True)
+        title = html.escape(example["title"])
         examples.append(
-            f'<figure><svg viewBox="0 0 {r["width"]} {r["height"]}" width="400" '
-            f'height="{400 * r["height"] / r["width"]}">'
-            f'<image href="{html.escape(r["image_url"], quote=True)}" width="{r["width"]}" '
-            f'height="{r["height"]}"/>{boxes}</svg>'
-            f"<figcaption>{html.escape(r['hint'])}</figcaption></figure>"
+            f'<h4>{title}</h4><p><a href="{url}" target="_blank">'
+            f'<img src="{url}" width="480" alt="{title}"></a></p>'
+            f"<p>{html.escape(example['caption'])}</p>"
         )
     return {
         "script": script,
