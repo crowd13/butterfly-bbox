@@ -18,7 +18,7 @@ from crowd.bbox.dataset import (
 )
 from crowd.bbox.export import answers
 from crowd.bbox.quality import control_windows, evaluate, match_count, validate_solution
-from crowd.bbox.render import ROOT, assets, project_body
+from crowd.bbox.render import ROOT, assets, instruction_structure, project_body
 from crowd.bbox.staging import stage
 from crowd.bbox.storage import digest, read_json, write_json
 from crowd.bbox.workflow import Run, now, prepare
@@ -190,6 +190,26 @@ class FakeApi:
                         "reward": batch["price"],
                     }
                 )
+
+
+class InstructionTests(unittest.TestCase):
+    def test_platform_formatting_preserves_instruction(self):
+        original = (
+            "<ol>\n<li>Draw all butterflies</li>\n</ol>"
+            '<a href="https://example.org"><img src="photo.jpg"></a>'
+        )
+        sanitized = (
+            "<ol><li>Draw all butterflies</li></ol>"
+            '<a rel="nofollow noopener noreferrer" href="https://example.org">'
+            '<img src="photo.jpg" /></a>'
+        )
+        self.assertEqual(instruction_structure(original), instruction_structure(sanitized))
+        for changed in (
+            sanitized.replace("Draw all", "Draw one"),
+            sanitized.replace("photo.jpg", "other.jpg"),
+            sanitized.replace("https://example.org", "https://other.org"),
+        ):
+            self.assertNotEqual(instruction_structure(original), instruction_structure(changed))
 
 
 class GeometryTests(unittest.TestCase):

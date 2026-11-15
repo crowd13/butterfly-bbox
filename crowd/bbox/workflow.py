@@ -10,7 +10,7 @@ from .budget import check_commitment, committed, cost, money, plan
 from .dataset import image_preflight, validate_inputs
 from .export import TERMINAL_ANSWERS, answers, coverage
 from .quality import control_windows, evaluate, match_count, validate_solution
-from .render import assets, project_body, public_image
+from .render import assets, instruction_structure, project_body, public_image
 from .storage import digest, read_json, write_json
 
 
@@ -727,6 +727,10 @@ class Run:
         expected_project = project_body(self.snapshot, "bbox:" + self.state["run_id"])
         # The saved project ID establishes identity; its private comment is editable.
         expected_project.pop("private_comment")
+        expected_project["public_instructions"] = instruction_structure(
+            expected_project["public_instructions"]
+        )
+        project["public_instructions"] = instruction_structure(project["public_instructions"])
         require_fields(expected_project, project, "project")
         suites = list(self.api.items("/task-suites", pool_id=batch["pool_id"]))
         retired = set(batch.get("retired_suite_ids", []))

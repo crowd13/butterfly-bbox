@@ -2,11 +2,50 @@
 
 import html
 import json
+from html.parser import HTMLParser
 from pathlib import Path
 
 from .storage import digest, read_json
 
 ROOT = Path(__file__).resolve().parent
+
+
+def instruction_structure(source):
+    """Ignore platform HTML formatting and its added link safety attributes."""
+
+    class Parser(HTMLParser):
+        def __init__(self):
+            super().__init__(convert_charrefs=True)
+            self.tokens = []
+
+        def handle_starttag(self, tag, attrs):
+            attrs = [
+                (key, value)
+                for key, value in attrs
+                if not (
+                    tag == "a"
+                    and key == "rel"
+                    and set((value or "").split()) == {"nofollow", "noopener", "noreferrer"}
+                )
+            ]
+            self.tokens.append(("start", tag, sorted(attrs)))
+
+        def handle_startendtag(self, tag, attrs):
+            self.handle_starttag(tag, attrs)
+            if tag not in {"img", "br", "hr"}:
+                self.handle_endtag(tag)
+
+        def handle_endtag(self, tag):
+            self.tokens.append(("end", tag))
+
+        def handle_data(self, data):
+            if data.strip():
+                self.tokens.append(("text", data))
+
+    parser = Parser()
+    parser.feed(source)
+    parser.close()
+    return parser.tokens
 
 
 def public_image(row):

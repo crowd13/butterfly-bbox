@@ -13,4 +13,5 @@ data/*.part
 # Bbox run state contains worker IDs and raw answers.
 crowd/bbox/runs/
 crowd/bbox/token
+crowd/bbox/token2
 .ruff_cache/
