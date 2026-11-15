@@ -234,7 +234,8 @@ class Run:
             "auto_accept_solutions": True,
             "auto_close_after_complete_delay_seconds": 0,
             "may_contain_adult_content": False,
-            "filter": {"and": filters},
+            # The requester UI expects AND groups containing OR groups.
+            "filter": {"and": [{"or": [item]} for item in filters]},
             "defaults": {"default_overlap_for_new_task_suites": batch["overlap"]},
         }
 
