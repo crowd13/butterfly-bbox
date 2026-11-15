@@ -84,7 +84,7 @@ def control_windows(events, window=5, minimum=4):
             needs_audit = True
             continue
         history.append(result)
-        if len(history) >= window and sum(history[-window:]) < minimum:
+        if history[-window:].count(False) > window - minimum:
             failed = True
     return {
         "failed": failed,

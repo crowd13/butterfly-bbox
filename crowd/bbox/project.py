@@ -3,6 +3,7 @@
 import argparse
 import csv
 import json
+import logging
 import sys
 from pathlib import Path
 
@@ -57,6 +58,8 @@ def parser():
         "preflight",
     ):
         sub.add_parser(name)
+    watch_parser = sub.add_parser("watch", help="Continuously score exams and controls")
+    watch_parser.add_argument("--interval", type=int, default=30, help="Seconds between checks")
     preview_parser = sub.add_parser("preview")
     preview_parser.add_argument("--output", type=Path, default=ROOT / "runs/preview.html")
     preview_parser.add_argument("--manifest", type=Path, help="Preview without preparing a run")
@@ -150,11 +153,23 @@ def execute(args):
 def main(argv=None):
     args = parser().parse_args(argv)
     try:
+        if args.command == "watch":
+            from .monitor import watch
+
+            logging.basicConfig(
+                level=logging.INFO,
+                format="%(asctime)s %(levelname)s %(message)s",
+                datefmt="%Y-%m-%d %H:%M:%S",
+            )
+            watch(args.run, TasksApi(), args.interval)
+            return 0
         with locked(args.run):
             result = execute(args)
         if result is not None:
             print(json.dumps(result, ensure_ascii=False, indent=2, allow_nan=False))
         return 0
+    except KeyboardInterrupt:
+        return 130
     except (ApiError, ValueError, OSError, KeyError) as exc:
         print(f"Error: {exc}", file=sys.stderr)
         return 1

@@ -9,6 +9,10 @@ from contextlib import contextmanager
 from pathlib import Path
 
 
+class RunBusyError(ValueError):
+    """Another command holds the run lock."""
+
+
 def digest(value):
     return hashlib.sha256(
         json.dumps(value, sort_keys=True, ensure_ascii=False, allow_nan=False).encode()
@@ -42,7 +46,7 @@ def locked(directory):
         try:
             fcntl.flock(stream, fcntl.LOCK_EX | fcntl.LOCK_NB)
         except BlockingIOError:
-            raise ValueError("Another command is using this run directory") from None
+            raise RunBusyError("Another command is using this run directory") from None
         try:
             yield
         finally:

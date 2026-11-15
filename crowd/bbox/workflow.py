@@ -324,10 +324,9 @@ class Run:
         self.state["workers"].setdefault(worker, {})["access"] = value
         self.save()
 
-    def score_exam(self):
-        assignments = self.sync()
+    def score_exam(self, assignments=None):
+        assignments = self.sync() if assignments is None else assignments
         batch = self.state["batches"][0]
-        self.closed_complete(batch, assignments)
         rows = answers(assignments, self.snapshot)
         for a in assignments:
             if a["pool_id"] != batch["pool_id"] or a["status"] != "ACCEPTED":
@@ -371,9 +370,9 @@ class Run:
             row["solution"], self.gold[row["photo_id"]]["solution"], self.config["iou_threshold"]
         )
 
-    def score_controls(self):
-        assignments = self.sync()
-        batch = self.state["batches"][-1]
+    def score_controls(self, assignments=None, batch=None):
+        assignments = self.sync() if assignments is None else assignments
+        batch = self.state["batches"][-1] if batch is None else batch
         if batch["kind"] == "exam":
             raise ValueError("No work batch")
         if not batch["uploaded"]:
@@ -403,7 +402,8 @@ class Run:
             was_failed = self.state["workers"].get(worker, {}).get("failed", False)
             result["failed"] |= was_failed
             if result["failed"]:
-                self.set_access(worker, 0)
+                if self.state["workers"].get(worker, {}).get("access") != 0:
+                    self.set_access(worker, 0)
                 self.state["workers"][worker]["failed"] = True
             required = (
                 [
