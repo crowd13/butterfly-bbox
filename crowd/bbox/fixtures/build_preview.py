@@ -1,4 +1,4 @@
-"""Rebuild the draft gallery without changing annotations or human reviews.
+"""Rebuild the gold gallery without changing annotations or human reviews.
 
 Run from the repository root: python3 -m crowd.bbox.fixtures.build_preview
 """
@@ -7,7 +7,7 @@ import html
 import json
 from pathlib import Path
 
-ROOT = Path(__file__).parent / "gold-draft"
+ROOT = Path(__file__).parent / "gold"
 POLICY = (
     "Размечаем всех взрослых бабочек, включая мотыльков и молей. "
     "Гусениц, куколок и кладки яиц не размечаем."
@@ -15,16 +15,20 @@ POLICY = (
 
 
 def main():
-    bank = json.loads((ROOT / "gold_draft.json").read_text())
+    bank = json.loads((ROOT / "gold.json").read_text())
+    rows = [row for split in bank.values() for row in split]
+    approved = all((row.get("team_approval") or {}).get("approved") is True for row in rows)
+    status = "Разметка одобрена командой." if approved else "Требуется проверка командой."
     gallery = [
-        '<!doctype html><html lang="ru"><meta charset="utf-8"><title>Черновик эталонов</title>',
+        '<!doctype html><html lang="ru"><meta charset="utf-8"><title>Эталоны bbox</title>',
         "<style>body{font:16px system-ui;max-width:1400px;margin:30px auto;padding:16px}"
         ".grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}"
         "svg{width:100%;height:340px;background:#eee}article{padding:12px;border:1px solid #ccc}"
         "a{margin-right:12px}</style>",
-        "<h1>Черновик ИИ: 110 изображений</h1><p>Требуется проверка командой.</p>",
+        f"<h1>Эталоны: {len(rows)} изображений</h1><p>{status} "
+        "Исходный черновик подготовлен ИИ.</p>",
         f"<p>{POLICY}</p>",
-        '<p><a href="gold_draft.json">JSON</a><a href="report.json">Отчёт</a></p>',
+        '<p><a href="gold.json">JSON</a><a href="report.json">Отчёт</a></p>',
     ]
     for split, rows in bank.items():
         gallery.append(f'<h2>{split}: {len(rows)}</h2><div class="grid">')
@@ -40,7 +44,7 @@ def main():
             )
             gallery.append(
                 f'<article><h3>{pid}</h3><svg viewBox="0 0 {width} {height}" '
-                f'role="img" aria-label="Черновик рамок {pid}">'
+                f'role="img" aria-label="Эталон рамок {pid}">'
                 f'<image href="images/{pid}.jpg" width="{width}" height="{height}"/>'
                 f"{rectangles}</svg><p>{hint}</p>"
                 f"<p>{html.escape(', '.join(row['scenarios']))} · "

@@ -24,11 +24,11 @@ bbox plan
 
 ## 2. Данные и эталоны
 
-Для подготовленного [черновика эталонов](fixtures/gold-draft/README.md) используйте
+Для подготовленного [банка эталонов](fixtures/gold/README.md) используйте
 сохранённые 400 ID:
 
 ```bash
-cp -n crowd/bbox/fixtures/gold-draft/working_manifest.csv data/manifest_bbox.csv
+cp -n crowd/bbox/fixtures/gold/working_manifest.csv data/manifest_bbox.csv
 ```
 
 Если файл уже существовал, сверьте его с сохранённым manifest: старые классы молей
@@ -38,8 +38,11 @@ cp -n crowd/bbox/fixtures/gold-draft/working_manifest.csv data/manifest_bbox.csv
 подбирают непересекающиеся эталоны.
 
 Проверьте состав выборки, визуальные дубли и разнообразие пилота. `select`
-не перезаписывает файлы. Подготовьте проверенный командой банк эталонов
-в `$BBOX_RUN/gold.json` по формату из `fixtures/README.md`.
+не перезаписывает файлы. Скопируйте одобренный банк в каталог запуска:
+
+```bash
+cp crowd/bbox/fixtures/gold/gold.json "$BBOX_RUN/gold.json"
+```
 
 ```bash
 bbox check --manifest data/manifest_bbox.csv --fixtures "$BBOX_RUN/gold.json"
@@ -70,20 +73,20 @@ python3 -m http.server 8765 --bind 127.0.0.1
 
 ### Тест без модерации и выдачи
 
-Для проверки API с черновыми эталонами создайте отдельный запуск:
+Для проверки API без возможности платной выдачи создайте отдельный запуск:
 
 ```bash
 export BBOX_RUN='crowd/bbox/runs/api-test'
 bbox prepare --test-only \
-  --manifest crowd/bbox/fixtures/gold-draft/working_manifest.csv \
-  --fixtures crowd/bbox/fixtures/gold-draft/gold_draft.json
+  --manifest crowd/bbox/fixtures/gold/working_manifest.csv \
+  --fixtures crowd/bbox/fixtures/gold/gold.json
 bbox create
 bbox status
 ```
 
 Перед `create` задайте `YANDEX_TASKS_OAUTH`. Это реальные ресурсы в аккаунте:
-проект с пометкой «ТЕСТ», обучение на 10 примерах внутри интерфейса и закрытый
-экзаменационный пул. Отдельный обучающий пул не создаётся.
+проект с пометкой «ТЕСТ» и закрытый экзаменационный пул.
+Для отдельного обучения добавьте `--with-training` к `prepare`.
 Режим допускает отсутствие человеческой проверки черновых эталонов,
 но блокирует команды `ready`, `moderate` и `open`.
 Для платного запуска подготовьте проверенные эталоны и новый каталог запуска
@@ -95,9 +98,9 @@ bbox status
 
 ```bash
 export BBOX_RUN='crowd/bbox/runs/production'
-bbox prepare --with-training --draft-gold \
-  --manifest crowd/bbox/fixtures/gold-draft/working_manifest.csv \
-  --fixtures crowd/bbox/fixtures/gold-draft/gold_draft.json
+bbox prepare --with-training \
+  --manifest crowd/bbox/fixtures/gold/working_manifest.csv \
+  --fixtures crowd/bbox/fixtures/gold/gold.json
 bbox stage
 bbox status
 ```

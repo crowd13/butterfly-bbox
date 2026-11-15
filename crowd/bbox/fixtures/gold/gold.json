@@ -34,10 +34,14 @@
         ]
       },
       "hint": "Верхняя часть крыла обрезана границей кадра. Рамку доводим до края изображения, скрытую часть не достраиваем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -78,10 +82,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -116,10 +124,14 @@
         "boxes": []
       },
       "hint": "На поверхности — оболочка куколки; взрослой бабочки нет.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "immature",
       "draft_provenance": {
         "source": "initial",
@@ -160,10 +172,14 @@
         ]
       },
       "hint": "Маленькая жёлтая бабочка среди травы. Обводим её видимые крылья, голову, усики и лапки, а не весь стебель.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -205,10 +221,14 @@
         ]
       },
       "hint": "Взрослая моль тоже относится к целевым бабочкам. Одна рамка включает крылья, тело, усики и лапки; тень на стене не включаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "moth",
       "draft_provenance": {
         "source": "initial",
@@ -243,10 +263,14 @@
         "boxes": []
       },
       "hint": "В кадре белка и лесная подстилка; взрослых бабочек не видно.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "mammal",
       "draft_provenance": {
         "source": "initial",
@@ -297,10 +321,14 @@
         ]
       },
       "hint": "Две бабочки, по одной рамке на каждую. Их рамки пересекаются; скрытые участки крыльев не достраиваем. Включаем видимые лапки и усики.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "unreviewed",
       "draft_provenance": {
         "source": "extra",
@@ -341,10 +369,14 @@
         ]
       },
       "hint": "Часть головы и усики перекрыты верхним листом. Обводим только видимые части бабочки, не расширяя рамку на предполагаемые скрытые усики.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -388,10 +420,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "unreviewed",
       "draft_provenance": {
         "source": "extra",
@@ -432,10 +468,14 @@
         ]
       },
       "hint": "Включаем оба усика и видимые лапки; светлую опору сверху не включаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -478,10 +518,14 @@
         ]
       },
       "hint": "Небольшая бабочка на верхушке цветка; в рамку включаем видимые лапки и усики.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -522,10 +566,14 @@
         ]
       },
       "hint": "Часть крыльев перекрыта травой. Обводим видимые части одной бабочки, не достраивая скрытые участки.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -560,10 +608,14 @@
         "boxes": []
       },
       "hint": "На листе гусеница; взрослой бабочки нет.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "immature",
       "draft_provenance": {
         "source": "initial",
@@ -605,10 +657,14 @@
         ]
       },
       "hint": "Коричневая взрослая моль на ткани — целевой объект. Обводим видимые крылья, голову, усики и лапки; тёмную щель над ней не включаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "moth",
       "draft_provenance": {
         "source": "initial",
@@ -643,10 +699,14 @@
         "boxes": []
       },
       "hint": "В кадре олень и трава; взрослых бабочек не видно.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "mammal",
       "draft_provenance": {
         "source": "initial",
@@ -687,10 +747,14 @@
         ]
       },
       "hint": "Включаем длинные усики над головой, крылья и видимые лапки; цветок не включаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -731,10 +795,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -786,10 +854,14 @@
         ]
       },
       "hint": "Две жёлтые бабочки. Верхняя перекрывает часть крыла нижней; каждой нужна своя рамка по видимым частям. Усик верхней обрезан краем кадра, его не достраиваем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "unreviewed",
       "draft_provenance": {
         "source": "extra",
@@ -830,10 +902,14 @@
         ]
       },
       "hint": "Бабочка обрезана левым краем. Светлая оболочка куколки под ней не является отдельным объектом; скрытые части крыла не достраиваем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -874,10 +950,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -913,10 +993,14 @@
         "boxes": []
       },
       "hint": "На фотографии травянистые растения; взрослых бабочек не видно.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "plant",
       "draft_provenance": {
         "source": "initial",
@@ -958,10 +1042,14 @@
         ]
       },
       "hint": "Яркая взрослая моль на цветке — целевой объект. Включаем длинные усики и лапки; цветок не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "moth",
       "draft_provenance": {
         "source": "initial",
@@ -1003,10 +1091,14 @@
         ]
       },
       "hint": "Включаем длинные выросты задних крыльев и усики; тень на цветке не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -1047,10 +1139,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -1084,10 +1180,14 @@
         "boxes": []
       },
       "hint": "В кадре сухое соцветие на ладони; взрослых бабочек нет.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "plant",
       "draft_provenance": {
         "source": "initial",
@@ -1128,10 +1228,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -1172,10 +1276,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -1216,10 +1324,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -1260,10 +1372,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -1304,10 +1420,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -1348,10 +1468,14 @@
         ]
       },
       "hint": "Небольшая жёлтая бабочка на камнях; тень слева не входит в рамку.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -1386,10 +1510,14 @@
         "boxes": []
       },
       "hint": "На цветке пчела, а не бабочка; рамок нет.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "other_insect",
       "draft_provenance": {
         "source": "initial",
@@ -1430,10 +1558,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -1468,10 +1600,14 @@
         "boxes": []
       },
       "hint": "На листе гусеница; взрослой бабочки в кадре нет.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "immature",
       "draft_provenance": {
         "source": "initial",
@@ -1512,10 +1648,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -1556,10 +1696,14 @@
         ]
       },
       "hint": "Размечаем светлую бабочку у центра кадра. Пчелу на нижнем цветке не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -1600,10 +1744,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -1637,10 +1785,14 @@
         "boxes": []
       },
       "hint": "На берегу морские млекопитающие; взрослых бабочек не видно.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "mammal",
       "draft_provenance": {
         "source": "initial",
@@ -1681,10 +1833,14 @@
         ]
       },
       "hint": "Одна бабочка со сложенными крыльями; тень и сухие растения не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -1725,10 +1881,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -1780,10 +1940,14 @@
         ]
       },
       "hint": "Два монарха, по рамке на каждого. У верхнего усик упирается в верхнюю границу. Часть крыла нижнего закрыта верхним; рамки охватывают только видимые части, включая усики и лапки.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "unreviewed",
       "draft_provenance": {
         "source": "extra",
@@ -1824,10 +1988,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -1868,10 +2036,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -1905,10 +2077,14 @@
         "boxes": []
       },
       "hint": "На фотографии кролик среди травы; взрослых бабочек нет.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "mammal",
       "draft_provenance": {
         "source": "initial",
@@ -1949,10 +2125,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -1993,10 +2173,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -2037,10 +2221,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -2084,10 +2272,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "unreviewed",
       "draft_provenance": {
         "source": "extra",
@@ -2122,10 +2314,14 @@
         "boxes": []
       },
       "hint": "Среди листьев прямокрылое насекомое; взрослой бабочки не видно.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "other_insect",
       "draft_provenance": {
         "source": "initial",
@@ -2166,10 +2362,14 @@
         ]
       },
       "hint": "Маленькая бабочка у верхнего цветка. Обводим её отдельно от стебля и цветка.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -2210,10 +2410,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -2257,10 +2461,14 @@
         ]
       },
       "hint": "Одна бабочка с раскрытыми крыльями. Крылья обрезаны сверху и справа: рамку доводим до этих краёв кадра, отсутствующие части не достраиваем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "unreviewed",
       "draft_provenance": {
         "source": "extra",
@@ -2301,10 +2509,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -2345,10 +2557,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -2390,10 +2606,14 @@
         ]
       },
       "hint": "Взрослая моль на стене: включаем крылья, тело, усики и лапки. Тень справа и снизу не входит в рамку.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "moth",
       "draft_provenance": {
         "source": "initial",
@@ -2438,10 +2658,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "unreviewed",
       "draft_provenance": {
         "source": "extra",
@@ -2475,10 +2699,14 @@
         "boxes": []
       },
       "hint": "В кадре грызун и сухая трава; взрослых бабочек не видно.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "mammal",
       "draft_provenance": {
         "source": "initial",
@@ -2512,10 +2740,14 @@
         "boxes": []
       },
       "hint": "Крупный план цветка на ладони; взрослых бабочек нет.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "plant",
       "draft_provenance": {
         "source": "initial",
@@ -2549,10 +2781,14 @@
         "boxes": []
       },
       "hint": "На фотографии мышь; взрослых бабочек нет.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "mammal",
       "draft_provenance": {
         "source": "initial",
@@ -2593,10 +2829,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -2638,10 +2878,14 @@
         ]
       },
       "hint": "Пальцекрылка — взрослая моль, её размечаем. Одна рамка охватывает оба узких крыла, тело, усики и видимые лапки; цветки не включаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "moth",
       "draft_provenance": {
         "source": "initial",
@@ -2683,10 +2927,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -2727,10 +2975,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -2765,10 +3017,14 @@
         "boxes": []
       },
       "hint": "Частично скрытое за листьями насекомое не относится к бабочкам; рамок нет.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "other_insect",
       "draft_provenance": {
         "source": "initial",
@@ -2802,10 +3058,14 @@
         "boxes": []
       },
       "hint": "Кадр с кустарником; взрослых бабочек не видно.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "plant",
       "draft_provenance": {
         "source": "initial",
@@ -2846,10 +3106,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -2890,10 +3154,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -2934,10 +3202,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -2979,10 +3251,14 @@
         ]
       },
       "hint": "На листе взрослая моль. Рамка включает раскрытые крылья, тело, усики и лапки; тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "moth",
       "draft_provenance": {
         "source": "initial",
@@ -3024,10 +3300,14 @@
         ]
       },
       "hint": "Крыло слева и усик справа обрезаны границами фотографии. Обводим видимую бабочку до краёв кадра; тень на ткани не включаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -3068,10 +3348,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -3112,10 +3396,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -3157,10 +3445,14 @@
         ]
       },
       "hint": "Тёмная взрослая моль на листе — целевой объект. Включаем узкие крылья, тело, усики и видимые лапки.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "moth",
       "draft_provenance": {
         "source": "initial",
@@ -3202,10 +3494,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -3246,10 +3542,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -3290,10 +3590,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -3334,10 +3638,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -3378,10 +3686,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -3422,10 +3734,14 @@
         ]
       },
       "hint": "Бабочка частично перекрыта растительностью; веточки и листья не являются отдельными объектами разметки.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -3466,10 +3782,14 @@
         ]
       },
       "hint": "Небольшая жёлтая бабочка среди листьев. В рамку включаем видимые лапки, не весь лист.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -3510,10 +3830,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -3548,10 +3872,14 @@
         "boxes": []
       },
       "hint": "На стебле гусеница; её не размечаем как взрослую бабочку.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "immature",
       "draft_provenance": {
         "source": "initial",
@@ -3585,10 +3913,14 @@
         "boxes": []
       },
       "hint": "На газоне кролик; взрослых бабочек не видно.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "mammal",
       "draft_provenance": {
         "source": "initial",
@@ -3623,10 +3955,14 @@
         "boxes": []
       },
       "hint": "На цветке оса; рамок бабочек нет.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "other_insect",
       "draft_provenance": {
         "source": "initial",
@@ -3667,10 +4003,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -3711,10 +4051,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -3755,10 +4099,14 @@
         ]
       },
       "hint": "Бабочка маскируется на коре. Включаем видимые усики над крылом; сам ствол не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -3793,10 +4141,14 @@
         "boxes": []
       },
       "hint": "На листе муха, а не бабочка.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "other_insect",
       "draft_provenance": {
         "source": "initial",
@@ -3837,10 +4189,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -3881,10 +4237,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -3925,10 +4285,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -3963,10 +4327,14 @@
         "boxes": []
       },
       "hint": "На стебле два жука; ни один не является бабочкой.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "other_insect",
       "draft_provenance": {
         "source": "initial",
@@ -4007,10 +4375,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -4051,10 +4423,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -4093,10 +4469,14 @@
         "boxes": []
       },
       "hint": "На листе гусеница. Незрелые стадии, включая гусениц, не размечаем; взрослых бабочек в кадре нет.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "draft_provenance": {
         "source": "extra",
         "annotation_index": 20,
@@ -4138,10 +4518,14 @@
         ]
       },
       "hint": "Взрослая моль с перистыми усиками тоже размечается. Обводим насекомое вместе с усиками и лапками; отражения на стекле не включаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "moth",
       "draft_provenance": {
         "source": "initial",
@@ -4183,10 +4567,14 @@
         ]
       },
       "hint": "Обводим крылья, голову, усики и видимые лапки. Лепестки и тонкие нити у цветка справа не входят в рамку.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -4228,10 +4616,14 @@
         ]
       },
       "hint": "Светлая взрослая моль на листе — целевой объект. Обводим все видимые части одной рамкой; листья не включаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "moth",
       "draft_provenance": {
         "source": "initial",
@@ -4273,10 +4665,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -4320,10 +4716,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "unreviewed",
       "draft_provenance": {
         "source": "extra",
@@ -4367,10 +4767,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "unreviewed",
       "draft_provenance": {
         "source": "extra",
@@ -4411,10 +4815,14 @@
         ]
       },
       "hint": "Включаем усики и длинный хоботок над головой; белые лепестки не являются частью бабочки.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -4449,10 +4857,14 @@
         "boxes": []
       },
       "hint": "На растении жуки; взрослых бабочек нет.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "other_insect",
       "draft_provenance": {
         "source": "initial",
@@ -4493,10 +4905,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -4537,10 +4953,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -4581,10 +5001,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -4625,10 +5049,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -4669,10 +5097,14 @@
         ]
       },
       "hint": "Небольшая бабочка на асфальте; её тень справа не входит в рамку.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "ordinary",
       "draft_provenance": {
         "source": "initial",
@@ -4716,10 +5148,14 @@
         ]
       },
       "hint": "Одна взрослая бабочка: рамка плотно включает видимые крылья, тело, усики и лапки. Фон и тень не размечаем.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "unreviewed",
       "draft_provenance": {
         "source": "extra",
@@ -4754,10 +5190,14 @@
         "boxes": []
       },
       "hint": "На пальце жук; целевых бабочек нет.",
-      "team_approval": null,
+      "team_approval": {
+        "approved": true,
+        "reviewer": "Команда проекта",
+        "reviewed_at": "2026-11-15T16:19:12.067074+00:00"
+      },
       "resolution": "",
       "annotation_source": "ai_visual_draft",
-      "review_required": true,
+      "review_required": false,
       "source_groups": "other_insect",
       "draft_provenance": {
         "source": "initial",

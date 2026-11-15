@@ -316,8 +316,9 @@ class InputTests(unittest.TestCase):
         chosen = select_manifest(source)
         self.assertEqual(len(chosen), 400)
         self.assertEqual(sum(is_difficult(r) for r in chosen), 61)
-        bank = read_json(ROOT / "fixtures/gold-draft/gold_draft.json")
-        work = read_manifest(ROOT / "fixtures/gold-draft/working_manifest.csv")
+        bank = read_json(ROOT / "fixtures/gold/gold.json")
+        work = read_manifest(ROOT / "fixtures/gold/working_manifest.csv")
+        validate_inputs(work, bank, read_json(ROOT / "config.json"))
         index = {r["photo_id"]: r for r in source}
         for row in work:
             self.assertEqual(row, index[row["photo_id"]])
