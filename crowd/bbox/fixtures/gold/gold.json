@@ -655,10 +655,10 @@
         "status": "boxes",
         "boxes": [
           {
-            "left": 0.365,
-            "top": 0.19,
-            "width": 0.625,
-            "height": 0.595
+            "left": 0.39,
+            "top": 0.225,
+            "width": 0.57,
+            "height": 0.56
           }
         ]
       },
@@ -687,6 +687,22 @@
                 "left": 0.365,
                 "top": 0.19,
                 "width": 0.59,
+                "height": 0.595
+              }
+            ]
+          },
+          "source": "assistant_visual_correction_requested_by_user"
+        },
+        {
+          "at": "2026-11-15T17:58:13.699517+00:00",
+          "reason": "Убраны избыточные поля сверху, слева и справа; оба видимых усика сохранены.",
+          "previous_solution": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.365,
+                "top": 0.19,
+                "width": 0.625,
                 "height": 0.595
               }
             ]
@@ -1150,9 +1166,9 @@
         "boxes": [
           {
             "left": 0.16,
-            "top": 0.14,
+            "top": 0.18,
             "width": 0.735,
-            "height": 0.78
+            "height": 0.71
           }
         ]
       },
@@ -1170,7 +1186,25 @@
         "source": "initial",
         "annotation_index": 21,
         "policy_update": "include-moths-policy:v1"
-      }
+      },
+      "corrections": [
+        {
+          "at": "2026-11-15T17:58:13.699517+00:00",
+          "reason": "Уменьшены верхнее и нижнее поля; длинный правый усик и задние лапки сохранены.",
+          "previous_solution": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.16,
+                "top": 0.14,
+                "width": 0.735,
+                "height": 0.78
+              }
+            ]
+          },
+          "source": "assistant_visual_correction_requested_by_user"
+        }
+      ]
     },
     {
       "photo_id": "761901411",
@@ -1384,9 +1418,9 @@
         "boxes": [
           {
             "left": 0.25,
-            "top": 0.35,
+            "top": 0.245,
             "width": 0.4,
-            "height": 0.375
+            "height": 0.48
           }
         ]
       },
@@ -1403,7 +1437,25 @@
       "draft_provenance": {
         "source": "initial",
         "annotation_index": 17
-      }
+      },
+      "corrections": [
+        {
+          "at": "2026-11-15T17:58:13.699517+00:00",
+          "reason": "В рамку включён ранее пропущенный верхний усик.",
+          "previous_solution": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.25,
+                "top": 0.35,
+                "width": 0.4,
+                "height": 0.375
+              }
+            ]
+          },
+          "source": "assistant_visual_correction_requested_by_user"
+        }
+      ]
     },
     {
       "photo_id": "761729735",
@@ -1821,10 +1873,10 @@
         "status": "boxes",
         "boxes": [
           {
-            "left": 0.43,
+            "left": 0.437,
             "top": 0.31,
-            "width": 0.19,
-            "height": 0.37
+            "width": 0.183,
+            "height": 0.353
           }
         ]
       },
@@ -1841,7 +1893,25 @@
       "draft_provenance": {
         "source": "initial",
         "annotation_index": 35
-      }
+      },
+      "corrections": [
+        {
+          "at": "2026-11-15T17:58:13.699517+00:00",
+          "reason": "Уменьшен запас слева и снизу; усики и правая лапка сохранены.",
+          "previous_solution": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.43,
+                "top": 0.31,
+                "width": 0.19,
+                "height": 0.37
+              }
+            ]
+          },
+          "source": "assistant_visual_correction_requested_by_user"
+        }
+      ]
     },
     {
       "photo_id": "761346903",
@@ -4470,9 +4540,9 @@
         "status": "boxes",
         "boxes": [
           {
-            "left": 0.095,
-            "top": 0.34,
-            "width": 0.585,
+            "left": 0.22,
+            "top": 0.285,
+            "width": 0.46,
             "height": 0.45
           }
         ]
@@ -4490,7 +4560,25 @@
       "draft_provenance": {
         "source": "initial",
         "annotation_index": 89
-      }
+      },
+      "corrections": [
+        {
+          "at": "2026-11-15T17:58:13.699517+00:00",
+          "reason": "Убраны лишние части листа слева и снизу; верхняя граница учитывает тонкие усики.",
+          "previous_solution": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.095,
+                "top": 0.34,
+                "width": 0.585,
+                "height": 0.45
+              }
+            ]
+          },
+          "source": "assistant_visual_correction_requested_by_user"
+        }
+      ]
     },
     {
       "photo_id": "760425692",
@@ -5436,9 +5524,9 @@
         "boxes": [
           {
             "left": 0.37,
-            "top": 0.34,
+            "top": 0.365,
             "width": 0.22,
-            "height": 0.405
+            "height": 0.38
           }
         ]
       },
@@ -5455,7 +5543,25 @@
       "draft_provenance": {
         "source": "extra",
         "annotation_index": 25
-      }
+      },
+      "corrections": [
+        {
+          "at": "2026-11-15T17:58:13.699517+00:00",
+          "reason": "Верхняя граница приближена к видимым усикам; лапки на цветке сохранены.",
+          "previous_solution": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.37,
+                "top": 0.34,
+                "width": 0.22,
+                "height": 0.405
+              }
+            ]
+          },
+          "source": "assistant_visual_correction_requested_by_user"
+        }
+      ]
     },
     {
       "photo_id": "762634568",

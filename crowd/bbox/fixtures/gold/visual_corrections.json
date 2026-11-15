@@ -424,5 +424,178 @@
   "rechecked_without_change": {
     "761312810": "На увеличении видимые части внутри рамки; скрытые цветком части не достраиваем.",
     "762096515": "Размечаем различимую часть моли; тень над ней не включаем."
-  }
+  },
+  "followup_reviews": [
+    {
+      "at": "2026-11-15T17:58:13.699517+00:00",
+      "source": "assistant_visual_review_requested_by_user",
+      "changed": [
+        {
+          "photo_id": "761386447",
+          "split": "exam",
+          "before": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.365,
+                "top": 0.19,
+                "width": 0.625,
+                "height": 0.595
+              }
+            ]
+          },
+          "after": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.39,
+                "top": 0.225,
+                "width": 0.57,
+                "height": 0.56
+              }
+            ]
+          },
+          "reason": "Убраны избыточные поля сверху, слева и справа; оба видимых усика сохранены."
+        },
+        {
+          "photo_id": "762235975",
+          "split": "controls",
+          "before": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.16,
+                "top": 0.14,
+                "width": 0.735,
+                "height": 0.78
+              }
+            ]
+          },
+          "after": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.16,
+                "top": 0.18,
+                "width": 0.735,
+                "height": 0.71
+              }
+            ]
+          },
+          "reason": "Уменьшены верхнее и нижнее поля; длинный правый усик и задние лапки сохранены."
+        },
+        {
+          "photo_id": "760483993",
+          "split": "controls",
+          "before": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.25,
+                "top": 0.35,
+                "width": 0.4,
+                "height": 0.375
+              }
+            ]
+          },
+          "after": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.25,
+                "top": 0.245,
+                "width": 0.4,
+                "height": 0.48
+              }
+            ]
+          },
+          "reason": "В рамку включён ранее пропущенный верхний усик."
+        },
+        {
+          "photo_id": "762613770",
+          "split": "controls",
+          "before": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.43,
+                "top": 0.31,
+                "width": 0.19,
+                "height": 0.37
+              }
+            ]
+          },
+          "after": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.437,
+                "top": 0.31,
+                "width": 0.183,
+                "height": 0.353
+              }
+            ]
+          },
+          "reason": "Уменьшен запас слева и снизу; усики и правая лапка сохранены."
+        },
+        {
+          "photo_id": "761729799",
+          "split": "controls",
+          "before": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.095,
+                "top": 0.34,
+                "width": 0.585,
+                "height": 0.45
+              }
+            ]
+          },
+          "after": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.22,
+                "top": 0.285,
+                "width": 0.46,
+                "height": 0.45
+              }
+            ]
+          },
+          "reason": "Убраны лишние части листа слева и снизу; верхняя граница учитывает тонкие усики."
+        },
+        {
+          "photo_id": "684748055",
+          "split": "controls",
+          "before": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.37,
+                "top": 0.34,
+                "width": 0.22,
+                "height": 0.405
+              }
+            ]
+          },
+          "after": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.37,
+                "top": 0.365,
+                "width": 0.22,
+                "height": 0.38
+              }
+            ]
+          },
+          "reason": "Верхняя граница приближена к видимым усикам; лапки на цветке сохранены."
+        }
+      ],
+      "unchanged": {
+        "761344683": "Левая граница включает усики, за правой границей тень; сдвиг рамки не требуется."
+      }
+    }
+  ]
 }
