@@ -60,7 +60,7 @@
     }
   },
   "required_before_launch": [
-    "Two independent human annotations per image; reconcile boxes, labels and explanations",
+    "Team approval of existing annotations for every image after discussion and corrections; record reviewer and timestamp",
     "Human check of cross-split visual near duplicates, including working set",
     "Run check and fresh preflight; test platform interface before paid launch"
   ],
@@ -97,7 +97,7 @@
     "exact_pixel_duplicates": "none across 510 images",
     "visual_overlay_pass": "AI inspected the nine new moth boxes and the replacement caterpillar; human checks pending.",
     "browser": "Updated adult-moth and caterpillar editors load local images and validate the expected positive/negative answers.",
-    "project_check": "blocked as intended: Two independent human annotations are required",
+    "project_check": "blocked as intended: Team approval is required for every gold image",
     "policy_checks": "26 bbox tests, 7 data tests, Ruff lint/format, CLI select and local hashes/geometry/CSV/link checks passed.",
     "policy_checked_at": "2026-11-14T21:49:44.493055+00:00"
   },

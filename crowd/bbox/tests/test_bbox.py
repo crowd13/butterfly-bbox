@@ -50,10 +50,11 @@ def inputs():
             "solution": copy.deepcopy(POSITIVE),
             "scenarios": sorted(SCENARIOS),
             "hint": "Synthetic fixture, not for production",
-            "independent_reviews": [
-                {"reviewer": "a", "solution": copy.deepcopy(POSITIVE)},
-                {"reviewer": "b", "solution": copy.deepcopy(POSITIVE)},
-            ],
+            "team_approval": {
+                "approved": True,
+                "reviewer": "synthetic team reviewer",
+                "reviewed_at": "2026-11-15T10:00:00+03:00",
+            },
         }
 
     bank = {
@@ -259,9 +260,22 @@ class InputTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             validate_inputs(rows, bank, config)
         rows, bank, config = inputs()
-        bank["exam"][0]["independent_reviews"][1]["reviewer"] = "a"
+        bank["exam"][0]["team_approval"]["reviewer"] = ""
         with self.assertRaises(ValueError):
             validate_inputs(rows, bank, config)
+
+    def test_team_approval_requires_confirmation_author_and_timestamp(self):
+        for change in (
+            {"approved": False},
+            {"reviewer": " "},
+            {"reviewed_at": "not-a-date"},
+            {"reviewed_at": "2026-11-15T12:00:00"},
+        ):
+            with self.subTest(change=change):
+                rows, bank, config = inputs()
+                bank["practice"][0]["team_approval"].update(change)
+                with self.assertRaisesRegex(ValueError, "Team approval"):
+                    validate_inputs(rows, bank, config)
 
     def test_no_private_gold_in_project(self):
         rows, bank, config = inputs()
@@ -338,8 +352,8 @@ class WorkflowTests(unittest.TestCase):
             manifest, bank, config = inputs()
             for rows in bank.values():
                 for row in rows:
-                    row["independent_reviews"] = []
-            with self.assertRaisesRegex(ValueError, "Two independent"):
+                    row["team_approval"] = None
+            with self.assertRaisesRegex(ValueError, "Team approval"):
                 prepare(directory, manifest, bank, config)
             prepare(directory, manifest, bank, config, test_only=True)
             api = FakeApi()
@@ -356,7 +370,7 @@ class WorkflowTests(unittest.TestCase):
             for action in (run.open, run.require_production, lambda: run.ready({})):
                 with self.assertRaisesRegex(ValueError, "Test-only"):
                     action()
-            self.assertEqual(run.snapshot["bank"]["exam"][0]["independent_reviews"], [])
+            self.assertIsNone(run.snapshot["bank"]["exam"][0]["team_approval"])
 
     def test_native_training_and_staged_pools(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -399,9 +413,9 @@ class WorkflowTests(unittest.TestCase):
             manifest, bank, config = inputs()
             for rows in bank.values():
                 for row in rows:
-                    row["independent_reviews"] = []
+                    row["team_approval"] = None
             prepare(directory, manifest, bank, config, draft_gold=True)
-            with self.assertRaisesRegex(ValueError, "Two independent"):
+            with self.assertRaisesRegex(ValueError, "Team approval"):
                 Run(directory).ready({})
 
     def setUp(self):

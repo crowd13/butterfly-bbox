@@ -6,13 +6,14 @@ import io
 import random
 import urllib.request
 from collections import Counter
+from datetime import datetime
 from pathlib import Path
 from urllib.parse import urlparse
 
 from PIL import Image, ImageOps
 
 from .budget import plan
-from .quality import evaluate, validate_solution
+from .quality import validate_solution
 
 DIFFICULT_SCENARIOS = {"small", "multiple", "occluded", "cropped"}
 SCENARIOS = DIFFICULT_SCENARIOS | {"ordinary", "moth", "lookalike", "empty"}
@@ -175,22 +176,29 @@ def validate_inputs(manifest, bank, config, *, require_reviews=True):
                 raise ValueError("Adult moth gold requires bounding boxes")
             if row["solution"]["status"] not in {"boxes", "no_butterflies"}:
                 raise ValueError("Gold must be unambiguous")
-            reviews = row.get("independent_reviews", [])
+            approval = row.get("team_approval")
             if require_reviews and (
-                len(reviews) != 2 or len({r.get("reviewer") for r in reviews}) != 2
+                not isinstance(approval, dict) or approval.get("approved") is not True
             ):
-                raise ValueError("Two independent human annotations are required")
-            for review in reviews:
-                if not review.get("reviewer", "").strip():
-                    raise ValueError("Missing reviewer")
-                validate_solution(review["solution"])
+                raise ValueError("Team approval is required for every gold image")
+            if approval is not None:
+                if not isinstance(approval, dict) or approval.get("approved") is not True:
+                    raise ValueError("Team approval must confirm approved: true")
                 if (
-                    not evaluate(review["solution"], row["solution"], config["iou_threshold"])[
-                        "correct"
-                    ]
-                    and not row.get("resolution", "").strip()
+                    not isinstance(approval.get("reviewer"), str)
+                    or not approval["reviewer"].strip()
                 ):
-                    raise ValueError("Explain how disagreement was resolved")
+                    raise ValueError("Team approval needs a reviewer")
+                try:
+                    reviewed_at = datetime.fromisoformat(
+                        approval["reviewed_at"].replace("Z", "+00:00")
+                    )
+                except (KeyError, TypeError, AttributeError, ValueError):
+                    raise ValueError(
+                        "Team approval needs an ISO 8601 reviewed_at timestamp"
+                    ) from None
+                if reviewed_at.tzinfo is None:
+                    raise ValueError("Team approval timestamp must include a timezone")
             if not row.get("hint", "").strip():
                 raise ValueError("Gold requires an explanation")
             scenarios.update(row.get("scenarios", []))
