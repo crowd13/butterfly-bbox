@@ -183,10 +183,10 @@
         "status": "boxes",
         "boxes": [
           {
-            "left": 0.54,
-            "top": 0.31,
-            "width": 0.13,
-            "height": 0.245
+            "left": 0.528711,
+            "top": 0.307292,
+            "width": 0.141289,
+            "height": 0.247708
           }
         ]
       },
@@ -203,7 +203,25 @@
       "draft_provenance": {
         "source": "initial",
         "annotation_index": 85
-      }
+      },
+      "corrections": [
+        {
+          "at": "2026-11-15T17:17:03.496376+00:00",
+          "reason": "Рамка обрезает видимые лапки слева и верхнюю часть правого усика.",
+          "previous_solution": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.54,
+                "top": 0.31,
+                "width": 0.13,
+                "height": 0.245
+              }
+            ]
+          },
+          "source": "assistant_visual_correction_requested_by_user"
+        }
+      ]
     },
     {
       "photo_id": "762688955",
@@ -327,9 +345,9 @@
         "boxes": [
           {
             "left": 0.032,
-            "top": 0.253,
+            "top": 0.22,
             "width": 0.588,
-            "height": 0.597
+            "height": 0.63
           },
           {
             "left": 0.295,
@@ -352,7 +370,31 @@
       "draft_provenance": {
         "source": "extra",
         "annotation_index": 0
-      }
+      },
+      "corrections": [
+        {
+          "at": "2026-11-15T17:17:03.496376+00:00",
+          "reason": "Верхняя граница передней бабочки включает видимый выступ дальнего переднего крыла.",
+          "previous_solution": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.032,
+                "top": 0.253,
+                "width": 0.588,
+                "height": 0.597
+              },
+              {
+                "left": 0.295,
+                "top": 0.207,
+                "width": 0.68,
+                "height": 0.512
+              }
+            ]
+          },
+          "source": "assistant_visual_correction_requested_by_user"
+        }
+      ]
     },
     {
       "photo_id": "761484080",
@@ -382,7 +424,7 @@
           {
             "left": 0.17,
             "top": 0.3,
-            "width": 0.59,
+            "width": 0.611725,
             "height": 0.45
           }
         ]
@@ -400,7 +442,25 @@
       "draft_provenance": {
         "source": "initial",
         "annotation_index": 76
-      }
+      },
+      "corrections": [
+        {
+          "at": "2026-11-15T17:17:03.496376+00:00",
+          "reason": "Кончик верхней правой лапки за правой границей.",
+          "previous_solution": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.17,
+                "top": 0.3,
+                "width": 0.59,
+                "height": 0.45
+              }
+            ]
+          },
+          "source": "assistant_visual_correction_requested_by_user"
+        }
+      ]
     },
     {
       "photo_id": "759665991",
@@ -531,7 +591,7 @@
           {
             "left": 0.375,
             "top": 0.24,
-            "width": 0.185,
+            "width": 0.200732,
             "height": 0.315
           }
         ]
@@ -549,7 +609,25 @@
       "draft_provenance": {
         "source": "initial",
         "annotation_index": 45
-      }
+      },
+      "corrections": [
+        {
+          "at": "2026-11-15T17:17:03.496376+00:00",
+          "reason": "Оба усика выходят за правую границу.",
+          "previous_solution": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.375,
+                "top": 0.24,
+                "width": 0.185,
+                "height": 0.315
+              }
+            ]
+          },
+          "source": "assistant_visual_correction_requested_by_user"
+        }
+      ]
     },
     {
       "photo_id": "761386447",
@@ -579,7 +657,7 @@
           {
             "left": 0.365,
             "top": 0.19,
-            "width": 0.59,
+            "width": 0.625,
             "height": 0.595
           }
         ]
@@ -597,7 +675,25 @@
       "draft_provenance": {
         "source": "initial",
         "annotation_index": 11
-      }
+      },
+      "corrections": [
+        {
+          "at": "2026-11-15T17:17:03.496376+00:00",
+          "reason": "Правая граница расширена до видимого дальнего усика.",
+          "previous_solution": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.365,
+                "top": 0.19,
+                "width": 0.59,
+                "height": 0.595
+              }
+            ]
+          },
+          "source": "assistant_visual_correction_requested_by_user"
+        }
+      ]
     },
     {
       "photo_id": "761863058",
@@ -1481,7 +1577,7 @@
           {
             "left": 0.325,
             "top": 0.29,
-            "width": 0.225,
+            "width": 0.245,
             "height": 0.225
           }
         ]
@@ -1499,7 +1595,25 @@
       "draft_provenance": {
         "source": "initial",
         "annotation_index": 30
-      }
+      },
+      "corrections": [
+        {
+          "at": "2026-11-15T17:17:03.496376+00:00",
+          "reason": "Правая граница включает светлую видимую лапку у головы на фоне камня.",
+          "previous_solution": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.325,
+                "top": 0.29,
+                "width": 0.225,
+                "height": 0.225
+              }
+            ]
+          },
+          "source": "assistant_visual_correction_requested_by_user"
+        }
+      ]
     },
     {
       "photo_id": "762649210",
@@ -2184,9 +2298,9 @@
         "status": "boxes",
         "boxes": [
           {
-            "left": 0.44,
+            "left": 0.426419,
             "top": 0.44,
-            "width": 0.34,
+            "width": 0.353581,
             "height": 0.21
           }
         ]
@@ -2204,7 +2318,25 @@
       "draft_provenance": {
         "source": "initial",
         "annotation_index": 10
-      }
+      },
+      "corrections": [
+        {
+          "at": "2026-11-15T17:17:03.496376+00:00",
+          "reason": "Небольшая часть левого края нижнего крыла выходит за рамку; усики включены.",
+          "previous_solution": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.44,
+                "top": 0.44,
+                "width": 0.34,
+                "height": 0.21
+              }
+            ]
+          },
+          "source": "assistant_visual_correction_requested_by_user"
+        }
+      ]
     },
     {
       "photo_id": "761287454",
@@ -3407,10 +3539,10 @@
         "status": "boxes",
         "boxes": [
           {
-            "left": 0.235,
-            "top": 0.44,
-            "width": 0.675,
-            "height": 0.375
+            "left": 0.126445,
+            "top": 0.415889,
+            "width": 0.783555,
+            "height": 0.399111
           }
         ]
       },
@@ -3427,7 +3559,25 @@
       "draft_provenance": {
         "source": "initial",
         "annotation_index": 71
-      }
+      },
+      "corrections": [
+        {
+          "at": "2026-11-15T17:17:03.496376+00:00",
+          "reason": "Верхний левый усик выходит за левую и верхнюю границы.",
+          "previous_solution": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.235,
+                "top": 0.44,
+                "width": 0.675,
+                "height": 0.375
+              }
+            ]
+          },
+          "source": "assistant_visual_correction_requested_by_user"
+        }
+      ]
     },
     {
       "photo_id": "762273500",
@@ -3604,7 +3754,7 @@
             "left": 0.385,
             "top": 0.3,
             "width": 0.295,
-            "height": 0.31
+            "height": 0.336632
           }
         ]
       },
@@ -3621,7 +3771,25 @@
       "draft_provenance": {
         "source": "initial",
         "annotation_index": 75
-      }
+      },
+      "corrections": [
+        {
+          "at": "2026-11-15T17:17:03.496376+00:00",
+          "reason": "Усики включены, но нижняя левая лапка выходит за нижнюю границу (не тень).",
+          "previous_solution": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.385,
+                "top": 0.3,
+                "width": 0.295,
+                "height": 0.31
+              }
+            ]
+          },
+          "source": "assistant_visual_correction_requested_by_user"
+        }
+      ]
     },
     {
       "photo_id": "762210333",
@@ -3746,9 +3914,9 @@
         "boxes": [
           {
             "left": 0.18,
-            "top": 0.28,
+            "top": 0.239897,
             "width": 0.43,
-            "height": 0.46
+            "height": 0.500103
           }
         ]
       },
@@ -3765,7 +3933,25 @@
       "draft_provenance": {
         "source": "initial",
         "annotation_index": 78
-      }
+      },
+      "corrections": [
+        {
+          "at": "2026-11-15T17:17:03.496376+00:00",
+          "reason": "Чёрный усик над головой выходит выше верхней границы.",
+          "previous_solution": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.18,
+                "top": 0.28,
+                "width": 0.43,
+                "height": 0.46
+              }
+            ]
+          },
+          "source": "assistant_visual_correction_requested_by_user"
+        }
+      ]
     },
     {
       "photo_id": "762240768",
@@ -3795,7 +3981,7 @@
           {
             "left": 0.405,
             "top": 0.28,
-            "width": 0.285,
+            "width": 0.315,
             "height": 0.235
           }
         ]
@@ -3813,7 +3999,25 @@
       "draft_provenance": {
         "source": "initial",
         "annotation_index": 79
-      }
+      },
+      "corrections": [
+        {
+          "at": "2026-11-15T17:17:03.496376+00:00",
+          "reason": "Правая граница включает видимый светлый отросток у головы.",
+          "previous_solution": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.405,
+                "top": 0.28,
+                "width": 0.285,
+                "height": 0.235
+              }
+            ]
+          },
+          "source": "assistant_visual_correction_requested_by_user"
+        }
+      ]
     },
     {
       "photo_id": "761480934",
@@ -4062,9 +4266,9 @@
         "status": "boxes",
         "boxes": [
           {
-            "left": 0.28,
+            "left": 0.268359,
             "top": 0.375,
-            "width": 0.31,
+            "width": 0.321641,
             "height": 0.31
           }
         ]
@@ -4082,7 +4286,25 @@
       "draft_provenance": {
         "source": "initial",
         "annotation_index": 3
-      }
+      },
+      "corrections": [
+        {
+          "at": "2026-11-15T17:17:03.496376+00:00",
+          "reason": "Длинный усик от головы влево выходит за левую границу.",
+          "previous_solution": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.28,
+                "top": 0.375,
+                "width": 0.31,
+                "height": 0.31
+              }
+            ]
+          },
+          "source": "assistant_visual_correction_requested_by_user"
+        }
+      ]
     },
     {
       "photo_id": "761339178",
@@ -4780,7 +5002,7 @@
           {
             "left": 0.083,
             "top": 0.283,
-            "width": 0.472,
+            "width": 0.555148,
             "height": 0.527
           }
         ]
@@ -4798,7 +5020,25 @@
       "draft_provenance": {
         "source": "extra",
         "annotation_index": 24
-      }
+      },
+      "corrections": [
+        {
+          "at": "2026-11-15T17:17:03.496376+00:00",
+          "reason": "Правая передняя лапка и часть нижних лапок выходят за правую границу.",
+          "previous_solution": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.083,
+                "top": 0.283,
+                "width": 0.472,
+                "height": 0.527
+              }
+            ]
+          },
+          "source": "assistant_visual_correction_requested_by_user"
+        }
+      ]
     },
     {
       "photo_id": "761434356",
@@ -4916,9 +5156,9 @@
         "status": "boxes",
         "boxes": [
           {
-            "left": 0.375,
+            "left": 0.286157,
             "top": 0.3,
-            "width": 0.22,
+            "width": 0.308843,
             "height": 0.44
           }
         ]
@@ -4936,7 +5176,25 @@
       "draft_provenance": {
         "source": "initial",
         "annotation_index": 103
-      }
+      },
+      "corrections": [
+        {
+          "at": "2026-11-15T17:17:03.496376+00:00",
+          "reason": "Голова и оба усика выходят за левую границу.",
+          "previous_solution": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.375,
+                "top": 0.3,
+                "width": 0.22,
+                "height": 0.44
+              }
+            ]
+          },
+          "source": "assistant_visual_correction_requested_by_user"
+        }
+      ]
     },
     {
       "photo_id": "761918220",
@@ -5060,9 +5318,9 @@
         "status": "boxes",
         "boxes": [
           {
-            "left": 0.36,
+            "left": 0.311064,
             "top": 0.36,
-            "width": 0.295,
+            "width": 0.343936,
             "height": 0.415
           }
         ]
@@ -5080,7 +5338,25 @@
       "draft_provenance": {
         "source": "initial",
         "annotation_index": 106
-      }
+      },
+      "corrections": [
+        {
+          "at": "2026-11-15T17:17:03.496376+00:00",
+          "reason": "Оба усика выходят далеко за левую границу рамки.",
+          "previous_solution": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.36,
+                "top": 0.36,
+                "width": 0.295,
+                "height": 0.415
+              }
+            ]
+          },
+          "source": "assistant_visual_correction_requested_by_user"
+        }
+      ]
     },
     {
       "photo_id": "761915126",

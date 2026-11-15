@@ -1,5 +1,5 @@
 {
-  "base_url": "https://raw.githubusercontent.com/crowd13/butterfly-bbox/f044480a873459cbc40fe988b20ae113d6ddbbd9/crowd/bbox/instruction-examples/",
+  "base_url": "https://raw.githubusercontent.com/crowd13/butterfly-bbox/1589bc777153905ddf7921724bf0ef1b4eff1dd0/crowd/bbox/instruction-examples/",
   "examples": [
     {
       "photo_id": "761310164",
@@ -12,7 +12,7 @@
     {
       "photo_id": "760354796",
       "source_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/760354796/original.jpg",
-      "solution_hash": "2d58457860a242973c3dd90ca2d4e632e5d8fe7d00032982b460e39db95435e7",
+      "solution_hash": "cf62a3cc1f35098328fde066a6e078bb13a1977d7ad4173cbabd5e8bc7d53037",
       "title": "Несколько бабочек",
       "caption": "Каждую бабочку выделяем отдельно, даже если рамки пересекаются.",
       "filename": "760354796.jpg"
@@ -20,7 +20,7 @@
     {
       "photo_id": "760853346",
       "source_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/760853346/original.jpg",
-      "solution_hash": "00a412689c9b17415ba4bc71b6c4bfc8639f3780ac176088dd9df95429315861",
+      "solution_hash": "8f2b9ae7c6929c287805ae4f0e34b0c3484189cdb84f806a3a814369508e6fbb",
       "title": "Мелкий объект",
       "caption": "Увеличьте фото и обведите бабочку, не включая окружающую траву.",
       "filename": "760853346.jpg"
