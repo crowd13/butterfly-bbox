@@ -1,0 +1,601 @@
+{
+  "at": "2026-11-15T17:17:03.496376+00:00",
+  "source": "assistant_visual_review",
+  "authorization": "Пользователь поручил исправить ошибки и обновить закрытый проект. Это не независимая человеческая переразметка.",
+  "changed": [
+    {
+      "photo_id": "760853346",
+      "split": "practice",
+      "before": {
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.54,
+            "top": 0.31,
+            "width": 0.13,
+            "height": 0.245
+          }
+        ]
+      },
+      "after": {
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.528711,
+            "top": 0.307292,
+            "width": 0.141289,
+            "height": 0.247708
+          }
+        ]
+      },
+      "reason": "Рамка обрезает видимые лапки слева и верхнюю часть правого усика."
+    },
+    {
+      "photo_id": "760354796",
+      "split": "practice",
+      "before": {
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.032,
+            "top": 0.253,
+            "width": 0.588,
+            "height": 0.597
+          },
+          {
+            "left": 0.295,
+            "top": 0.207,
+            "width": 0.68,
+            "height": 0.512
+          }
+        ]
+      },
+      "after": {
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.032,
+            "top": 0.22,
+            "width": 0.588,
+            "height": 0.63
+          },
+          {
+            "left": 0.295,
+            "top": 0.207,
+            "width": 0.68,
+            "height": 0.512
+          }
+        ]
+      },
+      "reason": "Верхняя граница передней бабочки включает видимый выступ дальнего переднего крыла."
+    },
+    {
+      "photo_id": "761484080",
+      "split": "practice",
+      "before": {
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.17,
+            "top": 0.3,
+            "width": 0.59,
+            "height": 0.45
+          }
+        ]
+      },
+      "after": {
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.17,
+            "top": 0.3,
+            "width": 0.611725,
+            "height": 0.45
+          }
+        ]
+      },
+      "reason": "Кончик верхней правой лапки за правой границей."
+    },
+    {
+      "photo_id": "761335307",
+      "split": "exam",
+      "before": {
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.375,
+            "top": 0.24,
+            "width": 0.185,
+            "height": 0.315
+          }
+        ]
+      },
+      "after": {
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.375,
+            "top": 0.24,
+            "width": 0.200732,
+            "height": 0.315
+          }
+        ]
+      },
+      "reason": "Оба усика выходят за правую границу."
+    },
+    {
+      "photo_id": "761386447",
+      "split": "exam",
+      "before": {
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.365,
+            "top": 0.19,
+            "width": 0.59,
+            "height": 0.595
+          }
+        ]
+      },
+      "after": {
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.365,
+            "top": 0.19,
+            "width": 0.625,
+            "height": 0.595
+          }
+        ]
+      },
+      "reason": "Правая граница расширена до видимого дальнего усика."
+    },
+    {
+      "photo_id": "761367167",
+      "split": "controls",
+      "before": {
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.325,
+            "top": 0.29,
+            "width": 0.225,
+            "height": 0.225
+          }
+        ]
+      },
+      "after": {
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.325,
+            "top": 0.29,
+            "width": 0.245,
+            "height": 0.225
+          }
+        ]
+      },
+      "reason": "Правая граница включает светлую видимую лапку у головы на фоне камня."
+    },
+    {
+      "photo_id": "762509532",
+      "split": "controls",
+      "before": {
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.44,
+            "top": 0.44,
+            "width": 0.34,
+            "height": 0.21
+          }
+        ]
+      },
+      "after": {
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.426419,
+            "top": 0.44,
+            "width": 0.353581,
+            "height": 0.21
+          }
+        ]
+      },
+      "reason": "Небольшая часть левого края нижнего крыла выходит за рамку; усики включены."
+    },
+    {
+      "photo_id": "761504261",
+      "split": "controls",
+      "before": {
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.235,
+            "top": 0.44,
+            "width": 0.675,
+            "height": 0.375
+          }
+        ]
+      },
+      "after": {
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.126445,
+            "top": 0.415889,
+            "width": 0.783555,
+            "height": 0.399111
+          }
+        ]
+      },
+      "reason": "Верхний левый усик выходит за левую и верхнюю границы."
+    },
+    {
+      "photo_id": "761346859",
+      "split": "controls",
+      "before": {
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.385,
+            "top": 0.3,
+            "width": 0.295,
+            "height": 0.31
+          }
+        ]
+      },
+      "after": {
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.385,
+            "top": 0.3,
+            "width": 0.295,
+            "height": 0.336632
+          }
+        ]
+      },
+      "reason": "Усики включены, но нижняя левая лапка выходит за нижнюю границу (не тень)."
+    },
+    {
+      "photo_id": "761219682",
+      "split": "controls",
+      "before": {
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.18,
+            "top": 0.28,
+            "width": 0.43,
+            "height": 0.46
+          }
+        ]
+      },
+      "after": {
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.18,
+            "top": 0.239897,
+            "width": 0.43,
+            "height": 0.500103
+          }
+        ]
+      },
+      "reason": "Чёрный усик над головой выходит выше верхней границы."
+    },
+    {
+      "photo_id": "762240768",
+      "split": "controls",
+      "before": {
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.405,
+            "top": 0.28,
+            "width": 0.285,
+            "height": 0.235
+          }
+        ]
+      },
+      "after": {
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.405,
+            "top": 0.28,
+            "width": 0.315,
+            "height": 0.235
+          }
+        ]
+      },
+      "reason": "Правая граница включает видимый светлый отросток у головы."
+    },
+    {
+      "photo_id": "762026765",
+      "split": "controls",
+      "before": {
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.28,
+            "top": 0.375,
+            "width": 0.31,
+            "height": 0.31
+          }
+        ]
+      },
+      "after": {
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.268359,
+            "top": 0.375,
+            "width": 0.321641,
+            "height": 0.31
+          }
+        ]
+      },
+      "reason": "Длинный усик от головы влево выходит за левую границу."
+    },
+    {
+      "photo_id": "688517685",
+      "split": "controls",
+      "before": {
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.083,
+            "top": 0.283,
+            "width": 0.472,
+            "height": 0.527
+          }
+        ]
+      },
+      "after": {
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.083,
+            "top": 0.283,
+            "width": 0.555148,
+            "height": 0.527
+          }
+        ]
+      },
+      "reason": "Правая передняя лапка и часть нижних лапок выходят за правую границу."
+    },
+    {
+      "photo_id": "761344683",
+      "split": "controls",
+      "before": {
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.375,
+            "top": 0.3,
+            "width": 0.22,
+            "height": 0.44
+          }
+        ]
+      },
+      "after": {
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.286157,
+            "top": 0.3,
+            "width": 0.308843,
+            "height": 0.44
+          }
+        ]
+      },
+      "reason": "Голова и оба усика выходят за левую границу."
+    },
+    {
+      "photo_id": "761321807",
+      "split": "controls",
+      "before": {
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.36,
+            "top": 0.36,
+            "width": 0.295,
+            "height": 0.415
+          }
+        ]
+      },
+      "after": {
+        "status": "boxes",
+        "boxes": [
+          {
+            "left": 0.311064,
+            "top": 0.36,
+            "width": 0.343936,
+            "height": 0.415
+          }
+        ]
+      },
+      "reason": "Оба усика выходят далеко за левую границу рамки."
+    }
+  ],
+  "rechecked_without_change": {
+    "761312810": "На увеличении видимые части внутри рамки; скрытые цветком части не достраиваем.",
+    "762096515": "Размечаем различимую часть моли; тень над ней не включаем."
+  },
+  "followup_reviews": [
+    {
+      "at": "2026-11-15T17:58:13.699517+00:00",
+      "source": "assistant_visual_review_requested_by_user",
+      "changed": [
+        {
+          "photo_id": "761386447",
+          "split": "exam",
+          "before": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.365,
+                "top": 0.19,
+                "width": 0.625,
+                "height": 0.595
+              }
+            ]
+          },
+          "after": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.39,
+                "top": 0.225,
+                "width": 0.57,
+                "height": 0.56
+              }
+            ]
+          },
+          "reason": "Убраны избыточные поля сверху, слева и справа; оба видимых усика сохранены."
+        },
+        {
+          "photo_id": "762235975",
+          "split": "controls",
+          "before": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.16,
+                "top": 0.14,
+                "width": 0.735,
+                "height": 0.78
+              }
+            ]
+          },
+          "after": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.16,
+                "top": 0.18,
+                "width": 0.735,
+                "height": 0.71
+              }
+            ]
+          },
+          "reason": "Уменьшены верхнее и нижнее поля; длинный правый усик и задние лапки сохранены."
+        },
+        {
+          "photo_id": "760483993",
+          "split": "controls",
+          "before": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.25,
+                "top": 0.35,
+                "width": 0.4,
+                "height": 0.375
+              }
+            ]
+          },
+          "after": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.25,
+                "top": 0.245,
+                "width": 0.4,
+                "height": 0.48
+              }
+            ]
+          },
+          "reason": "В рамку включён ранее пропущенный верхний усик."
+        },
+        {
+          "photo_id": "762613770",
+          "split": "controls",
+          "before": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.43,
+                "top": 0.31,
+                "width": 0.19,
+                "height": 0.37
+              }
+            ]
+          },
+          "after": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.437,
+                "top": 0.31,
+                "width": 0.183,
+                "height": 0.353
+              }
+            ]
+          },
+          "reason": "Уменьшен запас слева и снизу; усики и правая лапка сохранены."
+        },
+        {
+          "photo_id": "761729799",
+          "split": "controls",
+          "before": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.095,
+                "top": 0.34,
+                "width": 0.585,
+                "height": 0.45
+              }
+            ]
+          },
+          "after": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.22,
+                "top": 0.285,
+                "width": 0.46,
+                "height": 0.45
+              }
+            ]
+          },
+          "reason": "Убраны лишние части листа слева и снизу; верхняя граница учитывает тонкие усики."
+        },
+        {
+          "photo_id": "684748055",
+          "split": "controls",
+          "before": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.37,
+                "top": 0.34,
+                "width": 0.22,
+                "height": 0.405
+              }
+            ]
+          },
+          "after": {
+            "status": "boxes",
+            "boxes": [
+              {
+                "left": 0.37,
+                "top": 0.365,
+                "width": 0.22,
+                "height": 0.38
+              }
+            ]
+          },
+          "reason": "Верхняя граница приближена к видимым усикам; лапки на цветке сохранены."
+        }
+      ],
+      "unchanged": {
+        "761344683": "Левая граница включает усики, за правой границей тень; сдвиг рамки не требуется."
+      }
+    }
+  ]
+}

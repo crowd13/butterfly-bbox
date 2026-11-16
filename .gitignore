@@ -9,3 +9,19 @@ data/review.html
 data/decisions*.csv
 data/*.tmp
 data/*.part
+
+# Keep live run state private; version only the final export for review.
+crowd/bbox/runs/*
+!crowd/bbox/runs/final/
+crowd/bbox/runs/final/*
+!crowd/bbox/runs/final/README.md
+!crowd/bbox/runs/final/result.json
+!crowd/bbox/runs/final/review.json
+!crowd/bbox/runs/final/controls.json
+!crowd/bbox/runs/final/exam.json
+!crowd/bbox/runs/final/assignments.json
+!crowd/bbox/runs/final/coverage.json
+!crowd/bbox/runs/final/index.html
+crowd/bbox/token
+crowd/bbox/token2
+.ruff_cache/

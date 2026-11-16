@@ -1,0 +1,3346 @@
+[
+  {
+    "answer_id": "000068c651--6afad8152676605b3c947c36:1",
+    "photo_id": "761481875",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761481875/original.jpg",
+    "width": 2048,
+    "height": 1427,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.15945730915790796,
+          "top": 0.22116049160131013,
+          "width": 0.6713286713286715,
+          "height": 0.5673247393251
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "a844b1e972b8bf46aad4feaff38d09c1",
+    "assignment_id": "000068c651--6afad8152676605b3c947c36",
+    "task_id": "f6b0795e-4dde-46c7-94dc-b26c6dd85fd1",
+    "task_suite_id": "000068c651--6afa27b5db278736078cf490",
+    "pool_id": "6866513",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:17:38.839",
+    "created": "2026-11-16T10:16:53.855",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c651--6afad843b5e35b0d9cabb36f:1",
+    "photo_id": "762509532",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762509532/original.jpg",
+    "width": 1152,
+    "height": 2048,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.4341880341880342,
+          "top": 0.4442307692307692,
+          "width": 0.32136752136752134,
+          "height": 0.19807692307692315
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "a844b1e972b8bf46aad4feaff38d09c1",
+    "assignment_id": "000068c651--6afad843b5e35b0d9cabb36f",
+    "task_id": "5ff9e1a0-c916-41c8-bf7d-f226272586fc",
+    "task_suite_id": "000068c651--6afa27b5db278736078cf474",
+    "pool_id": "6866513",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:18:42.394",
+    "created": "2026-11-16T10:17:39.113",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c651--6afad864f006a13bf9ec6dba:0",
+    "photo_id": "762700796",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762700796/original.jpg",
+    "width": 2048,
+    "height": 1536,
+    "role": "controls",
+    "solution": {
+      "status": "no_butterflies",
+      "boxes": []
+    },
+    "validation_error": null,
+    "worker_id": "08eabc06e5466d8b9015c1d2e65a9598",
+    "assignment_id": "000068c651--6afad864f006a13bf9ec6dba",
+    "task_id": "8450589d-5306-43a5-b39b-1de9ccf3ec5a",
+    "task_suite_id": "000068c651--6afa27b5db278736078cf498",
+    "pool_id": "6866513",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:18:54.918",
+    "created": "2026-11-16T10:18:12.448",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c651--6afad86e2676605b3c948a35:2",
+    "photo_id": "761287454",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761287454/original.jpg",
+    "width": 2048,
+    "height": 1638,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.28762316750781064,
+          "top": 0.13269629496078608,
+          "width": 0.42297524633501565,
+          "height": 0.6057874335166321
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "672c7b2d9274681ad5828203e3178de4",
+    "assignment_id": "000068c651--6afad86e2676605b3c948a35",
+    "task_id": "e107e664-bd28-4f14-b941-6213559fccc1",
+    "task_suite_id": "000068c651--6afa27b5db278736078cf480",
+    "pool_id": "6866513",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:19:19.365",
+    "created": "2026-11-16T10:18:22.677",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c651--6afad872b7895576f95b4534:1",
+    "photo_id": "762713586",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762713586/original.jpg",
+    "width": 2048,
+    "height": 1536,
+    "role": "controls",
+    "solution": {
+      "status": "no_butterflies",
+      "boxes": []
+    },
+    "validation_error": null,
+    "worker_id": "a903149f4c989fd3702bdf7345eb12ac",
+    "assignment_id": "000068c651--6afad872b7895576f95b4534",
+    "task_id": "454bbbd2-69a8-453e-8d5c-0652ebea0995",
+    "task_suite_id": "000068c651--6afa27b5db278736078cf48c",
+    "pool_id": "6866513",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:20:38.996",
+    "created": "2026-11-16T10:18:26.089",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c651--6afad878e8f3154fe8651cb1:1",
+    "photo_id": "699296200",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/699296200/original.jpg",
+    "width": 1752,
+    "height": 2048,
+    "role": "controls",
+    "solution": {
+      "status": "no_butterflies",
+      "boxes": []
+    },
+    "validation_error": null,
+    "worker_id": "1ea4f2d45c487604e2d13fb5599e5cb1",
+    "assignment_id": "000068c651--6afad878e8f3154fe8651cb1",
+    "task_id": "54ef4745-90d1-4d0e-ba58-e50496e7280e",
+    "task_suite_id": "000068c651--6afa27b5db278736078cf494",
+    "pool_id": "6866513",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:19:18.445",
+    "created": "2026-11-16T10:18:32.272",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c651--6afad8828ea2184b82889d4f:3",
+    "photo_id": "762208225",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762208225/original.jpg",
+    "width": 1536,
+    "height": 2048,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.13846153846153847,
+          "top": 0.14807692307692308,
+          "width": 0.6538461538461537,
+          "height": 0.5115384615384615
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "a844b1e972b8bf46aad4feaff38d09c1",
+    "assignment_id": "000068c651--6afad8828ea2184b82889d4f",
+    "task_id": "df906159-6a5d-472d-91c7-ccdb06f53088",
+    "task_suite_id": "000068c651--6afa27b5db278736078cf47c",
+    "pool_id": "6866513",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:19:06.142",
+    "created": "2026-11-16T10:18:42.992",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c651--6afad88fb5e35b0d9cabbfa9:3",
+    "photo_id": "761346903",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761346903/original.jpg",
+    "width": 2048,
+    "height": 1596,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.36117550638098583,
+          "top": 0.19808287508639083,
+          "width": 0.3491862779534013,
+          "height": 0.46539859971753955
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "08eabc06e5466d8b9015c1d2e65a9598",
+    "assignment_id": "000068c651--6afad88fb5e35b0d9cabbfa9",
+    "task_id": "42dc62e9-94e8-4573-9b54-53f03f4b374a",
+    "task_suite_id": "000068c651--6afa27b5db278736078cf488",
+    "pool_id": "6866513",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:19:37.461",
+    "created": "2026-11-16T10:18:55.355",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c651--6afad8912f8c38133610b88f:2",
+    "photo_id": "761729799",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761729799/original.jpg",
+    "width": 1500,
+    "height": 1200,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.22615384615384615,
+          "top": 0.3192307692307692,
+          "width": 0.4507692307692308,
+          "height": 0.42692307692307696
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "4a85d12b475c51de8d2daa41f2410b8b",
+    "assignment_id": "000068c651--6afad8912f8c38133610b88f",
+    "task_id": "bed4967d-efdc-4c1c-a8ba-98df3a170189",
+    "task_suite_id": "000068c651--6afa27b5db278736078cf478",
+    "pool_id": "6866513",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:24:13.421",
+    "created": "2026-11-16T10:18:57.902",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c651--6afad894b7895576f95b4b2f:1",
+    "photo_id": "761340883",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761340883/original.jpg",
+    "width": 1909,
+    "height": 1638,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.33311019754500054,
+          "top": 0.344915384546162,
+          "width": 0.2673298790480933,
+          "height": 0.27339182121691474
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "a00ee2db3892155a13983d85cfd3f1b6",
+    "assignment_id": "000068c651--6afad894b7895576f95b4b2f",
+    "task_id": "29cb3bc7-f005-4e82-961e-1c1a354d97d6",
+    "task_suite_id": "000068c651--6afa27b5db278736078cf484",
+    "pool_id": "6866513",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:19:56.489",
+    "created": "2026-11-16T10:19:00.944",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afadfd22f8c38133612245a:4",
+    "photo_id": "762574511",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762574511/original.jpg",
+    "width": 2048,
+    "height": 1365,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.28967397613879875,
+          "top": 0.30769974088778945,
+          "width": 0.38964988478080187,
+          "height": 0.316930679413931
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "c08babc045295590657b6f710a184dae",
+    "assignment_id": "000068c652--6afadfd22f8c38133612245a",
+    "task_id": "fda9ade1-eeda-4fa2-ab01-836d08027225",
+    "task_suite_id": "000068c652--6afa27b90e9fca0f8380a708",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:53:14.330",
+    "created": "2026-11-16T10:49:54.806",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afadfd4e989e73b442fda05:3",
+    "photo_id": "762703651",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762703651/original.jpg",
+    "width": 2048,
+    "height": 1536,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.32163703152818157,
+          "top": 0.1730821238618949,
+          "width": 0.5048114844612714,
+          "height": 0.7211755160912287
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "cd58222fd71d31871b41341323918dc9",
+    "assignment_id": "000068c652--6afadfd4e989e73b442fda05",
+    "task_id": "1a6f1f75-255a-4ced-b7fb-2f345d07f1b6",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a7af",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:50:51.442",
+    "created": "2026-11-16T10:49:56.370",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 0,
+      "failed": true
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afadfdee989e73b442fdb6d:1",
+    "photo_id": "761344683",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761344683/original.jpg",
+    "width": 2048,
+    "height": 1552,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.28705098132669976,
+          "top": 0.301141839916421,
+          "width": 0.33209589857474503,
+          "height": 0.44056747845165384
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "16c3f3a25fdf5865d44ea8b18b43326b",
+    "assignment_id": "000068c652--6afadfdee989e73b442fdb6d",
+    "task_id": "50056604-5535-4ee5-ad88-e51140c887e5",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a7ec",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:52:05.267",
+    "created": "2026-11-16T10:50:06.723",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afadfe827a75f4e4f4e78ca:4",
+    "photo_id": "762645178",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762645178/original.jpg",
+    "width": 2048,
+    "height": 1749,
+    "role": "controls",
+    "solution": {
+      "status": "no_butterflies",
+      "boxes": []
+    },
+    "validation_error": null,
+    "worker_id": "672c7b2d9274681ad5828203e3178de4",
+    "assignment_id": "000068c652--6afadfe827a75f4e4f4e78ca",
+    "task_id": "5378af0f-03a7-49bc-86f3-921b33a43a01",
+    "task_suite_id": "000068c652--6afa27b90e9fca0f8380a763",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:51:14.720",
+    "created": "2026-11-16T10:50:16.707",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae00b8ea2184b8289ee8b:0",
+    "photo_id": "761003491",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761003491/original.jpg",
+    "width": 2048,
+    "height": 1325,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.08584925834483563,
+          "top": 0.0769253883830644,
+          "width": 0.8410738933494042,
+          "height": 0.8115628474413293
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "cd58222fd71d31871b41341323918dc9",
+    "assignment_id": "000068c652--6afae00b8ea2184b8289ee8b",
+    "task_id": "96611ca1-fb53-4c7d-b267-4aaef72b803a",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a810",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:51:28.507",
+    "created": "2026-11-16T10:50:51.783",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 0,
+      "failed": true
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae01c8a82a107ce845a3a:3",
+    "photo_id": "762274044",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762274044/original.jpg",
+    "width": 1164,
+    "height": 1552,
+    "role": "controls",
+    "solution": {
+      "status": "no_butterflies",
+      "boxes": []
+    },
+    "validation_error": null,
+    "worker_id": "08eabc06e5466d8b9015c1d2e65a9598",
+    "assignment_id": "000068c652--6afae01c8a82a107ce845a3a",
+    "task_id": "a457484d-4d66-45a0-8a4c-76770e3b4dc3",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a79b",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:53:06.631",
+    "created": "2026-11-16T10:51:08.841",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae01d2676605b3c962b1e:3",
+    "photo_id": "760425692",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/760425692/original.jpg",
+    "width": 1365,
+    "height": 2048,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.27892155964926524,
+          "top": 0.3474498432331429,
+          "width": 0.4539689245861094,
+          "height": 0.31796140522169614
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "1ea4f2d45c487604e2d13fb5599e5cb1",
+    "assignment_id": "000068c652--6afae01d2676605b3c962b1e",
+    "task_id": "dd6feb34-f5a2-4c5a-8f08-d0b19b332dea",
+    "task_suite_id": "000068c652--6afa27b80e9fca0f8380a6e4",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:52:07.796",
+    "created": "2026-11-16T10:51:09.996",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae024b5e35b0d9cad0a4b:4",
+    "photo_id": "762712678",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762712678/original.jpg",
+    "width": 2048,
+    "height": 1536,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.27548283866315104,
+          "top": 0.18846720153850777,
+          "width": 0.4687535212854663,
+          "height": 0.41924336668770096
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "672c7b2d9274681ad5828203e3178de4",
+    "assignment_id": "000068c652--6afae024b5e35b0d9cad0a4b",
+    "task_id": "530f2d5c-2b62-483d-9207-02cb5bbc4927",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a78f",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:52:06.013",
+    "created": "2026-11-16T10:51:16.045",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae0302f8c381336123ab3:0",
+    "photo_id": "760487198",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/760487198/original.jpg",
+    "width": 1536,
+    "height": 2048,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.3299145299145299,
+          "top": 0.44743589743589746,
+          "width": 0.3760683760683761,
+          "height": 0.24487179487179483
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "cd58222fd71d31871b41341323918dc9",
+    "assignment_id": "000068c652--6afae0302f8c381336123ab3",
+    "task_id": "bfc647b1-5499-4300-969b-a06bb07650ef",
+    "task_suite_id": "000068c652--6afa27b90e9fca0f8380a753",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:52:13.023",
+    "created": "2026-11-16T10:51:28.929",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 0,
+      "failed": true
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae0558ea2184b8289fbad:3",
+    "photo_id": "761761078",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761761078/original.jpg",
+    "width": 1500,
+    "height": 1200,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.18881117894099309,
+          "top": 0.19509397653432992,
+          "width": 0.6013986206054688,
+          "height": 0.5909090188833384
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "16c3f3a25fdf5865d44ea8b18b43326b",
+    "assignment_id": "000068c652--6afae0558ea2184b8289fbad",
+    "task_id": "0de5661f-0b96-437e-8c0e-4f35981d93f8",
+    "task_suite_id": "000068c652--6afa27b90e9fca0f8380a700",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:53:12.806",
+    "created": "2026-11-16T10:52:05.772",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae05657179663f8b79309:3",
+    "photo_id": "761344699",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761344699/original.jpg",
+    "width": 2048,
+    "height": 1604,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.28918384637108163,
+          "top": 0.24808437753538268,
+          "width": 0.35093664689823967,
+          "height": 0.40962769313981784
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "672c7b2d9274681ad5828203e3178de4",
+    "assignment_id": "000068c652--6afae05657179663f8b79309",
+    "task_id": "afe4a1a1-f035-4807-a452-6ee1aebff499",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a7f3",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:53:09.995",
+    "created": "2026-11-16T10:52:06.337",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae058e8f3154fe86678ef:1",
+    "photo_id": "762129659",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762129659/original.jpg",
+    "width": 1616,
+    "height": 1080,
+    "role": "controls",
+    "solution": {
+      "status": "no_butterflies",
+      "boxes": []
+    },
+    "validation_error": null,
+    "worker_id": "1ea4f2d45c487604e2d13fb5599e5cb1",
+    "assignment_id": "000068c652--6afae058e8f3154fe86678ef",
+    "task_id": "501ab75d-13fc-4481-a031-7a47d0d6dca5",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a7b3",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:53:09.775",
+    "created": "2026-11-16T10:52:08.068",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae05d27a75f4e4f4e9138:0",
+    "photo_id": "762129751",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762129751/original.jpg",
+    "width": 1616,
+    "height": 1080,
+    "role": "controls",
+    "solution": {
+      "status": "no_butterflies",
+      "boxes": []
+    },
+    "validation_error": null,
+    "worker_id": "cd58222fd71d31871b41341323918dc9",
+    "assignment_id": "000068c652--6afae05d27a75f4e4f4e9138",
+    "task_id": "54af1506-087c-4df2-8fed-a559ad41b8b9",
+    "task_suite_id": "000068c652--6afa27b90e9fca0f8380a743",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:53:06.915",
+    "created": "2026-11-16T10:52:13.513",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 0,
+      "failed": true
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae062e989e73b442ff0de:2",
+    "photo_id": "761346903",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761346903/original.jpg",
+    "width": 2048,
+    "height": 1596,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.35967685282753775,
+          "top": 0.20000600979596742,
+          "width": 0.3536822386137454,
+          "height": 0.4211665013972776
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "a4d1de54603582af0c929715836bd877",
+    "assignment_id": "000068c652--6afae062e989e73b442ff0de",
+    "task_id": "d597a66d-143a-4390-8e6f-3ce33fd87eb1",
+    "task_suite_id": "000068c652--6afa27b90e9fca0f8380a75f",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:53:05.117",
+    "created": "2026-11-16T10:52:18.601",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae077f006a13bf9edcb3a:4",
+    "photo_id": "762235975",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762235975/original.jpg",
+    "width": 1280,
+    "height": 880,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.15424872091959188,
+          "top": 0.17598749676473505,
+          "width": 0.7477390848658009,
+          "height": 0.6730993221936534
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "1a7dff01de3a48a8f2e0d253d70a5b98",
+    "assignment_id": "000068c652--6afae077f006a13bf9edcb3a",
+    "task_id": "e214d35c-e57b-4c75-a186-adbeafe86e3e",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a7df",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:53:43.926",
+    "created": "2026-11-16T10:52:39.052",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae0912676605b3c9643b5:4",
+    "photo_id": "762277068",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762277068/original.jpg",
+    "width": 2048,
+    "height": 1427,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.3055148444370001,
+          "top": 0.2326992998587698,
+          "width": 0.6364892592437503,
+          "height": 0.6577120706752005
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "a4d1de54603582af0c929715836bd877",
+    "assignment_id": "000068c652--6afae0912676605b3c9643b5",
+    "task_id": "d122ff5a-86ca-416e-a407-b43cccbd8a00",
+    "task_suite_id": "000068c652--6afa27b90e9fca0f8380a710",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:53:42.747",
+    "created": "2026-11-16T10:53:05.497",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae0932f8c381336125201:0",
+    "photo_id": "761287454",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761287454/original.jpg",
+    "width": 2048,
+    "height": 1638,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.24609468877673635,
+          "top": 0.13846569908951592,
+          "width": 0.4629656332612353,
+          "height": 0.6038642988070555
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "08eabc06e5466d8b9015c1d2e65a9598",
+    "assignment_id": "000068c652--6afae0932f8c381336125201",
+    "task_id": "98e0c4b8-9ed9-4dbf-b2e5-1b3ea1457316",
+    "task_suite_id": "000068c652--6afa27b80e9fca0f8380a6b8",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:54:01.032",
+    "created": "2026-11-16T10:53:07.559",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae093e989e73b442ff835:4",
+    "photo_id": "760483993",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/760483993/original.jpg",
+    "width": 1180,
+    "height": 1645,
+    "role": "controls",
+    "solution": {
+      "status": "no_butterflies",
+      "boxes": []
+    },
+    "validation_error": null,
+    "worker_id": "cd58222fd71d31871b41341323918dc9",
+    "assignment_id": "000068c652--6afae093e989e73b442ff835",
+    "task_id": "dada1a1e-3767-447f-88bd-e5668bfe03e5",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a79f",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:53:39.285",
+    "created": "2026-11-16T10:53:07.309",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 0,
+      "failed": true
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae0968a82a107ce847679:0",
+    "photo_id": "762630429",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762630429/original.jpg",
+    "width": 1536,
+    "height": 2048,
+    "role": "controls",
+    "solution": {
+      "status": "no_butterflies",
+      "boxes": []
+    },
+    "validation_error": null,
+    "worker_id": "1ea4f2d45c487604e2d13fb5599e5cb1",
+    "assignment_id": "000068c652--6afae0968a82a107ce847679",
+    "task_id": "e02c3fad-827a-4830-83dc-932580c2a8ed",
+    "task_suite_id": "000068c652--6afa27b80e9fca0f8380a6c0",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:54:30.776",
+    "created": "2026-11-16T10:53:10.046",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae0978a82a107ce8476df:0",
+    "photo_id": "762634568",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762634568/original.jpg",
+    "width": 1536,
+    "height": 2048,
+    "role": "controls",
+    "solution": {
+      "status": "no_butterflies",
+      "boxes": []
+    },
+    "validation_error": null,
+    "worker_id": "672c7b2d9274681ad5828203e3178de4",
+    "assignment_id": "000068c652--6afae0978a82a107ce8476df",
+    "task_id": "7671497a-468f-47ea-8662-d6a2b34033a1",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a78b",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:54:12.766",
+    "created": "2026-11-16T10:53:11.125",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae09a27a75f4e4f4e9b7f:4",
+    "photo_id": "761901411",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761901411/original.jpg",
+    "width": 2047,
+    "height": 2048,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.22373214363562696,
+          "top": 0.33526175556323085,
+          "width": 0.48947976823643247,
+          "height": 0.32756261805331727
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "c08babc045295590657b6f710a184dae",
+    "assignment_id": "000068c652--6afae09a27a75f4e4f4e9b7f",
+    "task_id": "1162f814-6c6d-4f21-a1b3-28fb281582fe",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a783",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:54:43.685",
+    "created": "2026-11-16T10:53:14.733",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae09a2f8c381336125382:2",
+    "photo_id": "699296200",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/699296200/original.jpg",
+    "width": 1752,
+    "height": 2048,
+    "role": "controls",
+    "solution": {
+      "status": "no_butterflies",
+      "boxes": []
+    },
+    "validation_error": null,
+    "worker_id": "16c3f3a25fdf5865d44ea8b18b43326b",
+    "assignment_id": "000068c652--6afae09a2f8c381336125382",
+    "task_id": "062bb74a-a879-4c82-b98f-e49c299e8ea7",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a797",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:54:14.178",
+    "created": "2026-11-16T10:53:14.548",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae0a2e8f3154fe866863c:3",
+    "photo_id": "761312810",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761312810/original.jpg",
+    "width": 1536,
+    "height": 2048,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.382051282051282,
+          "top": 0.325,
+          "width": 0.26410256410256416,
+          "height": 0.3019230769230769
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "4a85d12b475c51de8d2daa41f2410b8b",
+    "assignment_id": "000068c652--6afae0a2e8f3154fe866863c",
+    "task_id": "66e7eae4-cc8d-4275-bf29-f678b000919b",
+    "task_suite_id": "000068c652--6afa27b90e9fca0f8380a704",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:55:15.334",
+    "created": "2026-11-16T10:53:22.768",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae0b32676605b3c964920:3",
+    "photo_id": "762208225",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762208225/original.jpg",
+    "width": 1536,
+    "height": 2048,
+    "role": "controls",
+    "solution": {
+      "status": "no_butterflies",
+      "boxes": []
+    },
+    "validation_error": null,
+    "worker_id": "cd58222fd71d31871b41341323918dc9",
+    "assignment_id": "000068c652--6afae0b32676605b3c964920",
+    "task_id": "83b2eebd-0251-41ea-8a80-abd6ff825262",
+    "task_suite_id": "000068c652--6afa27b90e9fca0f8380a734",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:54:20.273",
+    "created": "2026-11-16T10:53:39.571",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 0,
+      "failed": true
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae0b72676605b3c964998:1",
+    "photo_id": "762509532",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762509532/original.jpg",
+    "width": 1152,
+    "height": 2048,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.41253561253561255,
+          "top": 0.43974358974358974,
+          "width": 0.32820512820512815,
+          "height": 0.19999999999999996
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "a4d1de54603582af0c929715836bd877",
+    "assignment_id": "000068c652--6afae0b72676605b3c964998",
+    "task_id": "8f8cabea-1a35-4b5c-abc1-1f0210639c44",
+    "task_suite_id": "000068c652--6afa27b90e9fca0f8380a720",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:54:21.945",
+    "created": "2026-11-16T10:53:43.113",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae0b82f8c381336125a92:0",
+    "photo_id": "762683666",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762683666/original.jpg",
+    "width": 1474,
+    "height": 1562,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.031701139524506226,
+          "top": 0.051250382216108066,
+          "width": 0.9193319889359307,
+          "height": 0.9166973124265279
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "1a7dff01de3a48a8f2e0d253d70a5b98",
+    "assignment_id": "000068c652--6afae0b82f8c381336125a92",
+    "task_id": "a30fb0a4-19e4-405f-93ef-e9c1cedfca7b",
+    "task_suite_id": "000068c652--6afa27b80e9fca0f8380a6b0",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:56:12.221",
+    "created": "2026-11-16T10:53:44.340",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae0bce989e73b44300087:0",
+    "photo_id": "761028483",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761028483/original.jpg",
+    "width": 1909,
+    "height": 1633,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.11022002878881348,
+          "top": 0.14423510321824573,
+          "width": 0.700801974090068,
+          "height": 0.6288650500315515
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "3ba47bf88ae4905e4a17fa9439346fab",
+    "assignment_id": "000068c652--6afae0bce989e73b44300087",
+    "task_id": "88e54858-1662-4857-a393-2228ac3fa9bc",
+    "task_suite_id": "000068c652--6afa27b90e9fca0f8380a71c",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:55:39.261",
+    "created": "2026-11-16T10:53:48.998",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae0c935e56c2ff824611d:2",
+    "photo_id": "720383621",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/720383621/original.jpg",
+    "width": 2048,
+    "height": 1483,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.030636001653647816,
+          "top": 0,
+          "width": 0.9693639983463522,
+          "height": 0.946182277111692
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "08eabc06e5466d8b9015c1d2e65a9598",
+    "assignment_id": "000068c652--6afae0c935e56c2ff824611d",
+    "task_id": "9781ecd9-d870-43dd-a272-2f62c7a45dd1",
+    "task_suite_id": "000068c652--6afa27b90e9fca0f8380a70c",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:54:48.718",
+    "created": "2026-11-16T10:54:01.547",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae0d535e56c2ff8246387:0",
+    "photo_id": "762597380",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762597380/original.jpg",
+    "width": 2048,
+    "height": 1536,
+    "role": "controls",
+    "solution": {
+      "status": "no_butterflies",
+      "boxes": []
+    },
+    "validation_error": null,
+    "worker_id": "672c7b2d9274681ad5828203e3178de4",
+    "assignment_id": "000068c652--6afae0d535e56c2ff8246387",
+    "task_id": "ff0611c1-f056-4659-99e5-9de96ff7378a",
+    "task_suite_id": "000068c652--6afa27b80e9fca0f8380a6d8",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:55:07.721",
+    "created": "2026-11-16T10:54:13.473",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae0d635e56c2ff82463d3:2",
+    "photo_id": "762240768",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762240768/original.jpg",
+    "width": 1152,
+    "height": 2048,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.40473106797264513,
+          "top": 0.2793196262457432,
+          "width": 0.3149442812203229,
+          "height": 0.23387723743406114
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "16c3f3a25fdf5865d44ea8b18b43326b",
+    "assignment_id": "000068c652--6afae0d635e56c2ff82463d3",
+    "task_id": "4b1d7d55-9885-47b3-8696-b6743b5f0e1a",
+    "task_suite_id": "000068c652--6afa27b80e9fca0f8380a6b4",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:55:36.839",
+    "created": "2026-11-16T10:54:14.677",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae0dc8a82a107ce848a3c:1",
+    "photo_id": "762713586",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762713586/original.jpg",
+    "width": 2048,
+    "height": 1536,
+    "role": "controls",
+    "solution": {
+      "status": "no_butterflies",
+      "boxes": []
+    },
+    "validation_error": null,
+    "worker_id": "cd58222fd71d31871b41341323918dc9",
+    "assignment_id": "000068c652--6afae0dc8a82a107ce848a3c",
+    "task_id": "ce076972-2942-40b6-b9da-e35a37d6decc",
+    "task_suite_id": "000068c652--6afa27b80e9fca0f8380a6c8",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:54:52.343",
+    "created": "2026-11-16T10:54:20.772",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 0,
+      "failed": true
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae0dee989e73b4430068a:2",
+    "photo_id": "762238129",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762238129/original.jpg",
+    "width": 2048,
+    "height": 1536,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.12259707479773736,
+          "top": 0.2326992998587698,
+          "width": 0.762986500800036,
+          "height": 0.5884792211304426
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "a4d1de54603582af0c929715836bd877",
+    "assignment_id": "000068c652--6afae0dee989e73b4430068a",
+    "task_id": "73d1b760-a84e-478b-aed4-983c4bfd22ba",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a801",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:55:14.026",
+    "created": "2026-11-16T10:54:22.509",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae0e757179663f8b7ad77:3",
+    "photo_id": "762613770",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762613770/original.jpg",
+    "width": 2048,
+    "height": 1536,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.42884615435402773,
+          "top": 0.31666668745187615,
+          "width": 0.19230765167778296,
+          "height": 0.36153846153846153
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "1ea4f2d45c487604e2d13fb5599e5cb1",
+    "assignment_id": "000068c652--6afae0e757179663f8b7ad77",
+    "task_id": "b3001ebe-d8bb-4974-a85b-e04cd085707d",
+    "task_suite_id": "000068c652--6afa27b90e9fca0f8380a75b",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:55:17.798",
+    "created": "2026-11-16T10:54:31.361",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae0f4e8f3154fe86695b6:4",
+    "photo_id": "762026765",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762026765/original.jpg",
+    "width": 1536,
+    "height": 2048,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.2766951601729434,
+          "top": 0.3767521524021768,
+          "width": 0.28717952195735397,
+          "height": 0.30632476806640624
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "c08babc045295590657b6f710a184dae",
+    "assignment_id": "000068c652--6afae0f4e8f3154fe86695b6",
+    "task_id": "d9d02f1e-bcbc-4135-98e0-ff901f811361",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a7d3",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:57:10.101",
+    "created": "2026-11-16T10:54:44.562",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae0f98a82a107ce8491bc:2",
+    "photo_id": "761352421",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761352421/original.jpg",
+    "width": 2048,
+    "height": 1445,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.2428816757478746,
+          "top": 0.18654406682893115,
+          "width": 0.4464138062628533,
+          "height": 0.56155533519637
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "08eabc06e5466d8b9015c1d2e65a9598",
+    "assignment_id": "000068c652--6afae0f98a82a107ce8491bc",
+    "task_id": "0074f984-bf3b-437a-999a-01c55fb119c7",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a7bf",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:55:33.006",
+    "created": "2026-11-16T10:54:49.117",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae10bf006a13bf9ede345:1",
+    "photo_id": "761918220",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761918220/original.jpg",
+    "width": 1809,
+    "height": 1809,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.038461538461538464,
+          "top": 0.18653846153846154,
+          "width": 0.9346153846153846,
+          "height": 0.8134615384615385
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "672c7b2d9274681ad5828203e3178de4",
+    "assignment_id": "000068c652--6afae10bf006a13bf9ede345",
+    "task_id": "da59ae39-9834-421f-b236-f8e003691897",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a7cb",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:56:08.001",
+    "created": "2026-11-16T10:55:07.987",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae10eb7895576f95cd9a7:0",
+    "photo_id": "761504261",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761504261/original.jpg",
+    "width": 1536,
+    "height": 2048,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.2145726521809896,
+          "top": 0.4503525660588191,
+          "width": 0.691025641025641,
+          "height": 0.36750001173753
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "4e73fa4f20bda89547104cd0e523a96b",
+    "assignment_id": "000068c652--6afae10eb7895576f95cd9a7",
+    "task_id": "71baa744-883d-4cc6-a2f0-749f8936e788",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a7c7",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:57:15.951",
+    "created": "2026-11-16T10:55:10.577",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae112e8f3154fe8669c23:1",
+    "photo_id": "761305005",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761305005/original.jpg",
+    "width": 2048,
+    "height": 1536,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.30577152773082733,
+          "top": 0.25000751224495926,
+          "width": 0.35336803912289,
+          "height": 0.3000090146939512
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "a4d1de54603582af0c929715836bd877",
+    "assignment_id": "000068c652--6afae112e8f3154fe8669c23",
+    "task_id": "b365a3ab-b87a-490d-9037-da67579c857d",
+    "task_suite_id": "000068c652--6afa27b90e9fca0f8380a730",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:56:01.702",
+    "created": "2026-11-16T10:55:14.429",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae1132676605b3c965a43:1",
+    "photo_id": "762649604",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762649604/original.jpg",
+    "width": 1536,
+    "height": 2048,
+    "role": "controls",
+    "solution": {
+      "status": "no_butterflies",
+      "boxes": []
+    },
+    "validation_error": null,
+    "worker_id": "4a85d12b475c51de8d2daa41f2410b8b",
+    "assignment_id": "000068c652--6afae1132676605b3c965a43",
+    "task_id": "848854fa-64e3-430b-9f63-b3784c0f39f1",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a7fc",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:57:07.575",
+    "created": "2026-11-16T10:55:15.644",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae1172676605b3c965b20:0",
+    "photo_id": "762273500",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762273500/original.jpg",
+    "width": 2048,
+    "height": 1152,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.5170712332061093,
+          "top": 0.1589775262896575,
+          "width": 0.32452166858224596,
+          "height": 0.49488167453292503
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "1ea4f2d45c487604e2d13fb5599e5cb1",
+    "assignment_id": "000068c652--6afae1172676605b3c965b20",
+    "task_id": "cab00e74-7e4a-4c2a-8f49-dbf717817643",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a81c",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:56:34.367",
+    "created": "2026-11-16T10:55:19.805",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae12535e56c2ff8247268:3",
+    "photo_id": "761770628",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761770628/original.jpg",
+    "width": 1536,
+    "height": 2048,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.44871794871794873,
+          "top": 0.22884615384615384,
+          "width": 0.3153846153846153,
+          "height": 0.18269230769230768
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "08eabc06e5466d8b9015c1d2e65a9598",
+    "assignment_id": "000068c652--6afae12535e56c2ff8247268",
+    "task_id": "a483ec23-a303-4873-ab26-a15ecad0916b",
+    "task_suite_id": "000068c652--6afa27b90e9fca0f8380a738",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:56:07.105",
+    "created": "2026-11-16T10:55:33.484",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae1298a82a107ce849b29:1",
+    "photo_id": "761340920",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761340920/original.jpg",
+    "width": 2048,
+    "height": 1652,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.34266274447036216,
+          "top": 0.270193383509113,
+          "width": 0.25828526738763424,
+          "height": 0.2579164229626298
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "16c3f3a25fdf5865d44ea8b18b43326b",
+    "assignment_id": "000068c652--6afae1298a82a107ce849b29",
+    "task_id": "db181d10-24af-409b-9002-28d3c4efe46a",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a80c",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:56:15.175",
+    "created": "2026-11-16T10:55:37.220",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae12be989e73b4430129f:1",
+    "photo_id": "761542018",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761542018/original.jpg",
+    "width": 2048,
+    "height": 1369,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.176113766922428,
+          "top": 0.22500676102046335,
+          "width": 0.6594624994978509,
+          "height": 0.5057844286186484
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "3ba47bf88ae4905e4a17fa9439346fab",
+    "assignment_id": "000068c652--6afae12be989e73b4430129f",
+    "task_id": "3096b96d-b7ff-4a0d-9746-bc0244fe60f7",
+    "task_suite_id": "000068c652--6afa27b90e9fca0f8380a77f",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:58:21.389",
+    "created": "2026-11-16T10:55:39.607",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae14257179663f8b7be76:2",
+    "photo_id": "761729775",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761729775/original.jpg",
+    "width": 1500,
+    "height": 1200,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.46923076923076923,
+          "top": 0.2230769230769231,
+          "width": 0.3092307692307692,
+          "height": 0.42307692307692313
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "a4d1de54603582af0c929715836bd877",
+    "assignment_id": "000068c652--6afae14257179663f8b7be76",
+    "task_id": "6e0ddb74-0c8d-42da-acc3-8562decf3f51",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a7e3",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:56:39.160",
+    "created": "2026-11-16T10:56:02.104",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae147e989e73b4430172c:2",
+    "photo_id": "761463933",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761463933/original.jpg",
+    "width": 1536,
+    "height": 2048,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.3769230769230769,
+          "top": 0.19807692307692307,
+          "width": 0.5538461538461539,
+          "height": 0.40576923076923077
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "08eabc06e5466d8b9015c1d2e65a9598",
+    "assignment_id": "000068c652--6afae147e989e73b4430172c",
+    "task_id": "79750a12-0518-49c5-b665-04cf79047a81",
+    "task_suite_id": "000068c652--6afa27b80e9fca0f8380a6a8",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:56:45.739",
+    "created": "2026-11-16T10:56:07.666",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae14857179663f8b7c056:4",
+    "photo_id": "761352413",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761352413/original.jpg",
+    "width": 2048,
+    "height": 1631,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.2649564468268402,
+          "top": 0.22500676102046335,
+          "width": 0.323154972719441,
+          "height": 0.3230866312088705
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "672c7b2d9274681ad5828203e3178de4",
+    "assignment_id": "000068c652--6afae14857179663f8b7c056",
+    "task_id": "912a6850-8d23-4ae3-a220-d30cff901170",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a7bb",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:56:56.605",
+    "created": "2026-11-16T10:56:08.475",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae14c8a82a107ce849ea1:4",
+    "photo_id": "761760852",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761760852/original.jpg",
+    "width": 1500,
+    "height": 1200,
+    "role": "controls",
+    "solution": {
+      "status": "no_butterflies",
+      "boxes": []
+    },
+    "validation_error": null,
+    "worker_id": "1a7dff01de3a48a8f2e0d253d70a5b98",
+    "assignment_id": "000068c652--6afae14c8a82a107ce849ea1",
+    "task_id": "941bb8eb-0c7a-40a9-a636-d31992dd7d31",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a793",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:57:48.240",
+    "created": "2026-11-16T10:56:12.718",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae1502f8c381336127e1e:3",
+    "photo_id": "762235232",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762235232/original.jpg",
+    "width": 1235,
+    "height": 930,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.19616151975799684,
+          "top": 0.09369792429015639,
+          "width": 0.6780079428502284,
+          "height": 0.767503512845376
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "16c3f3a25fdf5865d44ea8b18b43326b",
+    "assignment_id": "000068c652--6afae1502f8c381336127e1e",
+    "task_id": "cc73bac2-fc91-4afd-840c-a3d557645382",
+    "task_suite_id": "000068c652--6afa27b90e9fca0f8380a76b",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:57:44.059",
+    "created": "2026-11-16T10:56:16.005",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae16227a75f4e4f4eb9b7:0",
+    "photo_id": "761480934",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761480934/original.jpg",
+    "width": 880,
+    "height": 907,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.11892718807718314,
+          "top": 0.23333800887609735,
+          "width": 0.6554208441211294,
+          "height": 0.4923175305856792
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "1ea4f2d45c487604e2d13fb5599e5cb1",
+    "assignment_id": "000068c652--6afae16227a75f4e4f4eb9b7",
+    "task_id": "ab26bba9-4d74-4a29-81cd-1fa8707b2339",
+    "task_suite_id": "000068c652--6afa27b80e9fca0f8380a6ec",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:57:16.064",
+    "created": "2026-11-16T10:56:34.687",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae1678ea2184b828a2d4c:0",
+    "photo_id": "761898421",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761898421/original.jpg",
+    "width": 2048,
+    "height": 1910,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.12375294249523595,
+          "top": 0.192313470957661,
+          "width": 0.7748010312745208,
+          "height": 0.5134769674569548
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "a4d1de54603582af0c929715836bd877",
+    "assignment_id": "000068c652--6afae1678ea2184b828a2d4c",
+    "task_id": "eab5a733-9181-4dc3-bc6d-968c3bf1f887",
+    "task_suite_id": "000068c652--6afa27b90e9fca0f8380a76f",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:57:33.492",
+    "created": "2026-11-16T10:56:39.823",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae16ef006a13bf9edf227:3",
+    "photo_id": "760605789",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/760605789/original.jpg",
+    "width": 1536,
+    "height": 2048,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.2,
+          "top": 0.18846153846153846,
+          "width": 0.5051282051282051,
+          "height": 0.33653846153846156
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "08eabc06e5466d8b9015c1d2e65a9598",
+    "assignment_id": "000068c652--6afae16ef006a13bf9edf227",
+    "task_id": "2c332774-7b10-4109-ad7a-e5add07b2542",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a7db",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:57:30.757",
+    "created": "2026-11-16T10:56:46.175",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae172b5e35b0d9cad4163:1",
+    "photo_id": "684738719",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/684738719/original.jpg",
+    "width": 1826,
+    "height": 1217,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.2967957121581008,
+          "top": 0.32735422390275154,
+          "width": 0.29674013023927054,
+          "height": 0.3819675139661329
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "0c8e9779bd60bcceab888df7c169c56c",
+    "assignment_id": "000068c652--6afae172b5e35b0d9cad4163",
+    "task_id": "0e3efecd-d146-46cb-a96d-47d0d5bbb89f",
+    "task_suite_id": "000068c652--6afa27b90e9fca0f8380a74f",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:58:46.682",
+    "created": "2026-11-16T10:56:50.716",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae1792676605b3c966b61:2",
+    "photo_id": "761729799",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761729799/original.jpg",
+    "width": 1500,
+    "height": 1200,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.24769230769230768,
+          "top": 0.3403846153846154,
+          "width": 0.4307692307692308,
+          "height": 0.3942307692307693
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "672c7b2d9274681ad5828203e3178de4",
+    "assignment_id": "000068c652--6afae1792676605b3c966b61",
+    "task_id": "7530017b-1cb0-4773-8175-84ae464bb498",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a814",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:57:53.801",
+    "created": "2026-11-16T10:56:57.176",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae184e8f3154fe866ab84:0",
+    "photo_id": "761729653",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761729653/original.jpg",
+    "width": 1500,
+    "height": 1200,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.34,
+          "top": 0.14615384615384616,
+          "width": 0.3661538461538461,
+          "height": 0.46923076923076923
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "4a85d12b475c51de8d2daa41f2410b8b",
+    "assignment_id": "000068c652--6afae184e8f3154fe866ab84",
+    "task_id": "05ebdb1d-0366-49bf-898f-73ee031146de",
+    "task_suite_id": "000068c652--6afa27b90e9fca0f8380a747",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:58:38.025",
+    "created": "2026-11-16T10:57:08.188",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae18657179663f8b7cb32:0",
+    "photo_id": "761339178",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761339178/original.jpg",
+    "width": 2048,
+    "height": 1530,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.3986993315144825,
+          "top": 0.2512713393085426,
+          "width": 0.1976502875680523,
+          "height": 0.3688579300750565
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "c08babc045295590657b6f710a184dae",
+    "assignment_id": "000068c652--6afae18657179663f8b7cb32",
+    "task_id": "b7c874c4-5812-4d42-9b42-ba884dcecdac",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a818",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:58:36.652",
+    "created": "2026-11-16T10:57:10.788",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae18c35e56c2ff824824c:0",
+    "photo_id": "761343247",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761343247/original.jpg",
+    "width": 2048,
+    "height": 1515,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.309576285174444,
+          "top": 0.3152884556696965,
+          "width": 0.2927662205515904,
+          "height": 0.5025640634390025
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "4e73fa4f20bda89547104cd0e523a96b",
+    "assignment_id": "000068c652--6afae18c35e56c2ff824824c",
+    "task_id": "5a95a99f-27c4-487c-9b37-1eb0136c557c",
+    "task_suite_id": "000068c652--6afa27b90e9fca0f8380a718",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:58:37.898",
+    "created": "2026-11-16T10:57:16.409",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae18cb7895576f95cf2a9:1",
+    "photo_id": "761729735",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761729735/original.jpg",
+    "width": 1500,
+    "height": 1200,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.14051282442533053,
+          "top": 0.2692307784007146,
+          "width": 0.41846156193659856,
+          "height": 0.49358981205866886
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "1ea4f2d45c487604e2d13fb5599e5cb1",
+    "assignment_id": "000068c652--6afae18cb7895576f95cf2a9",
+    "task_id": "0f6b9bfd-b969-460e-ade1-27f40065371f",
+    "task_suite_id": "000068c652--6afa27b90e9fca0f8380a6f8",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:58:52.287",
+    "created": "2026-11-16T10:57:16.348",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae19b27a75f4e4f4ec4ce:3",
+    "photo_id": "762552613",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762552613/original.jpg",
+    "width": 1207,
+    "height": 1567,
+    "role": "controls",
+    "solution": {
+      "status": "no_butterflies",
+      "boxes": []
+    },
+    "validation_error": null,
+    "worker_id": "08eabc06e5466d8b9015c1d2e65a9598",
+    "assignment_id": "000068c652--6afae19b27a75f4e4f4ec4ce",
+    "task_id": "215b92e1-c653-42fb-b39f-fcd69785e099",
+    "task_suite_id": "000068c652--6afa27b80e9fca0f8380a6c4",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:58:08.212",
+    "created": "2026-11-16T10:57:31.157",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae19d8a82a107ce84aaf6:3",
+    "photo_id": "761362336",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761362336/original.jpg",
+    "width": 1536,
+    "height": 2048,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.4025641025641026,
+          "top": 0.1576923076923077,
+          "width": 0.3846153846153846,
+          "height": 0.41538461538461535
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "a4d1de54603582af0c929715836bd877",
+    "assignment_id": "000068c652--6afae19d8a82a107ce84aaf6",
+    "task_id": "efbcd7ed-76dc-40f5-bd28-af0064f0cd2c",
+    "task_suite_id": "000068c652--6afa27b90e9fca0f8380a74b",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:58:17.912",
+    "created": "2026-11-16T10:57:33.989",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae1a8b5e35b0d9cad483b:3",
+    "photo_id": "761340883",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761340883/original.jpg",
+    "width": 1909,
+    "height": 1638,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.34189058002477934,
+          "top": 0.34862567709463077,
+          "width": 0.25693181037224533,
+          "height": 0.26909876223793694
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "16c3f3a25fdf5865d44ea8b18b43326b",
+    "assignment_id": "000068c652--6afae1a8b5e35b0d9cad483b",
+    "task_id": "e16a02d6-a756-44fe-b306-cbd3b2023a80",
+    "task_suite_id": "000068c652--6afa27b90e9fca0f8380a72c",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:58:59.399",
+    "created": "2026-11-16T10:57:44.481",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae1ad27a75f4e4f4ec8b6:2",
+    "photo_id": "762104548",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762104548/original.jpg",
+    "width": 1536,
+    "height": 2048,
+    "role": "controls",
+    "solution": {
+      "status": "no_butterflies",
+      "boxes": []
+    },
+    "validation_error": null,
+    "worker_id": "1a7dff01de3a48a8f2e0d253d70a5b98",
+    "assignment_id": "000068c652--6afae1ad27a75f4e4f4ec8b6",
+    "task_id": "42389957-c6b2-4e9d-93b7-438e58e54980",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a7cf",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:58:55.400",
+    "created": "2026-11-16T10:57:49.397",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae1b227a75f4e4f4ec958:4",
+    "photo_id": "762669308",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762669308/original.jpg",
+    "width": 1536,
+    "height": 2048,
+    "role": "controls",
+    "solution": {
+      "status": "no_butterflies",
+      "boxes": []
+    },
+    "validation_error": null,
+    "worker_id": "672c7b2d9274681ad5828203e3178de4",
+    "assignment_id": "000068c652--6afae1b227a75f4e4f4ec958",
+    "task_id": "b861d614-24ab-44f1-8736-31497f8e88a4",
+    "task_suite_id": "000068c652--6afa27b80e9fca0f8380a6dc",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:58:38.394",
+    "created": "2026-11-16T10:57:54.111",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae1c08a82a107ce84af87:3",
+    "photo_id": "761367167",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761367167/original.jpg",
+    "width": 1536,
+    "height": 2048,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.3230769230769231,
+          "top": 0.2903846153846154,
+          "width": 0.24871794871794867,
+          "height": 0.21923076923076917
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "08eabc06e5466d8b9015c1d2e65a9598",
+    "assignment_id": "000068c652--6afae1c08a82a107ce84af87",
+    "task_id": "6eb6e716-3033-4a6c-a32b-812e3ed2dc54",
+    "task_suite_id": "000068c652--6afa27b80e9fca0f8380a6cc",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:58:46.634",
+    "created": "2026-11-16T10:58:08.549",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae1cab7895576f95cfde5:2",
+    "photo_id": "761310204",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761310204/original.jpg",
+    "width": 1536,
+    "height": 2048,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.23846153846153847,
+          "top": 0.16346153846153846,
+          "width": 0.3076923076923076,
+          "height": 0.27884615384615385
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "a4d1de54603582af0c929715836bd877",
+    "assignment_id": "000068c652--6afae1cab7895576f95cfde5",
+    "task_id": "6daabb23-13f8-4c31-930b-68a94ab30228",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a787",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:59:03.514",
+    "created": "2026-11-16T10:58:18.298",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae1cd35e56c2ff8248d9b:1",
+    "photo_id": "762210333",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762210333/original.jpg",
+    "width": 399,
+    "height": 428,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.2722965350523771,
+          "top": 0.22116049160131013,
+          "width": 0.5631587429492344,
+          "height": 0.517323236876108
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "3ba47bf88ae4905e4a17fa9439346fab",
+    "assignment_id": "000068c652--6afae1cd35e56c2ff8248d9b",
+    "task_id": "7ddffc55-4936-42c5-8d39-57aef432153b",
+    "task_suite_id": "000068c652--6afa27b80e9fca0f8380a6d4",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:59:46.084",
+    "created": "2026-11-16T10:58:21.892",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae1dd57179663f8b7d6b3:4",
+    "photo_id": "762700796",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762700796/original.jpg",
+    "width": 2048,
+    "height": 1536,
+    "role": "controls",
+    "solution": {
+      "status": "no_butterflies",
+      "boxes": []
+    },
+    "validation_error": null,
+    "worker_id": "c08babc045295590657b6f710a184dae",
+    "assignment_id": "000068c652--6afae1dd57179663f8b7d6b3",
+    "task_id": "f9d52dfb-b5b6-4f85-838b-b8043160d8dc",
+    "task_suite_id": "000068c652--6afa27b90e9fca0f8380a6fc",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T11:00:30.687",
+    "created": "2026-11-16T10:58:37.020",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae1de8a82a107ce84ba3c:0",
+    "photo_id": "761170705",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761170705/original.jpg",
+    "width": 2048,
+    "height": 1536,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.2137500018706689,
+          "top": 0.22419870816744292,
+          "width": 0.36161059927164513,
+          "height": 0.18846153846153846
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "4e73fa4f20bda89547104cd0e523a96b",
+    "assignment_id": "000068c652--6afae1de8a82a107ce84ba3c",
+    "task_id": "a0108622-94ca-4e03-b158-42747c1216a7",
+    "task_suite_id": "000068c652--6afa27b90e9fca0f8380a77b",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:59:42.221",
+    "created": "2026-11-16T10:58:38.279",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae1de8ea2184b828a40fa:4",
+    "photo_id": "762646171",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762646171/original.jpg",
+    "width": 1536,
+    "height": 2048,
+    "role": "controls",
+    "solution": {
+      "status": "no_butterflies",
+      "boxes": []
+    },
+    "validation_error": null,
+    "worker_id": "672c7b2d9274681ad5828203e3178de4",
+    "assignment_id": "000068c652--6afae1de8ea2184b828a40fa",
+    "task_id": "b6821ca3-245c-443d-a54f-549b5e5c5b8b",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a7a3",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:59:20.259",
+    "created": "2026-11-16T10:58:38.844",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae1dee8f3154fe866bb84:4",
+    "photo_id": "761032336",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761032336/original.jpg",
+    "width": 1626,
+    "height": 1791,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.24995035414046468,
+          "top": 0.2173142221821569,
+          "width": 0.5189647183424901,
+          "height": 0.6365575888698579
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "4a85d12b475c51de8d2daa41f2410b8b",
+    "assignment_id": "000068c652--6afae1dee8f3154fe866bb84",
+    "task_id": "a219493c-f450-4bda-ade9-41a40ed96f3f",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a7c3",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T11:00:10.052",
+    "created": "2026-11-16T10:58:38.344",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae1e657179663f8b7d93f:3",
+    "photo_id": "761346859",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761346859/original.jpg",
+    "width": 1937,
+    "height": 1544,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.3883314903253072,
+          "top": 0.30563579269204505,
+          "width": 0.29547845682828155,
+          "height": 0.3324708452500594
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "0c8e9779bd60bcceab888df7c169c56c",
+    "assignment_id": "000068c652--6afae1e657179663f8b7d93f",
+    "task_id": "bbdbf584-996d-4347-ab6a-78ab6da1e989",
+    "task_suite_id": "000068c652--6afa27b80e9fca0f8380a6f0",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T11:00:17.747",
+    "created": "2026-11-16T10:58:46.980",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae1e72676605b3c967e01:1",
+    "photo_id": "727167240",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/727167240/original.jpg",
+    "width": 399,
+    "height": 458,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.02207505518763797,
+          "top": 0.1365425643799393,
+          "width": 0.9536423841059603,
+          "height": 0.6423269929985878
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "08eabc06e5466d8b9015c1d2e65a9598",
+    "assignment_id": "000068c652--6afae1e72676605b3c967e01",
+    "task_id": "32fd174b-373d-4897-8749-beca3ec74ac2",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a7ab",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:59:34.851",
+    "created": "2026-11-16T10:58:47.717",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae1ece989e73b4430309c:1",
+    "photo_id": "761864040",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761864040/original.jpg",
+    "width": 945,
+    "height": 2048,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.01944949882171464,
+          "top": 0.2320559075580638,
+          "width": 0.9696970544901016,
+          "height": 0.45770144057580775
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "1ea4f2d45c487604e2d13fb5599e5cb1",
+    "assignment_id": "000068c652--6afae1ece989e73b4430309c",
+    "task_id": "29fd7927-3e91-473f-83c9-21a2d43cdcac",
+    "task_suite_id": "000068c652--6afa27b90e9fca0f8380a73c",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:59:46.890",
+    "created": "2026-11-16T10:58:52.564",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae1eff006a13bf9ee05f8:4",
+    "photo_id": "762649210",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762649210/original.jpg",
+    "width": 1536,
+    "height": 2048,
+    "role": "controls",
+    "solution": {
+      "status": "no_butterflies",
+      "boxes": []
+    },
+    "validation_error": null,
+    "worker_id": "1a7dff01de3a48a8f2e0d253d70a5b98",
+    "assignment_id": "000068c652--6afae1eff006a13bf9ee05f8",
+    "task_id": "7fde398e-e95f-4ae6-a70f-0e6e35261bd4",
+    "task_suite_id": "000068c652--6afa27b90e9fca0f8380a714",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T11:01:21.524",
+    "created": "2026-11-16T10:58:55.850",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae1f3e989e73b44303388:0",
+    "photo_id": "684748055",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/684748055/original.jpg",
+    "width": 2048,
+    "height": 1365,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.36562762394310666,
+          "top": 0.3548622725316751,
+          "width": 0.2131497222137657,
+          "height": 0.3868842692887534
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "16c3f3a25fdf5865d44ea8b18b43326b",
+    "assignment_id": "000068c652--6afae1f3e989e73b44303388",
+    "task_id": "1ec4d644-2c3b-4627-bd65-3db8b2e6042a",
+    "task_suite_id": "000068c652--6afa27b90e9fca0f8380a724",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T11:00:27.877",
+    "created": "2026-11-16T10:58:59.862",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae1f8e989e73b4430346e:0",
+    "photo_id": "762682720",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762682720/original.jpg",
+    "width": 2048,
+    "height": 1833,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.02926068364575209,
+          "top": 0.055770906577721685,
+          "width": 0.936341876664067,
+          "height": 0.8692568887286277
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "a4d1de54603582af0c929715836bd877",
+    "assignment_id": "000068c652--6afae1f8e989e73b4430346e",
+    "task_id": "f488f9d0-1459-4d32-a52b-8b75c72eb9a3",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a7a7",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:59:40.758",
+    "created": "2026-11-16T10:59:04.068",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae208b5e35b0d9cad56e4:4",
+    "photo_id": "762627960",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762627960/original.jpg",
+    "width": 1536,
+    "height": 2048,
+    "role": "controls",
+    "solution": {
+      "status": "no_butterflies",
+      "boxes": []
+    },
+    "validation_error": null,
+    "worker_id": "672c7b2d9274681ad5828203e3178de4",
+    "assignment_id": "000068c652--6afae208b5e35b0d9cad56e4",
+    "task_id": "69d15b15-a6c9-4191-b653-03009280b2b0",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a7f8",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T10:59:57.970",
+    "created": "2026-11-16T10:59:20.894",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae21735e56c2ff8249931:2",
+    "photo_id": "762662443",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762662443/original.jpg",
+    "width": 1536,
+    "height": 2048,
+    "role": "controls",
+    "solution": {
+      "status": "no_butterflies",
+      "boxes": []
+    },
+    "validation_error": null,
+    "worker_id": "08eabc06e5466d8b9015c1d2e65a9598",
+    "assignment_id": "000068c652--6afae21735e56c2ff8249931",
+    "task_id": "afa06d8a-8232-4d3a-a998-cc149e4b38ee",
+    "task_suite_id": "000068c652--6afa27b90e9fca0f8380a728",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T11:00:17.400",
+    "created": "2026-11-16T10:59:35.207",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae21d8a82a107ce84c3f4:0",
+    "photo_id": "761350448",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761350448/original.jpg",
+    "width": 2048,
+    "height": 1550,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.31729282270535797,
+          "top": 0.3750112683674389,
+          "width": 0.2736286727917766,
+          "height": 0.39231948075362844
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "a4d1de54603582af0c929715836bd877",
+    "assignment_id": "000068c652--6afae21d8a82a107ce84c3f4",
+    "task_id": "03eb00cf-0d82-48f5-9232-4e9148997cd0",
+    "task_suite_id": "000068c652--6afa27b80e9fca0f8380a6bc",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T11:00:12.752",
+    "created": "2026-11-16T10:59:41.120",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae21eb7895576f95d0b85:0",
+    "photo_id": "761838259",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761838259/original.jpg",
+    "width": 1497,
+    "height": 1497,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.3509615678053636,
+          "top": 0.327852542583759,
+          "width": 0.33451919555664067,
+          "height": 0.2528525719275841
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "4e73fa4f20bda89547104cd0e523a96b",
+    "assignment_id": "000068c652--6afae21eb7895576f95d0b85",
+    "task_id": "dbf8ba04-caf9-41cf-b4e8-3141c7b35509",
+    "task_suite_id": "000068c652--6afa27b90e9fca0f8380a767",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T11:00:51.475",
+    "created": "2026-11-16T10:59:42.679",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae222b7895576f95d0bef:4",
+    "photo_id": "759056545",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/759056545/original.jpg",
+    "width": 765,
+    "height": 879,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.07513033870800677,
+          "top": 0.20577541392469725,
+          "width": 0.8220142940993681,
+          "height": 0.5634784699059467
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "3ba47bf88ae4905e4a17fa9439346fab",
+    "assignment_id": "000068c652--6afae222b7895576f95d0bef",
+    "task_id": "611bda2f-2fc9-4288-84fb-8e4fb07e0f1c",
+    "task_suite_id": "000068c652--6afa27b80e9fca0f8380a6e8",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T11:01:12.688",
+    "created": "2026-11-16T10:59:46.429",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae2232f8c38133612a65d:1",
+    "photo_id": "698481931",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/698481931/original.jpg",
+    "width": 462,
+    "height": 580,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.06760052983848591,
+          "top": 0,
+          "width": 0.8369589347175503,
+          "height": 0.6474618071895014
+        },
+        {
+          "left": 0.24464954269822414,
+          "top": 0.4500180119607871,
+          "width": 0.7500439862020368,
+          "height": 0.40770862622088405
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "1ea4f2d45c487604e2d13fb5599e5cb1",
+    "assignment_id": "000068c652--6afae2232f8c38133612a65d",
+    "task_id": "33990895-e8a1-4f80-a34f-36d7afe1fd3e",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a7d7",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T11:01:07.582",
+    "created": "2026-11-16T10:59:47.193",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae22eb5e35b0d9cad5cd3:1",
+    "photo_id": "761481875",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761481875/original.jpg",
+    "width": 2048,
+    "height": 1427,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.1634772413215527,
+          "top": 0.2173142221821569,
+          "width": 0.665968761777145,
+          "height": 0.5769404128729829
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "672c7b2d9274681ad5828203e3178de4",
+    "assignment_id": "000068c652--6afae22eb5e35b0d9cad5cd3",
+    "task_id": "533e70df-d63c-4b29-a8a7-a5094fb90dac",
+    "task_suite_id": "000068c652--6afa27b90e9fca0f8380a773",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T11:01:03.575",
+    "created": "2026-11-16T10:59:58.292",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae23a27a75f4e4f4edec2:0",
+    "photo_id": "762641002",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762641002/original.jpg",
+    "width": 1017,
+    "height": 2048,
+    "role": "controls",
+    "solution": {
+      "status": "no_butterflies",
+      "boxes": []
+    },
+    "validation_error": null,
+    "worker_id": "4a85d12b475c51de8d2daa41f2410b8b",
+    "assignment_id": "000068c652--6afae23a27a75f4e4f4edec2",
+    "task_id": "67ef8b1d-9959-40c5-8115-5d42e2eb8a59",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a7b7",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T11:01:44.995",
+    "created": "2026-11-16T11:00:10.524",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae23df006a13bf9ee10ec:4",
+    "photo_id": "761782367",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761782367/original.jpg",
+    "width": 1536,
+    "height": 2048,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.3145299145299145,
+          "top": 0.44871794871794873,
+          "width": 0.2136752136752137,
+          "height": 0.21282051282051279
+        },
+        {
+          "left": 0.4683760683760684,
+          "top": 0.42435897435897435,
+          "width": 0.19658119658119655,
+          "height": 0.22820512820512823
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "a4d1de54603582af0c929715836bd877",
+    "assignment_id": "000068c652--6afae23df006a13bf9ee10ec",
+    "task_id": "d3f4ed6c-46c5-4b24-985a-0a8b625fa983",
+    "task_suite_id": "000068c652--6afa27b80e9fca0f8380a6ac",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T11:00:59.612",
+    "created": "2026-11-16T11:00:13.201",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae241e989e73b443040cc:2",
+    "photo_id": "761915126",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761915126/original.jpg",
+    "width": 1536,
+    "height": 2048,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.28205128205128205,
+          "top": 0.49615384615384617,
+          "width": 0.40512820512820513,
+          "height": 0.25384615384615383
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "08eabc06e5466d8b9015c1d2e65a9598",
+    "assignment_id": "000068c652--6afae241e989e73b443040cc",
+    "task_id": "b221ed6b-caab-44dc-90ee-819a53495a19",
+    "task_suite_id": "000068c652--6afa27b80e9fca0f8380a6e0",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T11:00:59.975",
+    "created": "2026-11-16T11:00:17.788",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae242f006a13bf9ee1168:0",
+    "photo_id": "762072515",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762072515/original.jpg",
+    "width": 2048,
+    "height": 1536,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.25614732559513237,
+          "top": 0.17808494567871094,
+          "width": 0.6604003812114785,
+          "height": 0.5477347153883715
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "0c8e9779bd60bcceab888df7c169c56c",
+    "assignment_id": "000068c652--6afae242f006a13bf9ee1168",
+    "task_id": "4cfe1511-bd24-4abb-8731-30b55a42cdb7",
+    "task_suite_id": "000068c652--6afa27b80e9fca0f8380a6d0",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T11:01:50.843",
+    "created": "2026-11-16T11:00:18.259",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae24c2676605b3c96903b:3",
+    "photo_id": "688517685",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/688517685/original.jpg",
+    "width": 1409,
+    "height": 2048,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.08809358916788966,
+          "top": 0.2769258780814292,
+          "width": 0.5675260416577808,
+          "height": 0.5408122150512864
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "16c3f3a25fdf5865d44ea8b18b43326b",
+    "assignment_id": "000068c652--6afae24c2676605b3c96903b",
+    "task_id": "292d5e83-cefc-4c3c-a04d-b9e9043590b0",
+    "task_suite_id": "000068c652--6afa27b80e9fca0f8380a6f4",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T11:02:26.046",
+    "created": "2026-11-16T11:00:28.258",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae24ff006a13bf9ee13bf:1",
+    "photo_id": "761219682",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761219682/original.jpg",
+    "width": 1542,
+    "height": 2048,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.1832190819830649,
+          "top": 0.18564697106081948,
+          "width": 0.4222894218343668,
+          "height": 0.5220679670127288
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "c08babc045295590657b6f710a184dae",
+    "assignment_id": "000068c652--6afae24ff006a13bf9ee13bf",
+    "task_id": "d5e095f0-a0fd-4c72-a7a3-dcca3c4e0f86",
+    "task_suite_id": "000068c652--6afa27b90e9fca0f8380a777",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T11:01:57.625",
+    "created": "2026-11-16T11:00:31.306",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae2632676605b3c969397:1",
+    "photo_id": "761434356",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761434356/original.jpg",
+    "width": 1935,
+    "height": 1290,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.3250641064766126,
+          "top": 0.32368589547964244,
+          "width": 0.2743162106244991,
+          "height": 0.568525637113131
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "4e73fa4f20bda89547104cd0e523a96b",
+    "assignment_id": "000068c652--6afae2632676605b3c969397",
+    "task_id": "e38517fd-63b0-406f-8d48-96e5f49e5d2e",
+    "task_suite_id": "000068c652--6afa27b90e9fca0f8380a757",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T11:01:56.541",
+    "created": "2026-11-16T11:00:51.897",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  },
+  {
+    "answer_id": "000068c652--6afae26cf006a13bf9ee18ca:2",
+    "photo_id": "761321807",
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761321807/original.jpg",
+    "width": 1616,
+    "height": 1296,
+    "role": "controls",
+    "solution": {
+      "status": "boxes",
+      "boxes": [
+        {
+          "left": 0.32387883461455047,
+          "top": 0.35385678656209624,
+          "width": 0.33159023543870636,
+          "height": 0.4134739625589711
+        }
+      ]
+    },
+    "validation_error": null,
+    "worker_id": "a4d1de54603582af0c929715836bd877",
+    "assignment_id": "000068c652--6afae26cf006a13bf9ee18ca",
+    "task_id": "58e744fa-08d0-42f9-8d3c-d307b3c2928f",
+    "task_suite_id": "000068c652--6afa27ba0e9fca0f8380a7e7",
+    "pool_id": "6866514",
+    "assignment_status": "ACCEPTED",
+    "submitted": "2026-11-16T11:01:40.366",
+    "created": "2026-11-16T11:01:00.103",
+    "manifest_version": "f740dac697f4dafeb2fd46851959e7afc17d75ca3404c015de5b1103b38b1b0e",
+    "instruction_version": "a1ee9a460354aaff3fc3e7acee005ffa1df17bd62a54ee2bdff6d32678b19b1c",
+    "repeat_reason": null,
+    "worker_quality": {
+      "access": 100
+    },
+    "audit": null
+  }
+]

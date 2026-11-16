@@ -1,0 +1,18 @@
+.bbox-task {font:16px/1.5 system-ui,sans-serif; max-width:1100px; margin:16px auto; color:#20242b;}
+.bbox-task button, .bbox-task select {font:inherit; padding:7px 10px; margin:3px; border:1px solid #777; border-radius:5px; background:white; color:#20242b;}
+.bbox-task button[aria-pressed="true"] {background:#d8ebff; border-color:#1262b3;}
+.bbox-task button:focus-visible, .bbox-task select:focus-visible {outline:3px solid #1262b3;}
+.bbox-toolbar {display:flex; flex-wrap:wrap; align-items:center;}
+.bbox-viewport {width:100%; height:520px; overflow:auto; background:#e7e7e7; border:1px solid #777;}
+.bbox-stage {position:relative;}
+.bbox-stage img {width:100%; height:100%; display:block; image-orientation:from-image;}
+.bbox-stage svg {position:absolute; inset:0; width:100%; height:100%; touch-action:none;}
+.bbox-box,.bbox-selected,.bbox-gold {fill:transparent; stroke:#ff3030; stroke-width:2px;}
+.bbox-selected {stroke:#006aff; stroke-width:3px;}
+.bbox-gold {stroke:#00ac44; stroke-width:3px; pointer-events:none;}
+.bbox-handle {fill:#006aff; cursor:nwse-resize;}
+.bbox-error {color:#a21b1b; min-height:1.5em;}
+.bbox-help {margin:8px 0;}
+.bbox-task details {margin:8px 0; padding:8px; border:1px solid #aaa;}
+.bbox-task summary {cursor:pointer;}
+@media (max-width:600px) {.bbox-viewport {height:360px;}}

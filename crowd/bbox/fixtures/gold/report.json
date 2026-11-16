@@ -1,0 +1,142 @@
+{
+  "ready_for_paid_work": false,
+  "source_sha256": "b205d57185c10eeb0a650d7495fd9c8a98d872b60548ef30645140e4498d8193",
+  "seed": 42,
+  "working_count": 400,
+  "counts": {
+    "practice": {
+      "images": 10,
+      "boxes": 9,
+      "statuses": {
+        "boxes": 8,
+        "no_butterflies": 2
+      },
+      "scenarios": {
+        "cropped": 1,
+        "ordinary": 4,
+        "lookalike": 1,
+        "empty": 2,
+        "small": 1,
+        "moth": 1,
+        "multiple": 1,
+        "occluded": 2
+      }
+    },
+    "exam": {
+      "images": 10,
+      "boxes": 9,
+      "statuses": {
+        "boxes": 8,
+        "no_butterflies": 2
+      },
+      "scenarios": {
+        "small": 1,
+        "occluded": 2,
+        "lookalike": 1,
+        "empty": 2,
+        "ordinary": 4,
+        "moth": 1,
+        "multiple": 1,
+        "cropped": 2
+      }
+    },
+    "controls": {
+      "images": 90,
+      "boxes": 71,
+      "statuses": {
+        "no_butterflies": 20,
+        "boxes": 70
+      },
+      "scenarios": {
+        "empty": 20,
+        "ordinary": 62,
+        "moth": 7,
+        "small": 4,
+        "lookalike": 11,
+        "multiple": 1,
+        "occluded": 2,
+        "cropped": 3
+      }
+    }
+  },
+  "required_before_launch": [
+    "Run check and fresh preflight; verify platform interface and actual commission before paid launch"
+  ],
+  "image_checks": {
+    "checked": 510,
+    "failures": [],
+    "exact_duplicate_groups": [],
+    "downloaded_candidates": 110
+  },
+  "excluded_duplicates": [
+    {
+      "photo_id": "761337763",
+      "duplicate_of": "761350448",
+      "replacement": "760425692",
+      "original_check": {
+        "photo_id": "761337763",
+        "sha256": "7f827c480187cf1be0f1a54ed5c383986ee79a86f9a7949416c62099caf6f3d6",
+        "pixels_sha256": "35ee6883ddda80d9f4c88b84e4bb5525c1110fd7c82847edda687529b3d8feb9",
+        "ok": true
+      }
+    }
+  ],
+  "selection_note": "Initial seed=42 selection under the original policy, followed by visual replacements. After include-moths-policy:v1, working 400 IDs and their order were retained, metadata refreshed from the current source, nine gold moth images annotated and one ambiguous control replaced with a caterpillar. Final membership: gold.json and working_manifest.csv.",
+  "checked_at": "2026-11-14T13:24:28.393471+00:00",
+  "ai_draft_complete": true,
+  "human_reviewed_count": 110,
+  "annotation_source": "ai_visual_draft",
+  "excluded_candidate_count": 11,
+  "added_cc0_count": 11,
+  "gold_sha256": "4d0e83fdb800202c533c51a4dfb242b8b31de891f232fb6feae00079f1071ffb",
+  "draft_completed_at": "2026-11-14T13:47:34.379166+00:00",
+  "verification": {
+    "geometry_and_metadata": "passed for 110 records",
+    "exact_pixel_duplicates": "none across 510 images",
+    "visual_overlay_pass": "Team approval of all 110 existing annotations confirmed by user; original annotations prepared by AI.",
+    "browser": "Updated adult-moth and caterpillar editors load local images and validate the expected positive/negative answers.",
+    "project_check": "passed: geometry, metadata, split integrity, scenario coverage, team approvals and budget",
+    "policy_checks": "26 bbox tests, 7 data tests, Ruff lint/format, CLI select and local hashes/geometry/CSV/link checks passed.",
+    "policy_checked_at": "2026-11-14T21:49:44.493055+00:00"
+  },
+  "annotation_policy": "include-moths-policy:v1",
+  "policy_updated_at": "2026-11-14T21:42:51.982537+00:00",
+  "working_classes": {
+    "butterfly": 303,
+    "lookalike": 57,
+    "unrelated": 40
+  },
+  "working_moths": 23,
+  "gold_ready": true,
+  "team_approval": {
+    "approved": true,
+    "reviewer": "Команда проекта",
+    "reviewed_at": "2026-11-15T16:19:12.067074+00:00",
+    "basis": "Пользователь подтвердил в чате: «Команда все подтвердила, все ок»; время означает фиксацию подтверждения."
+  },
+  "corrections": [
+    {
+      "photo_id": "761310164",
+      "at": "2026-11-15T16:45:21.829608+00:00",
+      "reason": "Right bbox edge expanded to include the visible antenna; user-requested correction."
+    },
+    {
+      "reason": "Visual audit: corrected visible extrema in 15 images at user request",
+      "details": "visual_corrections.json",
+      "source": "assistant_visual_review"
+    },
+    {
+      "at": "2026-11-15T17:58:13.699517+00:00",
+      "photo_ids": [
+        "761386447",
+        "762235975",
+        "760483993",
+        "762613770",
+        "761729799",
+        "684748055"
+      ],
+      "reason": "Refined six boxes after user visual review",
+      "details": "visual_corrections.json"
+    }
+  ]
+}
