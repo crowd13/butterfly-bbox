@@ -24,4 +24,6 @@ crowd/bbox/runs/final/*
 !crowd/bbox/runs/final/index.html
 crowd/bbox/token
 crowd/bbox/token2
+crowd/review/preview.html
+crowd/review/runs/*
 .ruff_cache/
