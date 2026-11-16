@@ -12,6 +12,7 @@ from .dataset import image_preflight, validate_inputs
 from .export import TERMINAL_ANSWERS, answers, coverage
 from .quality import control_windows, evaluate, match_count, validate_solution
 from .render import assets, instruction_structure, project_body, public_image
+from .results import write_results
 from .storage import digest, read_json, write_json
 
 
@@ -878,6 +879,11 @@ class Run:
             }
         )
         write_json(self.directory / "coverage.json", report)
+        write_json(
+            self.directory / "result.json",
+            [r for r in rows if r["role"] == "work" and r["assignment_status"] == "ACCEPTED"],
+        )
+        write_results(self.directory / "result.json", self.directory / "index.html")
         if require_complete and not report["collection_complete"]:
             raise ValueError("Collection incomplete; partial export saved, inspect coverage.json")
         return report

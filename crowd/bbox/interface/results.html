@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ответы исполнителей — bbox</title>
+<style>
+body{font:16px/1.5 system-ui,sans-serif;margin:24px;background:#f4f6f8;color:#17202b}
+h1{margin-bottom:4px} .note{color:#506070} nav{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0;align-items:end}
+label{display:flex;flex-direction:column;gap:4px}select,input,button{font:inherit;padding:7px;border:1px solid #a9b5c3;border-radius:6px}
+button{cursor:pointer;background:white}button:hover{background:#edf4ff}#grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+article{background:white;border:1px solid #d6dde5;border-radius:10px;padding:14px;min-width:0}h2{font-size:18px;margin:0 0 8px}
+.frame{width:100%;padding:0;border:0;background:#e7ebef;display:block}svg{display:block;width:100%;height:auto}rect{fill:none;stroke:#ff3424;stroke-width:2;vector-effect:non-scaling-stroke}
+.meta{font-size:13px;overflow-wrap:anywhere;margin:8px 0}.warning{color:#a33412}.error{color:#a33412;font-weight:bold}
+dialog{width:95vw;max-width:none;height:90vh;box-sizing:border-box;border:0;border-radius:10px}dialog::backdrop{background:#000a}
+.toolbar{display:flex;gap:16px;align-items:center;flex-wrap:wrap}#large{overflow:auto;height:calc(100% - 100px);margin-top:12px;background:#e7ebef}#large svg{max-width:none}
+</style>
+<h1>Ответы исполнителей</h1>
+<p class="note">Красные рамки — ответ исполнителя из result.json. Нажмите на фото для увеличения.</p>
+
+<nav>
+<label>Поиск по ID фото<input id="search" type="search"></label>
+</nav>
+<p id="count" aria-live="polite"></p><main id="grid"></main><nav><button id="prev">Назад</button><span id="page"></span><button id="next">Далее</button></nav>
+<dialog id="viewer"><div class="toolbar"><button id="close">Закрыть</button><strong id="title"></strong><label>Масштаб<input id="zoom" type="range" min="100" max="400" step="25" value="100"></label><label><input id="boxes" type="checkbox" checked>Показать рамки</label></div><div id="large"></div></dialog>
+<script id="data" type="application/json">__RESULT_DATA__</script>
+<script>
+'use strict';
+const rows = JSON.parse(document.getElementById('data').textContent);
+const $ = id => document.getElementById(id);
+const ns = 'http://www.w3.org/2000/svg';
+const titles = {boxes:'Есть рамки',no_butterflies:'Бабочек нет',load_error:'Ошибка загрузки',uncertain:'Не уверен'};
+function text(tag, value, className) {const e=document.createElement(tag);e.textContent=value;if(className)e.className=className;return e;}
+function boxes(r){return Array.isArray(r.solution?.boxes)?r.solution.boxes:[];}
+function draw(r){
+ const svg=document.createElementNS(ns,'svg');svg.setAttribute('viewBox',`0 0 ${r.width} ${r.height}`);svg.setAttribute('role','img');svg.setAttribute('aria-label',`Фото ${r.photo_id} с рамками исполнителя`);
+ const img=document.createElementNS(ns,'image');img.setAttribute('width',r.width);img.setAttribute('height',r.height);
+ try{const url=new URL(r.image_url);if(!['https:','http:'].includes(url.protocol))throw Error();img.setAttribute('href',url.href);}catch{svg.dataset.error='true';}
+ img.addEventListener('error',()=>{svg.replaceWith(text('p','Не удалось загрузить фото. Проверьте подключение к интернету.','error'));});svg.append(img);
+ for(const b of boxes(r)){
+  if(!b||!['left','top','width','height'].every(k=>typeof b[k]==='number'&&Number.isFinite(b[k])))continue;
+  const box=document.createElementNS(ns,'rect');for(const [k,v] of Object.entries({x:b.left*r.width,y:b.top*r.height,width:b.width*r.width,height:b.height*r.height}))box.setAttribute(k,v);svg.append(box);
+ }
+ if(svg.dataset.error)return text('p','Некорректный адрес изображения','error');return svg;
+}
+function open(r){$('title').textContent=`Фото ${r.photo_id}`;$('zoom').value='100';$('boxes').checked=true;$('large').replaceChildren(draw(r));$('viewer').showModal();}
+$('close').onclick=()=>$('viewer').close();
+$('zoom').oninput=()=>{const svg=$('large').querySelector('svg');if(svg)svg.style.width=`${$('zoom').value}%`;};
+$('boxes').onchange=()=>{$('large').querySelectorAll('rect').forEach(b=>b.style.display=$('boxes').checked?'':'none');};
+let page=0;const pageSize=24;
+function render(){
+ const query=$('search').value.trim().toLowerCase();
+ const filtered=rows.filter(r=>!query||String(r.photo_id).toLowerCase().includes(query));
+ $('count').textContent=`Показано ответов: ${filtered.length} из ${rows.length}.`;$('grid').replaceChildren();
+ const pages=Math.max(1,Math.ceil(filtered.length/pageSize));page=Math.min(page,pages-1);
+ $('page').textContent=`Страница ${page+1} из ${pages}`;$('prev').disabled=page===0;$('next').disabled=page===pages-1;
+ for(const r of filtered.slice(page*pageSize,(page+1)*pageSize)){
+  const card=document.createElement('article');card.append(text('h2',`Фото ${r.photo_id}`));
+  const button=text('button','');button.className='frame';button.setAttribute('aria-label',`Увеличить фото ${r.photo_id}`);button.append(draw(r));button.onclick=()=>open(r);card.append(button);
+  card.append(text('p',`${titles[r.solution?.status]||'Ответ не получен'} · рамок: ${boxes(r).length}`));
+  $('grid').append(card);
+ }
+}
+$('search').addEventListener('input',()=>{page=0;render();});
+$('prev').onclick=()=>{page--;render();};$('next').onclick=()=>{page++;render();};
+render();
+</script>
+</html>
