@@ -52,12 +52,17 @@ def parser():
         "open",
         "close",
         "status",
-        "export",
         "score-exam",
         "score-controls",
         "preflight",
     ):
         sub.add_parser(name)
+    export_parser = sub.add_parser("export", help="Download answers from all uploaded pools")
+    export_parser.add_argument(
+        "--require-complete",
+        action="store_true",
+        help="Fail if work pools are not closed and fully collected; keep partial files",
+    )
     watch_parser = sub.add_parser("watch", help="Continuously score exams and controls")
     watch_parser.add_argument("--interval", type=int, default=30, help="Seconds between checks")
     preview_parser = sub.add_parser("preview")
@@ -124,6 +129,8 @@ def execute(args):
         return {"preview": str(args.output)}
     if args.command == "ready":
         run.ready(read_json(args.file))
+    elif args.command == "export":
+        return run.export(require_complete=args.require_complete)
     elif args.command == "stage":
         from .staging import stage
 

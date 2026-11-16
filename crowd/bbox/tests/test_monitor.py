@@ -142,3 +142,49 @@ class MonitorTests(unittest.TestCase):
             watch(self.path, self.api)
         with self.assertRaises(ValueError):
             watch(self.path, self.api, interval=0)
+
+    def test_manual_workflow_exports_both_pools_and_checks_completion(self):
+        from crowd.bbox.storage import read_json
+
+        stage(self.run)
+        pilot, main = self.run.state["staged_batches"]
+        self.api.finish(pilot)
+        with self.assertRaisesRegex(ValueError, "Collection incomplete"):
+            Run(self.path, self.api).export(require_complete=True)
+        report = read_json(self.path / "coverage.json")
+        self.assertFalse(report["collection_complete"])
+        self.assertEqual(len(read_json(self.path / "review.json")), 40)
+        self.api.finish(main)
+        report = Run(self.path, self.api).export(require_complete=True)
+        self.assertTrue(report["collection_complete"])
+        self.assertFalse(report["is_golden_set"])
+        self.assertEqual(len(read_json(self.path / "review.json")), 400)
+        self.assertEqual(len(read_json(self.path / "controls.json")), 100)
+        # Closed does not mean complete if an assignment is still active.
+        self.api.objects["/assignments"][-1]["status"] = "ACTIVE"
+        with self.assertRaisesRegex(ValueError, "Collection incomplete"):
+            Run(self.path, self.api).export(require_complete=True)
+
+    def test_repeated_control_is_not_counted_as_independent_evidence(self):
+        stage(self.run)
+        pilot, main = self.run.state["staged_batches"]
+        self.api.finish(pilot)
+        self.api.finish(main)
+        check_once(self.path, self.api)
+        events = Run(self.path).state["events"].values()
+        repeated = [e for e in events if e["reason"].startswith("Repeated control")]
+        self.assertTrue(repeated)
+        self.assertTrue(all(e["correct"] is None for e in repeated))
+
+    def test_watch_logs_manual_pool_changes_once(self):
+        stage(self.run)
+        with self.assertLogs("crowd.bbox.monitor", level="INFO") as logs:
+            check_once(self.path, self.api)
+        self.assertTrue(any("Пул " in line for line in logs.output))
+        with self.assertLogs("crowd.bbox.monitor", level="INFO") as logs:
+            check_once(self.path, self.api)
+        self.assertFalse(any("Пул " in line for line in logs.output))
+        self.api.objects["/pools"][1]["status"] = "OPEN"
+        with self.assertLogs("crowd.bbox.monitor", level="INFO") as logs:
+            check_once(self.path, self.api)
+        self.assertTrue(any("OPEN" in line for line in logs.output))

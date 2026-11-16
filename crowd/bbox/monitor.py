@@ -21,8 +21,24 @@ def check_once(directory, api):
         previous_events = copy.deepcopy(run.state["events"])
         previous_workers = copy.deepcopy(run.state["workers"])
         assignments = run.sync()
+        progress = run.pool_progress(assignments)
+        previous_progress = run.state.get("pool_progress", {})
+        for report in progress:
+            if previous_progress.get(report["pool_id"]) != report:
+                LOG.info(
+                    "Пул %s (%s): %s; завершено страниц %d/%d; ответы %s; сбор завершён: %s",
+                    report["pool_id"],
+                    report["kind"],
+                    report["status"],
+                    report["completed_pages"],
+                    report["expected_pages"],
+                    report["assignments"],
+                    "да" if report["complete"] else "нет",
+                )
+        run.state["pool_progress"] = {p["pool_id"]: p for p in progress}
+        run.save()
         run.score_exam(assignments)
-        for batch in run.state["batches"] + run.state.get("staged_batches", []):
+        for batch in run.all_batches():
             if batch["kind"] != "exam" and batch.get("uploaded"):
                 run.score_controls(assignments, batch)
         changed = 0
@@ -47,11 +63,12 @@ def check_once(directory, api):
             controls += 1
             verdict = {True: "верно", False: "ошибка", None: "нужен разбор"}[event["correct"]]
             LOG.info(
-                "Ханипот %s: пул %s, исполнитель %s — %s",
+                "Ханипот %s: пул %s, исполнитель %s — %s (%s)",
                 answer_id,
                 event["pool_id"],
                 event["worker_id"],
                 verdict,
+                event["reason"],
             )
         for worker, state in run.state["workers"].items():
             if state.get("failed") and not previous_workers.get(worker, {}).get("failed"):

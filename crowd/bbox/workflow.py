@@ -2,6 +2,7 @@
 
 import random
 import uuid
+from collections import Counter
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -291,9 +292,42 @@ class Run:
         batch["uploaded"] = True
         self.save()
 
+    def all_batches(self):
+        return self.state["batches"] + self.state.get("staged_batches", [])
+
+    def pool_progress(self, assignments):
+        reports = []
+        for batch in self.all_batches():
+            if not batch.get("pool_id"):
+                continue
+            pool = self.api.request("GET", f"/pools/{batch['pool_id']}")
+            rows = [a for a in assignments if a["pool_id"] == batch["pool_id"]]
+            accepted = Counter(a["task_suite_id"] for a in rows if a["status"] == "ACCEPTED")
+            expected = {s.get("remote_id") for s in batch["suites"]}
+            settled = not any(a["status"] in {"ACTIVE", "SUBMITTED"} for a in rows)
+            complete = (
+                batch["uploaded"]
+                and pool["status"] == "CLOSED"
+                and settled
+                and all(accepted[sid] == batch["overlap"] for sid in expected)
+                and not (accepted.keys() - expected)
+            )
+            reports.append(
+                {
+                    "pool_id": batch["pool_id"],
+                    "kind": batch["kind"],
+                    "status": pool["status"],
+                    "assignments": dict(Counter(a["status"] for a in rows)),
+                    "completed_pages": sum(accepted[sid] == batch["overlap"] for sid in expected),
+                    "expected_pages": len(expected),
+                    "complete": bool(complete),
+                }
+            )
+        return reports
+
     def sync(self):
         items = []
-        for batch in self.state["batches"] + self.state.get("staged_batches", []):
+        for batch in self.all_batches():
             if batch.get("pool_id"):
                 items.extend(self.api.items("/assignments", pool_id=batch["pool_id"]))
         write_json(self.directory / "assignments.json", items)
@@ -378,14 +412,22 @@ class Run:
         if not batch["uploaded"]:
             raise ValueError("Finish uploading the pool before scoring controls")
         rows = answers(assignments, self.snapshot)
+        first_seen = {}
+        for assignment in sorted(assignments, key=lambda a: (a.get("created", ""), a["id"])):
+            for task in assignment.get("tasks") or []:
+                key = (assignment["user_id"], str(task["input_values"]["photo_id"]))
+                first_seen.setdefault(key, assignment["id"])
         for row in rows:
             if row["role"] == "controls" and row["assignment_status"] == "ACCEPTED":
+                grade = self.grade(row)
+                if first_seen[row["worker_id"], row["photo_id"]] != row["assignment_id"]:
+                    grade = {"correct": None, "reason": "Repeated control: human audit required"}
                 self.state["events"][row["answer_id"]] = {
                     "id": row["answer_id"],
                     "worker_id": row["worker_id"],
                     "submitted": row["submitted"],
                     "pool_id": row["pool_id"],
-                    **self.grade(row),
+                    **grade,
                 }
         workers = {r["worker_id"] for r in rows if r["pool_id"] == batch["pool_id"]}
         report = {}
@@ -791,10 +833,15 @@ class Run:
         batch["opened_at"] = now()
         self.save()
 
-    def export(self):
+    def export(self, require_complete=False):
         assignments = self.sync()
+        self.score_exam(assignments)
+        for batch in self.all_batches():
+            if batch["kind"] != "exam" and batch.get("uploaded"):
+                self.score_controls(assignments, batch)
+        progress = self.pool_progress(assignments)
         rows = answers(assignments, self.snapshot)
-        batches = {b.get("pool_id"): b for b in self.state["batches"]}
+        batches = {b.get("pool_id"): b for b in self.all_batches()}
         for row in rows:
             row["repeat_reason"] = batches[row["pool_id"]].get("repeat_reason")
             row["worker_quality"] = self.state["workers"].get(row["worker_id"], {})
@@ -806,7 +853,33 @@ class Run:
         ):
             write_json(self.directory / filename, [r for r in rows if r["role"] == role])
         report = coverage(rows, self.snapshot["manifest"])
+        report["pools"] = progress
+        accepted_work = {
+            row["photo_id"]
+            for row in rows
+            if row["role"] == "work" and row["assignment_status"] == "ACCEPTED"
+        }
+        report["collection_complete"] = accepted_work == {
+            str(row["photo_id"]) for row in self.snapshot["manifest"]
+        } and all(p["complete"] for p in progress if p["kind"] != "exam")
+        report["required_audits"] = sorted(
+            {
+                answer_id
+                for batch in self.all_batches()
+                for result in batch.get("control_report", {}).values()
+                for answer_id in result["required_audits"]
+            }
+            | {
+                row["answer_id"]
+                for row in rows
+                if row["role"] == "work"
+                and row["assignment_status"] == "ACCEPTED"
+                and batches[row["pool_id"]]["kind"] == "pilot"
+            }
+        )
         write_json(self.directory / "coverage.json", report)
+        if require_complete and not report["collection_complete"]:
+            raise ValueError("Collection incomplete; partial export saved, inspect coverage.json")
         return report
 
     def status(self):
