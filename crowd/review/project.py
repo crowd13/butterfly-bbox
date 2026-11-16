@@ -95,7 +95,7 @@ class Creator:
         self.save()
         return resource["id"]
 
-    def pool_body(self, name, price, overlap, qualified):
+    def pool_body(self, name, marker, price, overlap, qualified):
         filters = [
             {"category": "profile", "key": "languages", "operator": "IN", "value": "RU"}
         ]
@@ -119,6 +119,7 @@ class Creator:
         body = {
             "project_id": self.state["resources"]["project"],
             "private_name": name,
+            "private_comment": marker,
             "will_expire": (datetime.now(timezone.utc) + timedelta(days=14)).strftime(
                 "%Y-%m-%dT%H:%M:%S"
             ),
@@ -210,7 +211,7 @@ class Creator:
         )
         training = {
             "project_id": self.state["resources"]["project"],
-            "private_name": "Обучение review " + marker,
+            "private_name": "Обучение проверки рамок [" + self.state["run_id"][:8] + "]",
             "may_contain_adult_content": False,
             "assignment_max_duration_seconds": self.plan["config"][
                 "assignment_seconds"
@@ -277,17 +278,17 @@ class Creator:
         }
         for key, (suites, price, overlap, qualified) in batches.items():
             title = {
-                "exam": "Экзамен review",
-                "pilot": "Пилот review",
-                "main": "Основной review",
+                "exam": "Экзамен проверки рамок",
+                "pilot": "Пилот проверки рамок",
+                "main": "Основная проверка рамок",
             }[key]
-            name = title + " " + marker
+            pool_marker = marker + ":" + key
             pool_id = self.ensure(
                 key,
                 "/pools",
-                self.pool_body(name, price, overlap, qualified),
-                "private_name",
-                name,
+                self.pool_body(title, pool_marker, price, overlap, qualified),
+                "private_comment",
+                pool_marker,
             )
             self.upload(key, pool_id, suites)
         return self.state

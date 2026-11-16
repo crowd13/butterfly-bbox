@@ -97,6 +97,9 @@ class ReviewTests(unittest.TestCase):
         uploads = [call for call in api.calls if call[1] in {"/tasks", "/task-suites"}]
         self.assertTrue(uploads)
         self.assertTrue(all(call[3]["open_pool"] == "false" for call in uploads))
+        pools = [call[2] for call in api.calls if call[1] == "/pools"]
+        self.assertTrue(all("review:" not in pool["private_name"] for pool in pools))
+        self.assertTrue(all(pool["private_comment"].startswith("review:") for pool in pools))
 
     def test_export_requires_two_independent_reviewers(self):
         source = [
