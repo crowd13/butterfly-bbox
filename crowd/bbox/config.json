@@ -9,7 +9,7 @@
   "exam_size": 10,
   "practice_size": 10,
   "exam_pass": 90,
-  "iou_threshold": 0.85,
+  "iou_threshold": 0.75,
   "control_window": 5,
   "control_min_correct": 4,
   "min_workers": 4,

@@ -7,6 +7,7 @@ from unittest.mock import patch
 
 from crowd.bbox.api import ApiError
 from crowd.bbox.monitor import check_once, watch
+from crowd.bbox.staging import stage
 from crowd.bbox.storage import RunBusyError, locked
 from crowd.bbox.tests.test_bbox import FakeApi, inputs
 from crowd.bbox.workflow import Run, prepare
@@ -74,6 +75,21 @@ class MonitorTests(unittest.TestCase):
         self.assertEqual(sleep.call_args.args, (30,))
         self.assertTrue(any("Проверка не завершена" in line for line in logs.output))
         self.assertTrue(any("Автопроверка остановлена" in line for line in logs.output))
+
+    def test_manually_opened_staged_pool_controls_are_scored(self):
+        stage(self.run)
+        self.api.finish(self.run.state["batches"][0])
+        pilot = self.run.state["staged_batches"][0]
+        self.api.finish(pilot, wrong_controls=True)
+        for pool in self.api.objects["/pools"]:
+            if pool["id"] == pilot["pool_id"]:
+                pool["status"] = "OPEN"
+        check_once(self.path, self.api)
+        state = Run(self.path).state
+        self.assertEqual(state["workers"]["w1"]["access"], 0)
+        self.assertTrue(state["staged_batches"][0]["control_report"]["w1"]["failed"])
+        self.assertEqual(len(state["events"]), 10)
+        self.assertEqual(len(state["batches"]), 1)
 
     def test_partial_skill_update_recovers_on_next_cycle(self):
         self.api.finish(self.run.state["batches"][0])

@@ -53,7 +53,7 @@ def match_count(predicted, expected, threshold):
     return sum(augment(i, set()) for i in range(len(predicted)))
 
 
-def evaluate(solution, gold, threshold=0.85):
+def evaluate(solution, gold, threshold=0.75):
     try:
         validate_solution(solution)
     except ValueError as exc:

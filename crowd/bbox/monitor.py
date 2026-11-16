@@ -22,8 +22,8 @@ def check_once(directory, api):
         previous_workers = copy.deepcopy(run.state["workers"])
         assignments = run.sync()
         run.score_exam(assignments)
-        for batch in run.state["batches"]:
-            if batch["kind"] != "exam":
+        for batch in run.state["batches"] + run.state.get("staged_batches", []):
+            if batch["kind"] != "exam" and batch.get("uploaded"):
                 run.score_controls(assignments, batch)
         changed = 0
         for assignment_id, score in run.state["exam_scores"].items():

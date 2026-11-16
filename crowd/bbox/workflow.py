@@ -293,7 +293,7 @@ class Run:
 
     def sync(self):
         items = []
-        for batch in self.state["batches"]:
+        for batch in self.state["batches"] + self.state.get("staged_batches", []):
             if batch.get("pool_id"):
                 items.extend(self.api.items("/assignments", pool_id=batch["pool_id"]))
         write_json(self.directory / "assignments.json", items)

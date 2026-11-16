@@ -10,7 +10,7 @@ TolokaTask.prototype.validate = function () { return null; };
 const context = {exports: {}, TolokaTask};
 vm.createContext(context);
 const script = fs.readFileSync(path.join(root, 'editor.js'), 'utf8') + '\n' +
-  fs.readFileSync(path.join(root, 'training.js'), 'utf8').replaceAll('__TRAINING_IOU__', '0.85') + '\n' +
+  fs.readFileSync(path.join(root, 'training.js'), 'utf8').replaceAll('__TRAINING_IOU__', '0.75') + '\n' +
   fs.readFileSync(path.join(root, 'task.js'), 'utf8').replace('__PRACTICE_JSON__', '[]');
 assert.equal(context.Task, undefined);
 vm.runInContext(script, context, {filename: 'task-source.js'});

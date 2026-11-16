@@ -57,7 +57,7 @@ def public_image(row):
     }
 
 
-def assets(bank, iou_threshold=0.85):
+def assets(bank, iou_threshold=0.75):
     practice = [
         {**public_image(r), "solution": r["solution"], "hint": r["hint"]} for r in bank["practice"]
     ]

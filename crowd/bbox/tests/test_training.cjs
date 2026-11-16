@@ -6,7 +6,7 @@ const vm = require('node:vm');
 const context = {};
 vm.createContext(context);
 vm.runInContext(fs.readFileSync(path.join(__dirname, '../interface/training.js'), 'utf8')
-  .replaceAll('__TRAINING_IOU__', '0.85'), context);
+  .replaceAll('__TRAINING_IOU__', '0.75'), context);
 const matches = context.bboxTrainingMatches;
 const box = {left:0.1, top:0.1, width:0.3, height:0.3};
 const answer = boxes => ({status:'boxes', boxes});
