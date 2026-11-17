@@ -34,6 +34,17 @@ class ReviewTests(unittest.TestCase):
         )
         controls = [suite["tasks"][-1]["input_values"]["photo_id"] for suite in suites]
         self.assertEqual(len(set(controls)), 80)
+        golden = [suite["tasks"][-1] for suite in suites]
+        self.assertTrue(
+            all("message_on_unknown_solution" not in task for task in golden)
+        )
+        self.assertTrue(
+            all(
+                "message_on_unknown_solution" not in task
+                for suite in self.plan["exam"]
+                for task in suite["tasks"]
+            )
+        )
 
     def test_bbox_authors_are_excluded(self):
         source = {
@@ -99,7 +110,26 @@ class ReviewTests(unittest.TestCase):
         self.assertTrue(all(call[3]["open_pool"] == "false" for call in uploads))
         pools = [call[2] for call in api.calls if call[1] == "/pools"]
         self.assertTrue(all("review:" not in pool["private_name"] for pool in pools))
-        self.assertTrue(all(pool["private_comment"].startswith("review:") for pool in pools))
+        self.assertTrue(
+            all(pool["private_comment"].startswith("review:") for pool in pools)
+        )
+        self.assertTrue(
+            all(
+                pool["quality_control"]["configs"][0]["collector_config"]["type"]
+                == "GOLDEN_SET"
+                for pool in pools
+            )
+        )
+        qualified = pools[1:]
+        access_filters = [
+            rule
+            for pool in qualified
+            for group in pool["filter"]["and"]
+            for rule in group["or"]
+            if rule.get("key") == state["resources"]["access_skill"]
+        ]
+        self.assertTrue(access_filters)
+        self.assertTrue(all(rule["operator"] == "GTE" for rule in access_filters))
 
     def test_export_requires_two_independent_reviewers(self):
         source = [
