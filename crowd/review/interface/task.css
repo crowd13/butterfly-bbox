@@ -1,0 +1,9 @@
+.review-task { max-width: 900px; margin: 0 auto; font: 16px/1.4 Arial, sans-serif; }
+.review-status { min-height: 1.4em; color: #555; }
+.review-image { position: relative; display: inline-block; max-width: 100%; background: #eee; }
+.review-image img { display: block; max-width: 100%; max-height: 72vh; }
+.review-boxes { position: absolute; inset: 0; pointer-events: none; }
+.review-box { position: absolute; box-sizing: border-box; border: 3px solid #ff3030; background: #ff303018; }
+.review-toggle { margin: 12px 0; padding: 7px 12px; }
+.review-verdicts { display: grid; gap: 8px; border: 1px solid #bbb; }
+.review-verdicts label { cursor: pointer; }

@@ -1,0 +1,15 @@
+{
+  "dataset_size": 400,
+  "seed": 42,
+  "work_per_page": 5,
+  "overlap": 2,
+  "pilot_size": 40,
+  "review_price": "0.75",
+  "exam_price": "1.00",
+  "exam_attempts": 20,
+  "exam_pass": 90,
+  "control_min_answers": 2,
+  "control_pass": 80,
+  "assignment_seconds": 900,
+  "commission": "0.40"
+}
