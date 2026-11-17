@@ -50,7 +50,6 @@ def build(source=DEFAULT_SOURCE, gold=DEFAULT_GOLD):
                                 "correctness_weight": 1.0,
                             }
                         ],
-                        "message_on_unknown_solution": row["hint"],
                     }
                     for row in examples["exam"]
                 ],
@@ -95,7 +94,34 @@ class Creator:
         self.save()
         return resource["id"]
 
-    def pool_body(self, name, marker, price, overlap, qualified):
+    @staticmethod
+    def golden_set(skill_id, minimum, history_size):
+        return {
+            "collector_config": {
+                "type": "GOLDEN_SET",
+                "parameters": {"history_size": history_size},
+            },
+            "rules": [
+                {
+                    "conditions": [
+                        {
+                            "key": "golden_set_answers_count",
+                            "operator": "GTE",
+                            "value": minimum,
+                        }
+                    ],
+                    "action": {
+                        "type": "SET_SKILL_FROM_OUTPUT_FIELD",
+                        "parameters": {
+                            "skill_id": skill_id,
+                            "from_field": "correct_answers_rate",
+                        },
+                    },
+                }
+            ],
+        }
+
+    def pool_body(self, key, name, marker, price, overlap, qualified):
         filters = [
             {"category": "profile", "key": "languages", "operator": "IN", "value": "RU"}
         ]
@@ -111,8 +137,8 @@ class Creator:
                     {
                         "category": "skill",
                         "key": self.state["resources"]["access_skill"],
-                        "operator": "EQ",
-                        "value": 100,
+                        "operator": "GTE",
+                        "value": self.plan["config"]["control_pass"],
                     },
                 ]
             )
@@ -133,12 +159,45 @@ class Creator:
             "filter": {"and": [{"or": [row]} for row in filters]},
             "defaults": {"default_overlap_for_new_task_suites": overlap},
         }
-        if not qualified:
-            body["quality_control"] = {
-                "training_requirement": {
-                    "training_pool_id": self.state["resources"]["training"],
-                    "training_passing_skill_value": 100,
+        skill = self.state["resources"][
+            "exam_skill" if key == "exam" else "access_skill"
+        ]
+        minimum = (
+            len(self.plan["examples"]["exam"])
+            if key == "exam"
+            else self.plan["config"]["control_min_answers"]
+        )
+        body["quality_control"] = {
+            "configs": [self.golden_set(skill, minimum, minimum)]
+        }
+        if key == "exam":
+            body["quality_control"]["configs"][0]["rules"].append(
+                {
+                    "conditions": [
+                        {
+                            "key": "golden_set_answers_count",
+                            "operator": "GTE",
+                            "value": minimum,
+                        },
+                        {
+                            "key": "correct_answers_rate",
+                            "operator": "GTE",
+                            "value": self.plan["config"]["exam_pass"],
+                        },
+                    ],
+                    "action": {
+                        "type": "SET_SKILL",
+                        "parameters": {
+                            "skill_id": self.state["resources"]["access_skill"],
+                            "skill_value": 100,
+                        },
+                    },
                 }
+            )
+        if not qualified:
+            body["quality_control"]["training_requirement"] = {
+                "training_pool_id": self.state["resources"]["training"],
+                "training_passing_skill_value": 100,
             }
         return body
 
@@ -211,7 +270,9 @@ class Creator:
         )
         training = {
             "project_id": self.state["resources"]["project"],
-            "private_name": "Обучение проверки рамок [" + self.state["run_id"][:8] + "]",
+            "private_name": "Обучение проверки рамок ["
+            + self.state["run_id"][:8]
+            + "]",
             "may_contain_adult_content": False,
             "assignment_max_duration_seconds": self.plan["config"][
                 "assignment_seconds"
@@ -286,7 +347,7 @@ class Creator:
             pool_id = self.ensure(
                 key,
                 "/pools",
-                self.pool_body(title, pool_marker, price, overlap, qualified),
+                self.pool_body(key, title, pool_marker, price, overlap, qualified),
                 "private_comment",
                 pool_marker,
             )
@@ -359,7 +420,7 @@ class Creator:
                 self.api.skill(
                     self.state["resources"]["access_skill"],
                     worker,
-                    100 if result["passed"] else 0,
+                    result["score"],
                 )
         self.state["control_scores"] = report
         self.save()

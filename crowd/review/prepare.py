@@ -166,7 +166,6 @@ def pages(rows, controls, config, seed=None):
                         "correctness_weight": 1.0,
                     }
                 ],
-                "message_on_unknown_solution": control["hint"],
             }
         )
         result.append(
