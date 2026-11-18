@@ -2,6 +2,7 @@
 
 import json
 import os
+import re
 import time
 import urllib.error
 import urllib.parse
@@ -18,9 +19,9 @@ class ApiError(RuntimeError):
 
 class TasksApi:
     def __init__(self, token=None):
-        self.token = token or os.environ.get("YANDEX_TASKS_OAUTH", "")
+        self.token = (os.environ.get("YANDEX_TASKS_OAUTH", "") if token is None else token).strip()
         if not self.token:
-            raise ValueError("Set YANDEX_TASKS_OAUTH")
+            raise ValueError("Enter a nonempty OAuth token or set YANDEX_TASKS_OAUTH")
 
     def request(self, method, path, body=None, query=None):
         url = API_ROOT + path
@@ -40,8 +41,31 @@ class TasksApi:
                 raw = response.read()
                 return json.loads(raw) if raw else {}
         except urllib.error.HTTPError as exc:
-            # Do not echo response bodies: they may contain requester or worker data.
-            raise ApiError(f"{method} {path}: HTTP {exc.code}", exc.code) from None
+            code = ""
+            try:
+                details = json.loads(exc.read(16384))
+                candidate = details.get("code", "") if isinstance(details, dict) else ""
+                if isinstance(candidate, str) and re.fullmatch(r"[A-Z][A-Z0-9_.-]{0,79}", candidate):
+                    code = f" ({candidate})"
+                payload = details.get("payload", {}) if isinstance(details, dict) else {}
+                fields = []
+                if isinstance(payload, dict) and isinstance(body, dict):
+                    for field, issue in payload.items():
+                        field_code = issue.get("code", "") if isinstance(issue, dict) else ""
+                        if field.split(".", 1)[0] in body and re.fullmatch(
+                            r"[A-Za-z_][A-Za-z0-9_.]{0,119}", field
+                        ):
+                            valid_code = isinstance(field_code, str) and re.fullmatch(
+                                r"[A-Z][A-Z0-9_.-]{0,79}", field_code
+                            )
+                            fields.append(f"{field}: {field_code}" if valid_code else field)
+                if fields:
+                    code += " [" + "; ".join(fields[:10]) + "]"
+            except (ValueError, OSError):
+                pass
+            finally:
+                exc.close()
+            raise ApiError(f"{method} {path}: HTTP {exc.code}{code}", exc.code) from None
         except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:
             raise ApiError(f"{method} {path}: uncertain response ({type(exc).__name__})") from None
 

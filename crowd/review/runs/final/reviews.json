@@ -1,0 +1,1318 @@
+[
+  {
+    "answer_id": "000068c651--6afad8152676605b3c947c36:3",
+    "decision": "ACCEPT",
+    "photo_id": "762614613",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb0f1dbc6782d147f23e7",
+        "verdict": "OK",
+        "worker_id": "b3e40c9dd319cf40f3161eb45e684fbe"
+      },
+      {
+        "assignment_id": "000068d372--6afdb0f2034bf371776c1428",
+        "verdict": "OK",
+        "worker_id": "a01ad0b0206c84b2c4514d4e19fc3081"
+      }
+    ],
+    "source_solution": {
+      "boxes": [],
+      "status": "no_butterflies"
+    },
+    "source_worker_id": "a844b1e972b8bf46aad4feaff38d09c1"
+  },
+  {
+    "answer_id": "000068c651--6afad864f006a13bf9ec6dba:2",
+    "decision": "ACCEPT",
+    "photo_id": "761169265",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb102f7cf255f980b6868",
+        "verdict": "OK",
+        "worker_id": "b3e40c9dd319cf40f3161eb45e684fbe"
+      },
+      {
+        "assignment_id": "000068d372--6afdb112e0a9eb7937dcb766",
+        "verdict": "OK",
+        "worker_id": "28f1e18992688d0869efe33bc1b0ea19"
+      }
+    ],
+    "source_solution": {
+      "boxes": [
+        {
+          "height": 0.18846153846153849,
+          "left": 0.3641025641025641,
+          "top": 0.21346153846153845,
+          "width": 0.3564102564102564
+        }
+      ],
+      "status": "boxes"
+    },
+    "source_worker_id": "08eabc06e5466d8b9015c1d2e65a9598"
+  },
+  {
+    "answer_id": "000068c651--6afad8912f8c38133610b88f:3",
+    "decision": "ACCEPT",
+    "photo_id": "761935261",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb0fbe0a9eb7937dcb3bf",
+        "verdict": "OK",
+        "worker_id": "6e9a057549a9d7a671f5bb987ea400df"
+      },
+      {
+        "assignment_id": "000068d372--6afdb129743be06b822ffb1a",
+        "verdict": "OK",
+        "worker_id": "b3e40c9dd319cf40f3161eb45e684fbe"
+      }
+    ],
+    "source_solution": {
+      "boxes": [
+        {
+          "height": 0.07500000000000001,
+          "left": 0.12564102564102564,
+          "top": 0.27692307692307694,
+          "width": 0.09487179487179487
+        },
+        {
+          "height": 0.0692307692307692,
+          "left": 0.541025641025641,
+          "top": 0.6846153846153846,
+          "width": 0.11794871794871797
+        },
+        {
+          "height": 0.06923076923076932,
+          "left": 0.6538461538461539,
+          "top": 0.6346153846153846,
+          "width": 0.04102564102564099
+        },
+        {
+          "height": 0.06730769230769229,
+          "left": 0.6974358974358974,
+          "top": 0.6230769230769231,
+          "width": 0.04871794871794877
+        },
+        {
+          "height": 0.06538461538461537,
+          "left": 0.5871794871794872,
+          "top": 0.9134615384615384,
+          "width": 0.09999999999999998
+        },
+        {
+          "height": 0.07499999999999996,
+          "left": 0.558974358974359,
+          "top": 0.8288461538461539,
+          "width": 0.09743589743589742
+        },
+        {
+          "height": 0.07692307692307687,
+          "left": 0.5538461538461539,
+          "top": 0.7480769230769231,
+          "width": 0.1102564102564102
+        },
+        {
+          "height": 0.06538461538461537,
+          "left": 0.6717948717948717,
+          "top": 0.7,
+          "width": 0.08461538461538465
+        },
+        {
+          "height": 0.059615384615384626,
+          "left": 0.6666666666666666,
+          "top": 0.7596153846153846,
+          "width": 0.10000000000000009
+        },
+        {
+          "height": 0.07692307692307687,
+          "left": 0.6794871794871795,
+          "top": 0.9,
+          "width": 0.1102564102564102
+        },
+        {
+          "height": 0.09423076923076923,
+          "left": 0.6538461538461539,
+          "top": 0.8,
+          "width": 0.17692307692307696
+        },
+        {
+          "height": 0.07499999999999996,
+          "left": 0.3564102564102564,
+          "top": 0.4326923076923077,
+          "width": 0.06153846153846154
+        },
+        {
+          "height": 0.0730769230769231,
+          "left": 0.28717948717948716,
+          "top": 0.37884615384615383,
+          "width": 0.0871794871794872
+        },
+        {
+          "height": 0.06730769230769229,
+          "left": 0.5205128205128206,
+          "top": 0.5615384615384615,
+          "width": 0.08205128205128198
+        },
+        {
+          "height": 0.0692307692307692,
+          "left": 0.6076923076923076,
+          "top": 0.5211538461538462,
+          "width": 0.12307692307692308
+        },
+        {
+          "height": 0.08269230769230773,
+          "left": 0.4307692307692308,
+          "top": 0.47307692307692306,
+          "width": 0.11282051282051275
+        },
+        {
+          "height": 0.05000000000000002,
+          "left": 0.14102564102564102,
+          "top": 0.15,
+          "width": 0.08717948717948718
+        },
+        {
+          "height": 0.05769230769230768,
+          "left": 0.14615384615384616,
+          "top": 0.19807692307692307,
+          "width": 0.09487179487179487
+        },
+        {
+          "height": 0.07500000000000001,
+          "left": 0.25384615384615383,
+          "top": 0.2692307692307692,
+          "width": 0.0871794871794872
+        },
+        {
+          "height": 0.06923076923076923,
+          "left": 0.2,
+          "top": 0.225,
+          "width": 0.08461538461538459
+        },
+        {
+          "height": 0.0730769230769231,
+          "left": 0.37435897435897436,
+          "top": 0.3730769230769231,
+          "width": 0.1333333333333333
+        },
+        {
+          "height": 0.06538461538461537,
+          "left": 0.6102564102564103,
+          "top": 0.37884615384615383,
+          "width": 0.0923076923076922
+        },
+        {
+          "height": 0.051923076923076905,
+          "left": 0.6282051282051282,
+          "top": 0.43653846153846154,
+          "width": 0.08974358974358976
+        },
+        {
+          "height": 0.06346153846153846,
+          "left": 0.558974358974359,
+          "top": 0.4442307692307692,
+          "width": 0.0871794871794872
+        },
+        {
+          "height": 0.10192307692307692,
+          "left": 0.46923076923076923,
+          "top": 0.21153846153846154,
+          "width": 0.07948717948717954
+        },
+        {
+          "height": 0.1596153846153846,
+          "left": 0.5538461538461539,
+          "top": 0.2153846153846154,
+          "width": 0.1333333333333333
+        },
+        {
+          "height": 0.11153846153846156,
+          "left": 0.32564102564102565,
+          "top": 0.24423076923076922,
+          "width": 0.11282051282051281
+        },
+        {
+          "height": 0.042307692307692296,
+          "left": 0.1717948717948718,
+          "top": 0.11538461538461539,
+          "width": 0.06666666666666668
+        },
+        {
+          "height": 0.07692307692307693,
+          "left": 0.22564102564102564,
+          "top": 0.046153846153846156,
+          "width": 0.15384615384615383
+        },
+        {
+          "height": 0.055769230769230765,
+          "left": 0.258974358974359,
+          "top": 0.11730769230769231,
+          "width": 0.046153846153846156
+        },
+        {
+          "height": 0.03653846153846155,
+          "left": 0.2692307692307692,
+          "top": 0.1673076923076923,
+          "width": 0.0435897435897436
+        },
+        {
+          "height": 0.059615384615384626,
+          "left": 0.29743589743589743,
+          "top": 0.20384615384615384,
+          "width": 0.038461538461538436
+        },
+        {
+          "height": 0.08653846153846154,
+          "left": 0.4076923076923077,
+          "top": 0.019230769230769232,
+          "width": 0.11025641025641031
+        },
+        {
+          "height": 0.06923076923076923,
+          "left": 0.5128205128205128,
+          "top": 0.03461538461538462,
+          "width": 0.07435897435897443
+        },
+        {
+          "height": 0.04999999999999999,
+          "left": 0.5256410256410257,
+          "top": 0.09423076923076923,
+          "width": 0.09487179487179487
+        },
+        {
+          "height": 0.03653846153846155,
+          "left": 0.43846153846153846,
+          "top": 0.08653846153846154,
+          "width": 0.07435897435897432
+        },
+        {
+          "height": 0.05000000000000002,
+          "left": 0.3384615384615385,
+          "top": 0.13653846153846153,
+          "width": 0.05384615384615382
+        },
+        {
+          "height": 0.06923076923076923,
+          "left": 0.3923076923076923,
+          "top": 0.1519230769230769,
+          "width": 0.08461538461538465
+        },
+        {
+          "height": 0.0846153846153846,
+          "left": 0.46153846153846156,
+          "top": 0.10384615384615385,
+          "width": 0.14615384615384608
+        },
+        {
+          "height": 0.07115384615384612,
+          "left": 0.4794871794871795,
+          "top": 0.3076923076923077,
+          "width": 0.07435897435897437
+        }
+      ],
+      "status": "boxes"
+    },
+    "source_worker_id": "4a85d12b475c51de8d2daa41f2410b8b"
+  },
+  {
+    "answer_id": "000068c651--6afad894b7895576f95b4b2f:3",
+    "decision": "ACCEPT",
+    "photo_id": "762613856",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb11af7cf255f980b6c46",
+        "verdict": "OK",
+        "worker_id": "a7d517a9933212168a5384ed56da7f95"
+      },
+      {
+        "assignment_id": "000068d372--6afdb11ce0a9eb7937dcb840",
+        "verdict": "OK",
+        "worker_id": "b3e40c9dd319cf40f3161eb45e684fbe"
+      }
+    ],
+    "source_solution": {
+      "boxes": [
+        {
+          "height": 0.4100913745075383,
+          "left": 0.39903080310905215,
+          "top": 0.22695724040207318,
+          "width": 0.2500053444476731
+        }
+      ],
+      "status": "boxes"
+    },
+    "source_worker_id": "a00ee2db3892155a13983d85cfd3f1b6"
+  },
+  {
+    "answer_id": "000068c652--6afadfd22f8c38133612245a:3",
+    "decision": "ACCEPT",
+    "photo_id": "762322566",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb116f5ff8931d17020c6",
+        "verdict": "OK",
+        "worker_id": "d76e51cf99e434b7851cb3bb439ceddf"
+      },
+      {
+        "assignment_id": "000068d372--6afdb129743be06b822ffb27",
+        "verdict": "OK",
+        "worker_id": "213c9d4e78ab328e42ff4901a2c6e5b2"
+      }
+    ],
+    "source_solution": {
+      "boxes": [
+        {
+          "height": 0.15965983441246723,
+          "left": 0.3901107674288033,
+          "top": 0.44650049903292155,
+          "width": 0.20132143188039692
+        }
+      ],
+      "status": "boxes"
+    },
+    "source_worker_id": "c08babc045295590657b6f710a184dae"
+  },
+  {
+    "answer_id": "000068c652--6afadfe827a75f4e4f4e78ca:1",
+    "decision": "ACCEPT",
+    "photo_id": "761985025",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb116f5ff8931d17020c6",
+        "verdict": "OK",
+        "worker_id": "d76e51cf99e434b7851cb3bb439ceddf"
+      },
+      {
+        "assignment_id": "000068d372--6afdb129743be06b822ffb27",
+        "verdict": "OK",
+        "worker_id": "213c9d4e78ab328e42ff4901a2c6e5b2"
+      }
+    ],
+    "source_solution": {
+      "boxes": [
+        {
+          "height": 0.19808287508639089,
+          "left": 0.4469808835854252,
+          "top": 0.36539559481955586,
+          "width": 0.17112982400127708
+        }
+      ],
+      "status": "boxes"
+    },
+    "source_worker_id": "672c7b2d9274681ad5828203e3178de4"
+  },
+  {
+    "answer_id": "000068c652--6afadfe827a75f4e4f4e78ca:3",
+    "decision": "ACCEPT",
+    "photo_id": "762498885",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb10fe0a9eb7937dcb707",
+        "verdict": "OK",
+        "worker_id": "b3e40c9dd319cf40f3161eb45e684fbe"
+      },
+      {
+        "assignment_id": "000068d372--6afdb116f7cf255f980b6c08",
+        "verdict": "OK",
+        "worker_id": "893589591375de85f2e4dbdd13cdc3a9"
+      }
+    ],
+    "source_solution": {
+      "boxes": [
+        {
+          "height": 0.5826923076923076,
+          "left": 0.25384615384615383,
+          "top": 0.27115384615384613,
+          "width": 0.46153846153846156
+        }
+      ],
+      "status": "boxes"
+    },
+    "source_worker_id": "672c7b2d9274681ad5828203e3178de4"
+  },
+  {
+    "answer_id": "000068c652--6afae00b8ea2184b8289ee8b:4",
+    "decision": "ACCEPT",
+    "photo_id": "761346782",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb0fbe0a9eb7937dcb3bf",
+        "verdict": "OK",
+        "worker_id": "6e9a057549a9d7a671f5bb987ea400df"
+      },
+      {
+        "assignment_id": "000068d372--6afdb129743be06b822ffb1a",
+        "verdict": "OK",
+        "worker_id": "b3e40c9dd319cf40f3161eb45e684fbe"
+      }
+    ],
+    "source_solution": {
+      "boxes": [
+        {
+          "height": 0.4051363208397604,
+          "left": 0.31268201855594635,
+          "top": 0.28205693223021294,
+          "width": 0.42268090456259844
+        }
+      ],
+      "status": "boxes"
+    },
+    "source_worker_id": "cd58222fd71d31871b41341323918dc9"
+  },
+  {
+    "answer_id": "000068c652--6afae024b5e35b0d9cad0a4b:0",
+    "decision": "ACCEPT",
+    "photo_id": "762452678",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb0f1dbc6782d147f23e7",
+        "verdict": "OK",
+        "worker_id": "b3e40c9dd319cf40f3161eb45e684fbe"
+      },
+      {
+        "assignment_id": "000068d372--6afdb0f2034bf371776c1428",
+        "verdict": "OK",
+        "worker_id": "a01ad0b0206c84b2c4514d4e19fc3081"
+      }
+    ],
+    "source_solution": {
+      "boxes": [
+        {
+          "height": 0.4865530815228823,
+          "left": 0.07112907299823187,
+          "top": 0.27693139817903184,
+          "width": 0.8196009093205354
+        }
+      ],
+      "status": "boxes"
+    },
+    "source_worker_id": "672c7b2d9274681ad5828203e3178de4"
+  },
+  {
+    "answer_id": "000068c652--6afae0558ea2184b8289fbad:1",
+    "decision": "ACCEPT",
+    "photo_id": "761167732",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb102f7cf255f980b6868",
+        "verdict": "OK",
+        "worker_id": "b3e40c9dd319cf40f3161eb45e684fbe"
+      },
+      {
+        "assignment_id": "000068d372--6afdb112e0a9eb7937dcb766",
+        "verdict": "OK",
+        "worker_id": "28f1e18992688d0869efe33bc1b0ea19"
+      }
+    ],
+    "source_solution": {
+      "boxes": [
+        {
+          "height": 0.0909090873522636,
+          "left": 0.43615644179342794,
+          "top": 0.35071871504824387,
+          "width": 0.22274021926333654
+        }
+      ],
+      "status": "boxes"
+    },
+    "source_worker_id": "16c3f3a25fdf5865d44ea8b18b43326b"
+  },
+  {
+    "answer_id": "000068c652--6afae062e989e73b442ff0de:3",
+    "decision": "ACCEPT",
+    "photo_id": "762593515",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb12716a8b1590482273d",
+        "verdict": "OK",
+        "worker_id": "7c1dcf32c921210e5c43aa68c4781a6f"
+      },
+      {
+        "assignment_id": "000068d372--6afdb12801316737e2ab9b42",
+        "verdict": "OK",
+        "worker_id": "28f1e18992688d0869efe33bc1b0ea19"
+      }
+    ],
+    "source_solution": {
+      "boxes": [],
+      "status": "no_butterflies"
+    },
+    "source_worker_id": "a4d1de54603582af0c929715836bd877"
+  },
+  {
+    "answer_id": "000068c652--6afae077f006a13bf9edcb3a:3",
+    "decision": "ACCEPT",
+    "photo_id": "762664520",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb116f5ff8931d17020c6",
+        "verdict": "OK",
+        "worker_id": "d76e51cf99e434b7851cb3bb439ceddf"
+      },
+      {
+        "assignment_id": "000068d372--6afdb129743be06b822ffb27",
+        "verdict": "OK",
+        "worker_id": "213c9d4e78ab328e42ff4901a2c6e5b2"
+      }
+    ],
+    "source_solution": {
+      "boxes": [],
+      "status": "no_butterflies"
+    },
+    "source_worker_id": "1a7dff01de3a48a8f2e0d253d70a5b98"
+  },
+  {
+    "answer_id": "000068c652--6afae09a27a75f4e4f4e9b7f:2",
+    "decision": "ACCEPT",
+    "photo_id": "762701651",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb131dbc6782d147f2e27",
+        "verdict": "OK",
+        "worker_id": "d76e51cf99e434b7851cb3bb439ceddf"
+      },
+      {
+        "assignment_id": "000068d372--6afdb131f7cf255f980b6f5b",
+        "verdict": "OK",
+        "worker_id": "893589591375de85f2e4dbdd13cdc3a9"
+      }
+    ],
+    "source_solution": {
+      "boxes": [],
+      "status": "no_butterflies"
+    },
+    "source_worker_id": "c08babc045295590657b6f710a184dae"
+  },
+  {
+    "answer_id": "000068c652--6afae0d635e56c2ff82463d3:3",
+    "decision": "ACCEPT",
+    "photo_id": "762125600",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb12716a8b1590482273d",
+        "verdict": "OK",
+        "worker_id": "7c1dcf32c921210e5c43aa68c4781a6f"
+      },
+      {
+        "assignment_id": "000068d372--6afdb12801316737e2ab9b42",
+        "verdict": "OK",
+        "worker_id": "28f1e18992688d0869efe33bc1b0ea19"
+      }
+    ],
+    "source_solution": {
+      "boxes": [
+        {
+          "height": 0.27505827683668865,
+          "left": 0.3321678186074281,
+          "top": 0.37481788244002906,
+          "width": 0.3088577661758814
+        }
+      ],
+      "status": "boxes"
+    },
+    "source_worker_id": "16c3f3a25fdf5865d44ea8b18b43326b"
+  },
+  {
+    "answer_id": "000068c652--6afae0dee989e73b4430068a:0",
+    "decision": "ACCEPT",
+    "photo_id": "761662522",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb12716a8b1590482273d",
+        "verdict": "OK",
+        "worker_id": "7c1dcf32c921210e5c43aa68c4781a6f"
+      },
+      {
+        "assignment_id": "000068d372--6afdb12801316737e2ab9b42",
+        "verdict": "OK",
+        "worker_id": "28f1e18992688d0869efe33bc1b0ea19"
+      }
+    ],
+    "source_solution": {
+      "boxes": [
+        {
+          "height": 0.4519366567505033,
+          "left": 0.2450368689733409,
+          "top": 0.20000600979596742,
+          "width": 0.4356211003970505
+        }
+      ],
+      "status": "boxes"
+    },
+    "source_worker_id": "a4d1de54603582af0c929715836bd877"
+  },
+  {
+    "answer_id": "000068c652--6afae0e757179663f8b7ad77:1",
+    "decision": "ACCEPT",
+    "photo_id": "761346897",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb102f7cf255f980b6868",
+        "verdict": "OK",
+        "worker_id": "b3e40c9dd319cf40f3161eb45e684fbe"
+      },
+      {
+        "assignment_id": "000068d372--6afdb112e0a9eb7937dcb766",
+        "verdict": "OK",
+        "worker_id": "28f1e18992688d0869efe33bc1b0ea19"
+      }
+    ],
+    "source_solution": {
+      "boxes": [
+        {
+          "height": 0.4051362695741892,
+          "left": 0.32808372498364996,
+          "top": 0.3051343126688037,
+          "width": 0.33259343662469615
+        }
+      ],
+      "status": "boxes"
+    },
+    "source_worker_id": "1ea4f2d45c487604e2d13fb5599e5cb1"
+  },
+  {
+    "answer_id": "000068c652--6afae112e8f3154fe8669c23:3",
+    "decision": "MANUAL",
+    "photo_id": "762537207",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb131dbc6782d147f2e27",
+        "verdict": "OK",
+        "worker_id": "d76e51cf99e434b7851cb3bb439ceddf"
+      },
+      {
+        "assignment_id": "000068d372--6afdb131f7cf255f980b6f5b",
+        "verdict": "MISSING",
+        "worker_id": "893589591375de85f2e4dbdd13cdc3a9"
+      }
+    ],
+    "source_solution": {
+      "boxes": [],
+      "status": "no_butterflies"
+    },
+    "source_worker_id": "a4d1de54603582af0c929715836bd877"
+  },
+  {
+    "answer_id": "000068c652--6afae1132676605b3c965a43:0",
+    "decision": "ACCEPT",
+    "photo_id": "761939121",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb11af7cf255f980b6c46",
+        "verdict": "OK",
+        "worker_id": "a7d517a9933212168a5384ed56da7f95"
+      },
+      {
+        "assignment_id": "000068d372--6afdb11ce0a9eb7937dcb840",
+        "verdict": "OK",
+        "worker_id": "b3e40c9dd319cf40f3161eb45e684fbe"
+      }
+    ],
+    "source_solution": {
+      "boxes": [
+        {
+          "height": 0.5288620451335677,
+          "left": 0.25617880937029874,
+          "top": 0.1365425643799393,
+          "width": 0.5192349022136256
+        }
+      ],
+      "status": "boxes"
+    },
+    "source_worker_id": "4a85d12b475c51de8d2daa41f2410b8b"
+  },
+  {
+    "answer_id": "000068c652--6afae1172676605b3c965b20:3",
+    "decision": "ACCEPT",
+    "photo_id": "762684124",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb0f1dbc6782d147f23e7",
+        "verdict": "OK",
+        "worker_id": "b3e40c9dd319cf40f3161eb45e684fbe"
+      },
+      {
+        "assignment_id": "000068d372--6afdb0f2034bf371776c1428",
+        "verdict": "OK",
+        "worker_id": "a01ad0b0206c84b2c4514d4e19fc3081"
+      }
+    ],
+    "source_solution": {
+      "boxes": [],
+      "status": "no_butterflies"
+    },
+    "source_worker_id": "1ea4f2d45c487604e2d13fb5599e5cb1"
+  },
+  {
+    "answer_id": "000068c652--6afae12be989e73b4430129f:2",
+    "decision": "ACCEPT",
+    "photo_id": "762481424",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb10fe0a9eb7937dcb707",
+        "verdict": "OK",
+        "worker_id": "b3e40c9dd319cf40f3161eb45e684fbe"
+      },
+      {
+        "assignment_id": "000068d372--6afdb116f7cf255f980b6c08",
+        "verdict": "OK",
+        "worker_id": "893589591375de85f2e4dbdd13cdc3a9"
+      }
+    ],
+    "source_solution": {
+      "boxes": [
+        {
+          "height": 0.8154091168604827,
+          "left": 0.0492295069357196,
+          "top": 0.11923435199374981,
+          "width": 0.8844901412784287
+        }
+      ],
+      "status": "boxes"
+    },
+    "source_worker_id": "3ba47bf88ae4905e4a17fa9439346fab"
+  },
+  {
+    "answer_id": "000068c652--6afae147e989e73b4430172c:1",
+    "decision": "MANUAL",
+    "photo_id": "762411961",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb116f5ff8931d17020c6",
+        "verdict": "OK",
+        "worker_id": "d76e51cf99e434b7851cb3bb439ceddf"
+      },
+      {
+        "assignment_id": "000068d372--6afdb129743be06b822ffb27",
+        "verdict": "MISSING",
+        "worker_id": "213c9d4e78ab328e42ff4901a2c6e5b2"
+      }
+    ],
+    "source_solution": {
+      "boxes": [],
+      "status": "no_butterflies"
+    },
+    "source_worker_id": "08eabc06e5466d8b9015c1d2e65a9598"
+  },
+  {
+    "answer_id": "000068c652--6afae1502f8c381336127e1e:0",
+    "decision": "ACCEPT",
+    "photo_id": "762663948",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb131dbc6782d147f2e27",
+        "verdict": "OK",
+        "worker_id": "d76e51cf99e434b7851cb3bb439ceddf"
+      },
+      {
+        "assignment_id": "000068d372--6afdb131f7cf255f980b6f5b",
+        "verdict": "OK",
+        "worker_id": "893589591375de85f2e4dbdd13cdc3a9"
+      }
+    ],
+    "source_solution": {
+      "boxes": [],
+      "status": "no_butterflies"
+    },
+    "source_worker_id": "16c3f3a25fdf5865d44ea8b18b43326b"
+  },
+  {
+    "answer_id": "000068c652--6afae16ef006a13bf9edf227:4",
+    "decision": "ACCEPT",
+    "photo_id": "762418100",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb0fbe0a9eb7937dcb3bf",
+        "verdict": "OK",
+        "worker_id": "6e9a057549a9d7a671f5bb987ea400df"
+      },
+      {
+        "assignment_id": "000068d372--6afdb129743be06b822ffb1a",
+        "verdict": "OK",
+        "worker_id": "b3e40c9dd319cf40f3161eb45e684fbe"
+      }
+    ],
+    "source_solution": {
+      "boxes": [
+        {
+          "height": 0.7250000000000001,
+          "left": 0.1346153846153846,
+          "top": 0.10576923076923077,
+          "width": 0.8230769230769232
+        }
+      ],
+      "status": "boxes"
+    },
+    "source_worker_id": "08eabc06e5466d8b9015c1d2e65a9598"
+  },
+  {
+    "answer_id": "000068c652--6afae172b5e35b0d9cad4163:0",
+    "decision": "ACCEPT",
+    "photo_id": "762668953",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb10fe0a9eb7937dcb707",
+        "verdict": "OK",
+        "worker_id": "b3e40c9dd319cf40f3161eb45e684fbe"
+      },
+      {
+        "assignment_id": "000068d372--6afdb116f7cf255f980b6c08",
+        "verdict": "OK",
+        "worker_id": "893589591375de85f2e4dbdd13cdc3a9"
+      }
+    ],
+    "source_solution": {
+      "boxes": [
+        {
+          "height": 0.445880126953125,
+          "left": 0.14325137851410863,
+          "top": 0.3717531350942758,
+          "width": 0.39355191794747235
+        }
+      ],
+      "status": "boxes"
+    },
+    "source_worker_id": "0c8e9779bd60bcceab888df7c169c56c"
+  },
+  {
+    "answer_id": "000068c652--6afae172b5e35b0d9cad4163:3",
+    "decision": "ACCEPT",
+    "photo_id": "761473838",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb12716a8b1590482273d",
+        "verdict": "OK",
+        "worker_id": "7c1dcf32c921210e5c43aa68c4781a6f"
+      },
+      {
+        "assignment_id": "000068d372--6afdb12801316737e2ab9b42",
+        "verdict": "OK",
+        "worker_id": "28f1e18992688d0869efe33bc1b0ea19"
+      }
+    ],
+    "source_solution": {
+      "boxes": [
+        {
+          "height": 0.5662821739864299,
+          "left": 0.3737028275390556,
+          "top": 0.22678329212217846,
+          "width": 0.46479313860522564
+        }
+      ],
+      "status": "boxes"
+    },
+    "source_worker_id": "0c8e9779bd60bcceab888df7c169c56c"
+  },
+  {
+    "answer_id": "000068c652--6afae1792676605b3c966b61:1",
+    "decision": "ACCEPT",
+    "photo_id": "761486670",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb12716a8b1590482273d",
+        "verdict": "OK",
+        "worker_id": "7c1dcf32c921210e5c43aa68c4781a6f"
+      },
+      {
+        "assignment_id": "000068d372--6afdb12801316737e2ab9b42",
+        "verdict": "OK",
+        "worker_id": "28f1e18992688d0869efe33bc1b0ea19"
+      }
+    ],
+    "source_solution": {
+      "boxes": [
+        {
+          "height": 0.7480994020253012,
+          "left": 0.06839480462541787,
+          "top": 0.10769554373629016,
+          "width": 0.7155148791582178
+        }
+      ],
+      "status": "boxes"
+    },
+    "source_worker_id": "672c7b2d9274681ad5828203e3178de4"
+  },
+  {
+    "answer_id": "000068c652--6afae1792676605b3c966b61:4",
+    "decision": "ACCEPT",
+    "photo_id": "761340928",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb102f7cf255f980b6868",
+        "verdict": "OK",
+        "worker_id": "b3e40c9dd319cf40f3161eb45e684fbe"
+      },
+      {
+        "assignment_id": "000068d372--6afdb112e0a9eb7937dcb766",
+        "verdict": "OK",
+        "worker_id": "28f1e18992688d0869efe33bc1b0ea19"
+      }
+    ],
+    "source_solution": {
+      "boxes": [
+        {
+          "height": 0.27885453288860845,
+          "left": 0.36569722695151247,
+          "top": 0.3365485741759067,
+          "width": 0.241807962310796
+        }
+      ],
+      "status": "boxes"
+    },
+    "source_worker_id": "672c7b2d9274681ad5828203e3178de4"
+  },
+  {
+    "answer_id": "000068c652--6afae184e8f3154fe866ab84:2",
+    "decision": "ACCEPT",
+    "photo_id": "761800430",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb10fe0a9eb7937dcb707",
+        "verdict": "OK",
+        "worker_id": "b3e40c9dd319cf40f3161eb45e684fbe"
+      },
+      {
+        "assignment_id": "000068d372--6afdb116f7cf255f980b6c08",
+        "verdict": "OK",
+        "worker_id": "893589591375de85f2e4dbdd13cdc3a9"
+      }
+    ],
+    "source_solution": {
+      "boxes": [
+        {
+          "height": 0.6346153846153846,
+          "left": 0.3507692307692308,
+          "top": 0.14423076923076922,
+          "width": 0.30769230769230765
+        }
+      ],
+      "status": "boxes"
+    },
+    "source_worker_id": "4a85d12b475c51de8d2daa41f2410b8b"
+  },
+  {
+    "answer_id": "000068c652--6afae18657179663f8b7cb32:2",
+    "decision": "ACCEPT",
+    "photo_id": "760361914",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb131dbc6782d147f2e27",
+        "verdict": "OK",
+        "worker_id": "d76e51cf99e434b7851cb3bb439ceddf"
+      },
+      {
+        "assignment_id": "000068d372--6afdb131f7cf255f980b6f5b",
+        "verdict": "OK",
+        "worker_id": "893589591375de85f2e4dbdd13cdc3a9"
+      }
+    ],
+    "source_solution": {
+      "boxes": [
+        {
+          "height": 0.7723262583668594,
+          "left": 0.2774566517344307,
+          "top": 0.06615542624398804,
+          "width": 0.7225433482655693
+        }
+      ],
+      "status": "boxes"
+    },
+    "source_worker_id": "c08babc045295590657b6f710a184dae"
+  },
+  {
+    "answer_id": "000068c652--6afae18657179663f8b7cb32:4",
+    "decision": "ACCEPT",
+    "photo_id": "762615334",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb10fe0a9eb7937dcb707",
+        "verdict": "OK",
+        "worker_id": "b3e40c9dd319cf40f3161eb45e684fbe"
+      },
+      {
+        "assignment_id": "000068d372--6afdb116f7cf255f980b6c08",
+        "verdict": "OK",
+        "worker_id": "893589591375de85f2e4dbdd13cdc3a9"
+      }
+    ],
+    "source_solution": {
+      "boxes": [],
+      "status": "no_butterflies"
+    },
+    "source_worker_id": "c08babc045295590657b6f710a184dae"
+  },
+  {
+    "answer_id": "000068c652--6afae19b27a75f4e4f4ec4ce:4",
+    "decision": "ACCEPT",
+    "photo_id": "762626192",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb102f7cf255f980b6868",
+        "verdict": "OK",
+        "worker_id": "b3e40c9dd319cf40f3161eb45e684fbe"
+      },
+      {
+        "assignment_id": "000068d372--6afdb112e0a9eb7937dcb766",
+        "verdict": "OK",
+        "worker_id": "28f1e18992688d0869efe33bc1b0ea19"
+      }
+    ],
+    "source_solution": {
+      "boxes": [],
+      "status": "no_butterflies"
+    },
+    "source_worker_id": "08eabc06e5466d8b9015c1d2e65a9598"
+  },
+  {
+    "answer_id": "000068c652--6afae1ad27a75f4e4f4ec8b6:0",
+    "decision": "ACCEPT",
+    "photo_id": "761945992",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb0fbe0a9eb7937dcb3bf",
+        "verdict": "OK",
+        "worker_id": "6e9a057549a9d7a671f5bb987ea400df"
+      },
+      {
+        "assignment_id": "000068d372--6afdb129743be06b822ffb1a",
+        "verdict": "OK",
+        "worker_id": "b3e40c9dd319cf40f3161eb45e684fbe"
+      }
+    ],
+    "source_solution": {
+      "boxes": [
+        {
+          "height": 0.4935898406500996,
+          "left": 0.38141024314910427,
+          "top": 0.26065040126511807,
+          "width": 0.28846154692610365
+        }
+      ],
+      "status": "boxes"
+    },
+    "source_worker_id": "1a7dff01de3a48a8f2e0d253d70a5b98"
+  },
+  {
+    "answer_id": "000068c652--6afae1cab7895576f95cfde5:0",
+    "decision": "ACCEPT",
+    "photo_id": "762534292",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb131dbc6782d147f2e27",
+        "verdict": "OK",
+        "worker_id": "d76e51cf99e434b7851cb3bb439ceddf"
+      },
+      {
+        "assignment_id": "000068d372--6afdb131f7cf255f980b6f5b",
+        "verdict": "OK",
+        "worker_id": "893589591375de85f2e4dbdd13cdc3a9"
+      }
+    ],
+    "source_solution": {
+      "boxes": [
+        {
+          "height": 0.798100904474293,
+          "left": 0.29880773469592226,
+          "top": 0.1538507767661288,
+          "width": 0.5334936379120329
+        }
+      ],
+      "status": "boxes"
+    },
+    "source_worker_id": "a4d1de54603582af0c929715836bd877"
+  },
+  {
+    "answer_id": "000068c652--6afae1de8a82a107ce84ba3c:2",
+    "decision": "ACCEPT",
+    "photo_id": "762705039",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb11af7cf255f980b6c46",
+        "verdict": "OK",
+        "worker_id": "a7d517a9933212168a5384ed56da7f95"
+      },
+      {
+        "assignment_id": "000068d372--6afdb11ce0a9eb7937dcb840",
+        "verdict": "OK",
+        "worker_id": "b3e40c9dd319cf40f3161eb45e684fbe"
+      }
+    ],
+    "source_solution": {
+      "boxes": [],
+      "status": "no_butterflies"
+    },
+    "source_worker_id": "4e73fa4f20bda89547104cd0e523a96b"
+  },
+  {
+    "answer_id": "000068c652--6afae1f8e989e73b4430346e:3",
+    "decision": "ACCEPT",
+    "photo_id": "761483634",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb11af7cf255f980b6c46",
+        "verdict": "OK",
+        "worker_id": "a7d517a9933212168a5384ed56da7f95"
+      },
+      {
+        "assignment_id": "000068d372--6afdb11ce0a9eb7937dcb840",
+        "verdict": "OK",
+        "worker_id": "b3e40c9dd319cf40f3161eb45e684fbe"
+      }
+    ],
+    "source_solution": {
+      "boxes": [
+        {
+          "height": 0.5923254905495958,
+          "left": 0.2001643298258634,
+          "top": 0.271161994050302,
+          "width": 0.39015081237244553
+        }
+      ],
+      "status": "boxes"
+    },
+    "source_worker_id": "a4d1de54603582af0c929715836bd877"
+  },
+  {
+    "answer_id": "000068c652--6afae21735e56c2ff8249931:4",
+    "decision": "ACCEPT",
+    "photo_id": "761773231",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb11af7cf255f980b6c46",
+        "verdict": "OK",
+        "worker_id": "a7d517a9933212168a5384ed56da7f95"
+      },
+      {
+        "assignment_id": "000068d372--6afdb11ce0a9eb7937dcb840",
+        "verdict": "OK",
+        "worker_id": "b3e40c9dd319cf40f3161eb45e684fbe"
+      }
+    ],
+    "source_solution": {
+      "boxes": [
+        {
+          "height": 0.6749999999999999,
+          "left": 0.24615384615384617,
+          "top": 0.17692307692307693,
+          "width": 0.46153846153846156
+        }
+      ],
+      "status": "boxes"
+    },
+    "source_worker_id": "08eabc06e5466d8b9015c1d2e65a9598"
+  },
+  {
+    "answer_id": "000068c652--6afae21eb7895576f95d0b85:3",
+    "decision": "ACCEPT",
+    "photo_id": "762153120",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb0fbe0a9eb7937dcb3bf",
+        "verdict": "OK",
+        "worker_id": "6e9a057549a9d7a671f5bb987ea400df"
+      },
+      {
+        "assignment_id": "000068d372--6afdb129743be06b822ffb1a",
+        "verdict": "OK",
+        "worker_id": "b3e40c9dd319cf40f3161eb45e684fbe"
+      }
+    ],
+    "source_solution": {
+      "boxes": [
+        {
+          "height": 0.007852583665114155,
+          "left": 0.2860968695746528,
+          "top": 0.2650961362398588,
+          "width": 0.12564102564102564
+        },
+        {
+          "height": 0.3156730651855469,
+          "left": 0.015270683092948718,
+          "top": 0.30592947739821214,
+          "width": 0.8376067854400373
+        }
+      ],
+      "status": "boxes"
+    },
+    "source_worker_id": "4e73fa4f20bda89547104cd0e523a96b"
+  },
+  {
+    "answer_id": "000068c652--6afae22eb5e35b0d9cad5cd3:0",
+    "decision": "MANUAL",
+    "photo_id": "762681240",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb116f5ff8931d17020c6",
+        "verdict": "OK",
+        "worker_id": "d76e51cf99e434b7851cb3bb439ceddf"
+      },
+      {
+        "assignment_id": "000068d372--6afdb129743be06b822ffb27",
+        "verdict": "OK",
+        "worker_id": "213c9d4e78ab328e42ff4901a2c6e5b2"
+      }
+    ],
+    "source_solution": {
+      "boxes": [],
+      "status": "uncertain"
+    },
+    "source_worker_id": "672c7b2d9274681ad5828203e3178de4"
+  },
+  {
+    "answer_id": "000068c652--6afae22eb5e35b0d9cad5cd3:4",
+    "decision": "ACCEPT",
+    "photo_id": "761921435",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb0f1dbc6782d147f23e7",
+        "verdict": "OK",
+        "worker_id": "b3e40c9dd319cf40f3161eb45e684fbe"
+      },
+      {
+        "assignment_id": "000068d372--6afdb0f2034bf371776c1428",
+        "verdict": "OK",
+        "worker_id": "a01ad0b0206c84b2c4514d4e19fc3081"
+      }
+    ],
+    "source_solution": {
+      "boxes": [
+        {
+          "height": 0.11730769230769222,
+          "left": 0.3641025641025641,
+          "top": 0.5230769230769231,
+          "width": 0.2871794871794872
+        }
+      ],
+      "status": "boxes"
+    },
+    "source_worker_id": "672c7b2d9274681ad5828203e3178de4"
+  },
+  {
+    "answer_id": "000068c652--6afae23df006a13bf9ee10ec:0",
+    "decision": "ACCEPT",
+    "photo_id": "761383669",
+    "reviews": [
+      {
+        "assignment_id": "000068d372--6afdb0f1dbc6782d147f23e7",
+        "verdict": "OK",
+        "worker_id": "b3e40c9dd319cf40f3161eb45e684fbe"
+      },
+      {
+        "assignment_id": "000068d372--6afdb0f2034bf371776c1428",
+        "verdict": "OK",
+        "worker_id": "a01ad0b0206c84b2c4514d4e19fc3081"
+      }
+    ],
+    "source_solution": {
+      "boxes": [
+        {
+          "height": 0.5788635475825596,
+          "left": 0.34529702970297027,
+          "top": 0.2730851287598786,
+          "width": 0.525990099009901
+        }
+      ],
+      "status": "boxes"
+    },
+    "source_worker_id": "a4d1de54603582af0c929715836bd877"
+  }
+]

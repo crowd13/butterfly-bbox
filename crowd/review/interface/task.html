@@ -1,7 +1,40 @@
 <section class="review-task">
-  <p class="review-status"></p>
-  <div class="review-image"><img alt="Фотография для проверки"><div class="review-boxes"></div></div>
-  <button class="review-toggle" type="button">Скрыть рамки</button>
+  <details class="review-practice" hidden>
+    <summary>Разобрать 6 учебных примеров</summary>
+    <p>Это необязательная тренировка. Ответы здесь не отправляются и не меняют вашу оценку задания.</p>
+    <p class="review-practice-progress" aria-live="polite"></p>
+    <div class="review-practice-exercise">
+      <div class="review-viewport"><div class="review-image"><img class="review-practice-photo" alt="Учебная фотография"><div class="review-practice-boxes review-boxes" aria-hidden="true"></div></div></div>
+      <p class="review-practice-status" role="status"></p>
+      <fieldset class="review-practice-verdicts">
+        <legend>Как оцените учебную разметку?</legend>
+        <label><input type="radio" value="OK"> Всё правильно</label>
+        <label><input type="radio" value="MISSING"> Пропущена бабочка</label>
+        <label><input type="radio" value="EXTRA"> Есть лишняя рамка</label>
+        <label><input type="radio" value="BOUNDARY"> Неточная рамка</label>
+        <label><input type="radio" value="LOAD_ERROR"> Ошибка загрузки</label>
+      </fieldset>
+      <p class="review-practice-feedback" role="status" aria-live="polite"></p>
+      <div class="review-tools">
+        <button class="review-practice-check" type="button">Проверить учебный ответ</button>
+        <button class="review-practice-next" type="button" hidden>Следующий пример</button>
+        <button class="review-practice-retry" type="button" hidden>Загрузить повторно</button>
+      </div>
+    </div>
+    <p class="review-practice-complete" hidden>Все 6 учебных примеров разобраны. Можно вернуться к заданию ниже.</p>
+  </details>
+  <p>Проверьте весь кадр: все ли взрослые бабочки, моли и мотыльки выделены отдельными плотными рамками.</p>
+  <p class="review-summary"></p>
+  <p class="review-status" role="status" aria-live="polite"></p>
+  <div class="review-main-viewport review-viewport" tabindex="0" aria-label="Фотография с рамками; при увеличении можно прокручивать">
+    <div class="review-image"><img class="review-photo" alt="Полная фотография для проверки"><div class="review-main-boxes review-boxes" aria-hidden="true"></div></div>
+  </div>
+  <div class="review-tools">
+    <button class="review-toggle" type="button" aria-pressed="false">Скрыть рамки</button>
+    <button class="review-zoom" type="button" aria-pressed="false">Увеличить до исходного размера</button>
+    <button class="review-retry" type="button" hidden>Загрузить повторно</button>
+  </div>
+  <p class="review-error" role="alert" aria-live="assertive" hidden></p>
   <fieldset class="review-verdicts">
     <legend>Оцените разметку</legend>
     <label><input type="radio" name="verdict" value="OK"> Всё правильно</label>
@@ -10,4 +43,5 @@
     <label><input type="radio" name="verdict" value="BOUNDARY"> Неточная рамка</label>
     <label><input type="radio" name="verdict" value="LOAD_ERROR"> Ошибка загрузки</label>
   </fieldset>
+  <p class="review-help">Если ошибок несколько, выберите первую: пропуск → лишняя рамка → неточная рамка. Если бабочек и рамок нет, выберите «Всё правильно». Ошибка загрузки — только если фотография не открылась.</p>
 </section>

@@ -3,6 +3,8 @@
 Проект по поиску бабочек на фотографиях и выделению их ограничивающими рамками. Собираем проверенную краудсорсинговую разметку и сравниваем готовые модели, чтобы выбрать наиболее точное решение и понять его ограничения.
 
 - [Запуск bbox через API](crowd/bbox/README.md)
+- [Независимая проверка рамок: API и ручная настройка](crowd/review/README.md)
+- [Ответы командного review для сборки golden_set](crowd/review/runs/final/README.md)
 - [Задание проекта](docs/final_project_2026.md)
 - [Задачи на реализацию](https://github.com/orgs/crowd13/projects/3/views/1)
 - [How to contribute](CONTRIBUTING.md)

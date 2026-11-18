@@ -1,9 +1,21 @@
 .review-task { max-width: 900px; margin: 0 auto; font: 16px/1.4 Arial, sans-serif; }
+.review-summary { font-weight: 600; }
 .review-status { min-height: 1.4em; color: #555; }
-.review-image { position: relative; display: inline-block; max-width: 100%; background: #eee; }
-.review-image img { display: block; max-width: 100%; max-height: 72vh; }
+.review-error { padding: 12px; border: 2px solid #a51616; color: #8c1111; background: #fff2f2; white-space: pre-line; }
+.review-viewport { max-width: 100%; max-height: 75vh; overflow: auto; background: #eee; }
+.review-image { position: relative; width: fit-content; max-width: 100%; }
+.review-image img { display: block; max-width: 100%; max-height: 72vh; width: auto; height: auto; }
+.review-zoomed .review-image, .review-zoomed img { max-width: none; max-height: none; }
 .review-boxes { position: absolute; inset: 0; pointer-events: none; }
 .review-box { position: absolute; box-sizing: border-box; border: 3px solid #ff3030; background: #ff303018; }
-.review-toggle { margin: 12px 0; padding: 7px 12px; }
+.review-tools { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+.review-tools button { padding: 8px 12px; cursor: pointer; }
 .review-verdicts { display: grid; gap: 8px; border: 1px solid #bbb; }
-.review-verdicts label { cursor: pointer; }
+.review-verdicts label { display: block; padding: 6px; cursor: pointer; }
+.review-help { font-size: 14px; color: #555; }
+.review-practice { margin-bottom: 24px; padding: 12px; border: 1px solid #aaa; background: #f7f9ff; }
+.review-practice summary { cursor: pointer; font-weight: 600; }
+.review-practice-progress, .review-practice-complete { font-weight: 600; }
+.review-practice-verdicts { display: grid; gap: 8px; }
+.review-practice-verdicts label { display: block; padding: 6px; cursor: pointer; }
+.review-practice-feedback { min-height: 1.4em; white-space: pre-line; }

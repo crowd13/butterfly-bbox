@@ -1,0 +1,174 @@
+[
+  {
+    "answer_id": "000068c652--6afae0e757179663f8b7ad77:1",
+    "height": 1801,
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761346897/original.jpg",
+    "is_independent_human_review": false,
+    "origin_file": "../known-qa-cases.json",
+    "photo_id": "761346897",
+    "proposal_origin": "AI_VISUAL_REVIEW",
+    "proposed_solution": null,
+    "reason": "Расхождение OK/BOUNDARY; проверить плотность исходной рамки вокруг усиков и лапок.",
+    "source_solution": {
+      "boxes": [
+        {
+          "height": 0.4051362695741892,
+          "left": 0.32808372498364996,
+          "top": 0.3051343126688037,
+          "width": 0.33259343662469615
+        }
+      ],
+      "status": "boxes"
+    },
+    "status": "PENDING_HUMAN_REVIEW",
+    "suggestion": "Проверить границы; исходную версию пока сохранить.",
+    "width": 2048
+  },
+  {
+    "answer_id": "000068c652--6afae16ef006a13bf9edf227:4",
+    "height": 2048,
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762418100/original.jpg",
+    "is_independent_human_review": false,
+    "origin_file": "../known-qa-cases.json",
+    "photo_id": "762418100",
+    "proposal_origin": "AI_VISUAL_REVIEW",
+    "proposed_solution": null,
+    "reason": "Расхождение BOUNDARY/OK; проверить край крыла и тонкие конечности на исходном размере.",
+    "source_solution": {
+      "boxes": [
+        {
+          "height": 0.7250000000000001,
+          "left": 0.1346153846153846,
+          "top": 0.10576923076923077,
+          "width": 0.8230769230769232
+        }
+      ],
+      "status": "boxes"
+    },
+    "status": "PENDING_HUMAN_REVIEW",
+    "suggestion": "Проверить границы; исходную версию пока сохранить.",
+    "width": 2048
+  },
+  {
+    "answer_id": "000068c652--6afae21eb7895576f95d0b85:3",
+    "height": 2048,
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762153120/original.jpg",
+    "is_independent_human_review": false,
+    "origin_file": "../known-qa-cases.json",
+    "photo_id": "762153120",
+    "proposal_origin": "AI_VISUAL_REVIEW",
+    "proposed_solution": {
+      "boxes": [
+        {
+          "height": 0.3156730651855469,
+          "left": 0.015270683092948718,
+          "top": 0.30592947739821214,
+          "width": 0.8376067854400373
+        }
+      ],
+      "status": "boxes"
+    },
+    "reason": "Расхождение EXTRA/BOUNDARY. На просмотре обнаружена маленькая рамка над основной бабочкой без целевого объекта.",
+    "source_solution": {
+      "boxes": [
+        {
+          "height": 0.007852583665114155,
+          "left": 0.2860968695746528,
+          "top": 0.2650961362398588,
+          "width": 0.12564102564102564
+        },
+        {
+          "height": 0.3156730651855469,
+          "left": 0.015270683092948718,
+          "top": 0.30592947739821214,
+          "width": 0.8376067854400373
+        }
+      ],
+      "status": "boxes"
+    },
+    "status": "PENDING_HUMAN_REVIEW",
+    "suggestion": "Удалить первую маленькую рамку; отдельно подтвердить границы основной.",
+    "width": 1152
+  },
+  {
+    "answer_id": "000068c652--6afae22eb5e35b0d9cad5cd3:0",
+    "height": 2048,
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762681240/original.jpg",
+    "is_independent_human_review": false,
+    "origin_file": "../known-qa-cases.json",
+    "photo_id": "762681240",
+    "proposal_origin": "AI_VISUAL_REVIEW",
+    "proposed_solution": null,
+    "reason": "Исходный статус uncertain и пустые рамки. Внизу кадра виден объект, похожий на взрослого мотылька; два OK не разрешают исходную неопределённость.",
+    "source_solution": {
+      "boxes": [],
+      "status": "uncertain"
+    },
+    "status": "PENDING_HUMAN_REVIEW",
+    "suggestion": "Человеку определить целевой класс и при необходимости нарисовать рамку.",
+    "width": 1536
+  },
+  {
+    "answer_id": "000068c652--6afae112e8f3154fe8669c23:3",
+    "height": 1200,
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762537207/original.jpg",
+    "is_independent_human_review": false,
+    "origin_file": "../known-qa-cases.json",
+    "photo_id": "762537207",
+    "proposal_origin": "AI_VISUAL_REVIEW",
+    "proposed_solution": {
+      "boxes": [
+        {
+          "height": 0.374,
+          "left": 0.345,
+          "top": 0.273,
+          "width": 0.19
+        }
+      ],
+      "status": "boxes"
+    },
+    "reason": "Оба ревьюера ответили OK на пустые рамки, но при визуальном просмотре обнаружен взрослый мотылёк на листе.",
+    "source_solution": {
+      "boxes": [],
+      "status": "no_butterflies"
+    },
+    "status": "PENDING_HUMAN_REVIEW",
+    "suggestion": "Добавить рамку вокруг мотылька; координаты ниже являются черновиком AI.",
+    "width": 1500
+  },
+  {
+    "answer_id": "000068c652--6afadfe827a75f4e4f4e78ca:1",
+    "height": 2048,
+    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761985025/original.jpg",
+    "is_independent_human_review": false,
+    "origin_file": "../known-qa-cases.json",
+    "photo_id": "761985025",
+    "proposal_origin": "AI_VISUAL_REVIEW",
+    "proposed_solution": {
+      "boxes": [
+        {
+          "height": 0.208,
+          "left": 0.4469808835854252,
+          "top": 0.36539559481955586,
+          "width": 0.222
+        }
+      ],
+      "status": "boxes"
+    },
+    "reason": "Оба ревьюера ответили OK; чёрный хвостик крыла справа выходит за исходную рамку.",
+    "source_solution": {
+      "boxes": [
+        {
+          "height": 0.19808287508639089,
+          "left": 0.4469808835854252,
+          "top": 0.36539559481955586,
+          "width": 0.17112982400127708
+        }
+      ],
+      "status": "boxes"
+    },
+    "status": "PENDING_HUMAN_REVIEW",
+    "suggestion": "Расширить рамку вправо и проверить видимые усики и лапки; координаты ниже — черновик AI.",
+    "width": 1542
+  }
+]
