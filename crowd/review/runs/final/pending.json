@@ -1,0 +1,4043 @@
+[
+  {
+    "answer_id": "000068c651--6afad8152676605b3c947c36:0",
+    "crowd_decision": null,
+    "photo_id": "762453423",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad8152676605b3c947c36:2",
+    "crowd_decision": null,
+    "photo_id": "761921826",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad8152676605b3c947c36:4",
+    "crowd_decision": null,
+    "photo_id": "762646894",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad843b5e35b0d9cabb36f:0",
+    "crowd_decision": null,
+    "photo_id": "762691328",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad843b5e35b0d9cabb36f:2",
+    "crowd_decision": null,
+    "photo_id": "762517911",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad843b5e35b0d9cabb36f:3",
+    "crowd_decision": null,
+    "photo_id": "762648898",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad843b5e35b0d9cabb36f:4",
+    "crowd_decision": null,
+    "photo_id": "762089640",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad864f006a13bf9ec6dba:1",
+    "crowd_decision": null,
+    "photo_id": "762623221",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad864f006a13bf9ec6dba:3",
+    "crowd_decision": null,
+    "photo_id": "761339173",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad864f006a13bf9ec6dba:4",
+    "crowd_decision": null,
+    "photo_id": "761982344",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad86e2676605b3c948a35:0",
+    "crowd_decision": null,
+    "photo_id": "761340889",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad86e2676605b3c948a35:1",
+    "crowd_decision": null,
+    "photo_id": "762621670",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad86e2676605b3c948a35:3",
+    "crowd_decision": null,
+    "photo_id": "761262449",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad86e2676605b3c948a35:4",
+    "crowd_decision": null,
+    "photo_id": "761316638",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad872b7895576f95b4534:0",
+    "crowd_decision": null,
+    "photo_id": "761922149",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad872b7895576f95b4534:2",
+    "crowd_decision": null,
+    "photo_id": "762200677",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad872b7895576f95b4534:3",
+    "crowd_decision": null,
+    "photo_id": "761320726",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad872b7895576f95b4534:4",
+    "crowd_decision": null,
+    "photo_id": "761682148",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad878e8f3154fe8651cb1:0",
+    "crowd_decision": null,
+    "photo_id": "762449856",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad878e8f3154fe8651cb1:2",
+    "crowd_decision": null,
+    "photo_id": "762452410",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad878e8f3154fe8651cb1:3",
+    "crowd_decision": null,
+    "photo_id": "762567381",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad878e8f3154fe8651cb1:4",
+    "crowd_decision": null,
+    "photo_id": "761179832",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad8828ea2184b82889d4f:0",
+    "crowd_decision": null,
+    "photo_id": "762678484",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad8828ea2184b82889d4f:1",
+    "crowd_decision": null,
+    "photo_id": "761340942",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad8828ea2184b82889d4f:2",
+    "crowd_decision": null,
+    "photo_id": "762560053",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad8828ea2184b82889d4f:4",
+    "crowd_decision": null,
+    "photo_id": "762005642",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad88fb5e35b0d9cabbfa9:0",
+    "crowd_decision": null,
+    "photo_id": "762604716",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad88fb5e35b0d9cabbfa9:1",
+    "crowd_decision": null,
+    "photo_id": "762191645",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad88fb5e35b0d9cabbfa9:2",
+    "crowd_decision": null,
+    "photo_id": "761457401",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad88fb5e35b0d9cabbfa9:4",
+    "crowd_decision": null,
+    "photo_id": "761168845",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad8912f8c38133610b88f:0",
+    "crowd_decision": null,
+    "photo_id": "761346822",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad8912f8c38133610b88f:1",
+    "crowd_decision": null,
+    "photo_id": "761244971",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad8912f8c38133610b88f:4",
+    "crowd_decision": null,
+    "photo_id": "761751734",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad894b7895576f95b4b2f:0",
+    "crowd_decision": null,
+    "photo_id": "761542222",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad894b7895576f95b4b2f:2",
+    "crowd_decision": null,
+    "photo_id": "761479744",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c651--6afad894b7895576f95b4b2f:4",
+    "crowd_decision": null,
+    "photo_id": "761346841",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afadfd22f8c38133612245a:0",
+    "crowd_decision": null,
+    "photo_id": "762112402",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afadfd22f8c38133612245a:1",
+    "crowd_decision": null,
+    "photo_id": "761773339",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afadfd22f8c38133612245a:2",
+    "crowd_decision": null,
+    "photo_id": "762032288",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afadfd4e989e73b442fda05:0",
+    "crowd_decision": null,
+    "photo_id": "762098396",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afadfd4e989e73b442fda05:1",
+    "crowd_decision": null,
+    "photo_id": "761473780",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afadfd4e989e73b442fda05:2",
+    "crowd_decision": null,
+    "photo_id": "760581893",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afadfd4e989e73b442fda05:4",
+    "crowd_decision": null,
+    "photo_id": "762699978",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afadfdee989e73b442fdb6d:0",
+    "crowd_decision": null,
+    "photo_id": "762662847",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afadfdee989e73b442fdb6d:2",
+    "crowd_decision": null,
+    "photo_id": "761984294",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afadfdee989e73b442fdb6d:3",
+    "crowd_decision": null,
+    "photo_id": "762475327",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afadfdee989e73b442fdb6d:4",
+    "crowd_decision": null,
+    "photo_id": "760835745",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afadfe827a75f4e4f4e78ca:0",
+    "crowd_decision": null,
+    "photo_id": "762211388",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afadfe827a75f4e4f4e78ca:1",
+    "crowd_decision": "ACCEPT",
+    "photo_id": "761985025",
+    "qa_flag_count": 1,
+    "reasons": [
+      "AI_QA_FLAG_REQUIRES_HUMAN_REVIEW"
+    ],
+    "requires_human_review": true,
+    "review_count": 2
+  },
+  {
+    "answer_id": "000068c652--6afadfe827a75f4e4f4e78ca:2",
+    "crowd_decision": null,
+    "photo_id": "762641966",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae00b8ea2184b8289ee8b:1",
+    "crowd_decision": null,
+    "photo_id": "761471166",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae00b8ea2184b8289ee8b:2",
+    "crowd_decision": null,
+    "photo_id": "761458334",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae00b8ea2184b8289ee8b:3",
+    "crowd_decision": null,
+    "photo_id": "761486404",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae01c8a82a107ce845a3a:0",
+    "crowd_decision": null,
+    "photo_id": "762616620",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae01c8a82a107ce845a3a:1",
+    "crowd_decision": null,
+    "photo_id": "762424090",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae01c8a82a107ce845a3a:2",
+    "crowd_decision": null,
+    "photo_id": "762683935",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae01c8a82a107ce845a3a:4",
+    "crowd_decision": null,
+    "photo_id": "761340911",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae01d2676605b3c962b1e:0",
+    "crowd_decision": null,
+    "photo_id": "761872374",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae01d2676605b3c962b1e:1",
+    "crowd_decision": null,
+    "photo_id": "762264076",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae01d2676605b3c962b1e:2",
+    "crowd_decision": null,
+    "photo_id": "761869092",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae01d2676605b3c962b1e:4",
+    "crowd_decision": null,
+    "photo_id": "761974107",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae024b5e35b0d9cad0a4b:1",
+    "crowd_decision": null,
+    "photo_id": "762683293",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae024b5e35b0d9cad0a4b:2",
+    "crowd_decision": null,
+    "photo_id": "762173255",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae024b5e35b0d9cad0a4b:3",
+    "crowd_decision": null,
+    "photo_id": "762618587",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0302f8c381336123ab3:1",
+    "crowd_decision": null,
+    "photo_id": "761614361",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0302f8c381336123ab3:2",
+    "crowd_decision": null,
+    "photo_id": "762240961",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0302f8c381336123ab3:3",
+    "crowd_decision": null,
+    "photo_id": "761958523",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0302f8c381336123ab3:4",
+    "crowd_decision": null,
+    "photo_id": "762570505",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0558ea2184b8289fbad:0",
+    "crowd_decision": null,
+    "photo_id": "761369266",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0558ea2184b8289fbad:2",
+    "crowd_decision": null,
+    "photo_id": "761316899",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0558ea2184b8289fbad:4",
+    "crowd_decision": null,
+    "photo_id": "761096243",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae05657179663f8b79309:0",
+    "crowd_decision": null,
+    "photo_id": "760675781",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae05657179663f8b79309:1",
+    "crowd_decision": null,
+    "photo_id": "762077565",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae05657179663f8b79309:2",
+    "crowd_decision": null,
+    "photo_id": "762322057",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae05657179663f8b79309:4",
+    "crowd_decision": null,
+    "photo_id": "762665943",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae058e8f3154fe86678ef:0",
+    "crowd_decision": null,
+    "photo_id": "761478127",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae058e8f3154fe86678ef:2",
+    "crowd_decision": null,
+    "photo_id": "761346809",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae058e8f3154fe86678ef:3",
+    "crowd_decision": null,
+    "photo_id": "760896866",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae058e8f3154fe86678ef:4",
+    "crowd_decision": null,
+    "photo_id": "761739870",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae05d27a75f4e4f4e9138:1",
+    "crowd_decision": null,
+    "photo_id": "762668867",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae05d27a75f4e4f4e9138:2",
+    "crowd_decision": null,
+    "photo_id": "762682898",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae05d27a75f4e4f4e9138:3",
+    "crowd_decision": null,
+    "photo_id": "761770742",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae05d27a75f4e4f4e9138:4",
+    "crowd_decision": null,
+    "photo_id": "760393787",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae062e989e73b442ff0de:0",
+    "crowd_decision": null,
+    "photo_id": "761346816",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae062e989e73b442ff0de:1",
+    "crowd_decision": null,
+    "photo_id": "762065112",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae062e989e73b442ff0de:4",
+    "crowd_decision": null,
+    "photo_id": "762175753",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae077f006a13bf9edcb3a:0",
+    "crowd_decision": null,
+    "photo_id": "761780128",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae077f006a13bf9edcb3a:1",
+    "crowd_decision": null,
+    "photo_id": "762180223",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae077f006a13bf9edcb3a:2",
+    "crowd_decision": null,
+    "photo_id": "762667870",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0912676605b3c9643b5:0",
+    "crowd_decision": null,
+    "photo_id": "761015383",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0912676605b3c9643b5:1",
+    "crowd_decision": null,
+    "photo_id": "762683167",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0912676605b3c9643b5:2",
+    "crowd_decision": null,
+    "photo_id": "762333045",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0912676605b3c9643b5:3",
+    "crowd_decision": null,
+    "photo_id": "761158481",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0932f8c381336125201:1",
+    "crowd_decision": null,
+    "photo_id": "762622379",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0932f8c381336125201:2",
+    "crowd_decision": null,
+    "photo_id": "762517993",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0932f8c381336125201:3",
+    "crowd_decision": null,
+    "photo_id": "762648502",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0932f8c381336125201:4",
+    "crowd_decision": null,
+    "photo_id": "762072266",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae093e989e73b442ff835:0",
+    "crowd_decision": null,
+    "photo_id": "762666524",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae093e989e73b442ff835:1",
+    "crowd_decision": null,
+    "photo_id": "762682856",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae093e989e73b442ff835:2",
+    "crowd_decision": null,
+    "photo_id": "761982317",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae093e989e73b442ff835:3",
+    "crowd_decision": null,
+    "photo_id": "762705079",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0968a82a107ce847679:1",
+    "crowd_decision": null,
+    "photo_id": "762678918",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0968a82a107ce847679:2",
+    "crowd_decision": null,
+    "photo_id": "760471483",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0968a82a107ce847679:3",
+    "crowd_decision": null,
+    "photo_id": "761334775",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0968a82a107ce847679:4",
+    "crowd_decision": null,
+    "photo_id": "761383827",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0978a82a107ce8476df:1",
+    "crowd_decision": null,
+    "photo_id": "762633341",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0978a82a107ce8476df:2",
+    "crowd_decision": null,
+    "photo_id": "762351486",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0978a82a107ce8476df:3",
+    "crowd_decision": null,
+    "photo_id": "761960813",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0978a82a107ce8476df:4",
+    "crowd_decision": null,
+    "photo_id": "761832174",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae09a27a75f4e4f4e9b7f:0",
+    "crowd_decision": null,
+    "photo_id": "762685822",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae09a27a75f4e4f4e9b7f:1",
+    "crowd_decision": null,
+    "photo_id": "760595076",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae09a27a75f4e4f4e9b7f:3",
+    "crowd_decision": null,
+    "photo_id": "761286010",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae09a2f8c381336125382:0",
+    "crowd_decision": null,
+    "photo_id": "761939177",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae09a2f8c381336125382:1",
+    "crowd_decision": null,
+    "photo_id": "761340947",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae09a2f8c381336125382:3",
+    "crowd_decision": null,
+    "photo_id": "761383748",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae09a2f8c381336125382:4",
+    "crowd_decision": null,
+    "photo_id": "761939456",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0a2e8f3154fe866863c:0",
+    "crowd_decision": null,
+    "photo_id": "761463334",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0a2e8f3154fe866863c:1",
+    "crowd_decision": null,
+    "photo_id": "762513398",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0a2e8f3154fe866863c:2",
+    "crowd_decision": null,
+    "photo_id": "760996704",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0a2e8f3154fe866863c:4",
+    "crowd_decision": null,
+    "photo_id": "762247019",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0b32676605b3c964920:0",
+    "crowd_decision": null,
+    "photo_id": "761227491",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0b32676605b3c964920:1",
+    "crowd_decision": null,
+    "photo_id": "761346880",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0b32676605b3c964920:2",
+    "crowd_decision": null,
+    "photo_id": "761343231",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0b32676605b3c964920:4",
+    "crowd_decision": null,
+    "photo_id": "762124248",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0b72676605b3c964998:0",
+    "crowd_decision": null,
+    "photo_id": "761036691",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0b72676605b3c964998:2",
+    "crowd_decision": null,
+    "photo_id": "762645205",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0b72676605b3c964998:3",
+    "crowd_decision": null,
+    "photo_id": "760735436",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0b72676605b3c964998:4",
+    "crowd_decision": null,
+    "photo_id": "761478610",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0b82f8c381336125a92:1",
+    "crowd_decision": null,
+    "photo_id": "761836698",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0b82f8c381336125a92:2",
+    "crowd_decision": null,
+    "photo_id": "762657685",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0b82f8c381336125a92:3",
+    "crowd_decision": null,
+    "photo_id": "761346858",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0b82f8c381336125a92:4",
+    "crowd_decision": null,
+    "photo_id": "761334725",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0bce989e73b44300087:1",
+    "crowd_decision": null,
+    "photo_id": "761940682",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0bce989e73b44300087:2",
+    "crowd_decision": null,
+    "photo_id": "761564604",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0bce989e73b44300087:3",
+    "crowd_decision": null,
+    "photo_id": "762138814",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0bce989e73b44300087:4",
+    "crowd_decision": null,
+    "photo_id": "761444258",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0c935e56c2ff824611d:0",
+    "crowd_decision": null,
+    "photo_id": "761485274",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0c935e56c2ff824611d:1",
+    "crowd_decision": null,
+    "photo_id": "762144892",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0c935e56c2ff824611d:3",
+    "crowd_decision": null,
+    "photo_id": "761476956",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0c935e56c2ff824611d:4",
+    "crowd_decision": null,
+    "photo_id": "761834976",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0d535e56c2ff8246387:1",
+    "crowd_decision": null,
+    "photo_id": "761479088",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0d535e56c2ff8246387:2",
+    "crowd_decision": null,
+    "photo_id": "762655572",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0d535e56c2ff8246387:3",
+    "crowd_decision": null,
+    "photo_id": "761478435",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0d535e56c2ff8246387:4",
+    "crowd_decision": null,
+    "photo_id": "762555337",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0d635e56c2ff82463d3:0",
+    "crowd_decision": null,
+    "photo_id": "762169824",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0d635e56c2ff82463d3:1",
+    "crowd_decision": null,
+    "photo_id": "761939393",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0d635e56c2ff82463d3:4",
+    "crowd_decision": null,
+    "photo_id": "761739830",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0dc8a82a107ce848a3c:0",
+    "crowd_decision": null,
+    "photo_id": "762634654",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0dc8a82a107ce848a3c:2",
+    "crowd_decision": null,
+    "photo_id": "762594300",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0dc8a82a107ce848a3c:3",
+    "crowd_decision": null,
+    "photo_id": "760828149",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0dc8a82a107ce848a3c:4",
+    "crowd_decision": null,
+    "photo_id": "761222854",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0dee989e73b4430068a:1",
+    "crowd_decision": null,
+    "photo_id": "762322081",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0dee989e73b4430068a:3",
+    "crowd_decision": null,
+    "photo_id": "761327721",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0dee989e73b4430068a:4",
+    "crowd_decision": null,
+    "photo_id": "761350458",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0e757179663f8b7ad77:0",
+    "crowd_decision": null,
+    "photo_id": "761335294",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0e757179663f8b7ad77:1",
+    "crowd_decision": "ACCEPT",
+    "photo_id": "761346897",
+    "qa_flag_count": 1,
+    "reasons": [
+      "AI_QA_FLAG_REQUIRES_HUMAN_REVIEW"
+    ],
+    "requires_human_review": true,
+    "review_count": 2
+  },
+  {
+    "answer_id": "000068c652--6afae0e757179663f8b7ad77:2",
+    "crowd_decision": null,
+    "photo_id": "762672418",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0e757179663f8b7ad77:4",
+    "crowd_decision": null,
+    "photo_id": "760665528",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0f4e8f3154fe86695b6:0",
+    "crowd_decision": null,
+    "photo_id": "762678715",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0f4e8f3154fe86695b6:1",
+    "crowd_decision": null,
+    "photo_id": "761459447",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0f4e8f3154fe86695b6:2",
+    "crowd_decision": null,
+    "photo_id": "761882503",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0f4e8f3154fe86695b6:3",
+    "crowd_decision": null,
+    "photo_id": "761773132",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0f98a82a107ce8491bc:0",
+    "crowd_decision": null,
+    "photo_id": "761005321",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0f98a82a107ce8491bc:1",
+    "crowd_decision": null,
+    "photo_id": "762149179",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0f98a82a107ce8491bc:3",
+    "crowd_decision": null,
+    "photo_id": "762287153",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae0f98a82a107ce8491bc:4",
+    "crowd_decision": null,
+    "photo_id": "762224488",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae10bf006a13bf9ede345:0",
+    "crowd_decision": null,
+    "photo_id": "762151539",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae10bf006a13bf9ede345:2",
+    "crowd_decision": null,
+    "photo_id": "761350473",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae10bf006a13bf9ede345:3",
+    "crowd_decision": null,
+    "photo_id": "762431448",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae10bf006a13bf9ede345:4",
+    "crowd_decision": null,
+    "photo_id": "761352394",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae10eb7895576f95cd9a7:1",
+    "crowd_decision": null,
+    "photo_id": "761978996",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae10eb7895576f95cd9a7:2",
+    "crowd_decision": null,
+    "photo_id": "761502814",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae10eb7895576f95cd9a7:3",
+    "crowd_decision": null,
+    "photo_id": "762642002",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae10eb7895576f95cd9a7:4",
+    "crowd_decision": null,
+    "photo_id": "762622230",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae112e8f3154fe8669c23:0",
+    "crowd_decision": null,
+    "photo_id": "761618775",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae112e8f3154fe8669c23:2",
+    "crowd_decision": null,
+    "photo_id": "761545798",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae112e8f3154fe8669c23:3",
+    "crowd_decision": "MANUAL",
+    "photo_id": "762537207",
+    "qa_flag_count": 1,
+    "reasons": [
+      "CROWD_REVIEW_MANUAL",
+      "AI_QA_FLAG_REQUIRES_HUMAN_REVIEW"
+    ],
+    "requires_human_review": true,
+    "review_count": 2
+  },
+  {
+    "answer_id": "000068c652--6afae112e8f3154fe8669c23:4",
+    "crowd_decision": null,
+    "photo_id": "761360917",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1132676605b3c965a43:2",
+    "crowd_decision": null,
+    "photo_id": "761477516",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1132676605b3c965a43:3",
+    "crowd_decision": null,
+    "photo_id": "762685823",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1132676605b3c965a43:4",
+    "crowd_decision": null,
+    "photo_id": "762193965",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1172676605b3c965b20:1",
+    "crowd_decision": null,
+    "photo_id": "761344674",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1172676605b3c965b20:2",
+    "crowd_decision": null,
+    "photo_id": "761443808",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1172676605b3c965b20:4",
+    "crowd_decision": null,
+    "photo_id": "760777419",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae12535e56c2ff8247268:0",
+    "crowd_decision": null,
+    "photo_id": "762671753",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae12535e56c2ff8247268:1",
+    "crowd_decision": null,
+    "photo_id": "762478784",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae12535e56c2ff8247268:2",
+    "crowd_decision": null,
+    "photo_id": "761308748",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae12535e56c2ff8247268:4",
+    "crowd_decision": null,
+    "photo_id": "761468743",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1298a82a107ce849b29:0",
+    "crowd_decision": null,
+    "photo_id": "761734488",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1298a82a107ce849b29:2",
+    "crowd_decision": null,
+    "photo_id": "762178434",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1298a82a107ce849b29:3",
+    "crowd_decision": null,
+    "photo_id": "762579750",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1298a82a107ce849b29:4",
+    "crowd_decision": null,
+    "photo_id": "762710048",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae12be989e73b4430129f:0",
+    "crowd_decision": null,
+    "photo_id": "761181108",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae12be989e73b4430129f:3",
+    "crowd_decision": null,
+    "photo_id": "762234779",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae12be989e73b4430129f:4",
+    "crowd_decision": null,
+    "photo_id": "761330907",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae14257179663f8b7be76:0",
+    "crowd_decision": null,
+    "photo_id": "761729678",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae14257179663f8b7be76:1",
+    "crowd_decision": null,
+    "photo_id": "761476521",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae14257179663f8b7be76:3",
+    "crowd_decision": null,
+    "photo_id": "762203653",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae14257179663f8b7be76:4",
+    "crowd_decision": null,
+    "photo_id": "762634925",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae147e989e73b4430172c:0",
+    "crowd_decision": null,
+    "photo_id": "761344696",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae147e989e73b4430172c:1",
+    "crowd_decision": "MANUAL",
+    "photo_id": "762411961",
+    "qa_flag_count": 0,
+    "reasons": [
+      "CROWD_REVIEW_MANUAL"
+    ],
+    "requires_human_review": true,
+    "review_count": 2
+  },
+  {
+    "answer_id": "000068c652--6afae147e989e73b4430172c:3",
+    "crowd_decision": null,
+    "photo_id": "761346909",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae147e989e73b4430172c:4",
+    "crowd_decision": null,
+    "photo_id": "761317379",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae14857179663f8b7c056:0",
+    "crowd_decision": null,
+    "photo_id": "762105063",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae14857179663f8b7c056:1",
+    "crowd_decision": null,
+    "photo_id": "762648669",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae14857179663f8b7c056:2",
+    "crowd_decision": null,
+    "photo_id": "761883601",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae14857179663f8b7c056:3",
+    "crowd_decision": null,
+    "photo_id": "762373004",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae14c8a82a107ce849ea1:0",
+    "crowd_decision": null,
+    "photo_id": "762479144",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae14c8a82a107ce849ea1:1",
+    "crowd_decision": null,
+    "photo_id": "762059095",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae14c8a82a107ce849ea1:2",
+    "crowd_decision": null,
+    "photo_id": "762241503",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae14c8a82a107ce849ea1:3",
+    "crowd_decision": null,
+    "photo_id": "761349244",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1502f8c381336127e1e:1",
+    "crowd_decision": null,
+    "photo_id": "761005095",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1502f8c381336127e1e:2",
+    "crowd_decision": null,
+    "photo_id": "761334731",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1502f8c381336127e1e:4",
+    "crowd_decision": null,
+    "photo_id": "762679766",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae16227a75f4e4f4eb9b7:1",
+    "crowd_decision": null,
+    "photo_id": "762614459",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae16227a75f4e4f4eb9b7:2",
+    "crowd_decision": null,
+    "photo_id": "762122255",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae16227a75f4e4f4eb9b7:3",
+    "crowd_decision": null,
+    "photo_id": "761339176",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae16227a75f4e4f4eb9b7:4",
+    "crowd_decision": null,
+    "photo_id": "762637523",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1678ea2184b828a2d4c:1",
+    "crowd_decision": null,
+    "photo_id": "762687365",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1678ea2184b828a2d4c:2",
+    "crowd_decision": null,
+    "photo_id": "761484844",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1678ea2184b828a2d4c:3",
+    "crowd_decision": null,
+    "photo_id": "762663145",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1678ea2184b828a2d4c:4",
+    "crowd_decision": null,
+    "photo_id": "762685755",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae16ef006a13bf9edf227:0",
+    "crowd_decision": null,
+    "photo_id": "762144389",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae16ef006a13bf9edf227:1",
+    "crowd_decision": null,
+    "photo_id": "762154282",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae16ef006a13bf9edf227:2",
+    "crowd_decision": null,
+    "photo_id": "762197262",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae16ef006a13bf9edf227:4",
+    "crowd_decision": "ACCEPT",
+    "photo_id": "762418100",
+    "qa_flag_count": 1,
+    "reasons": [
+      "AI_QA_FLAG_REQUIRES_HUMAN_REVIEW"
+    ],
+    "requires_human_review": true,
+    "review_count": 2
+  },
+  {
+    "answer_id": "000068c652--6afae172b5e35b0d9cad4163:2",
+    "crowd_decision": null,
+    "photo_id": "762270198",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae172b5e35b0d9cad4163:4",
+    "crowd_decision": null,
+    "photo_id": "761352303",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1792676605b3c966b61:0",
+    "crowd_decision": null,
+    "photo_id": "761474873",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1792676605b3c966b61:3",
+    "crowd_decision": null,
+    "photo_id": "761352400",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae184e8f3154fe866ab84:1",
+    "crowd_decision": null,
+    "photo_id": "760497576",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae184e8f3154fe866ab84:3",
+    "crowd_decision": null,
+    "photo_id": "761803130",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae184e8f3154fe866ab84:4",
+    "crowd_decision": null,
+    "photo_id": "762358693",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae18657179663f8b7cb32:1",
+    "crowd_decision": null,
+    "photo_id": "761974733",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae18657179663f8b7cb32:3",
+    "crowd_decision": null,
+    "photo_id": "761354483",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae18c35e56c2ff824824c:1",
+    "crowd_decision": null,
+    "photo_id": "761939431",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae18c35e56c2ff824824c:2",
+    "crowd_decision": null,
+    "photo_id": "761211825",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae18c35e56c2ff824824c:3",
+    "crowd_decision": null,
+    "photo_id": "762536519",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae18c35e56c2ff824824c:4",
+    "crowd_decision": null,
+    "photo_id": "762290232",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae18cb7895576f95cf2a9:0",
+    "crowd_decision": null,
+    "photo_id": "762613968",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae18cb7895576f95cf2a9:2",
+    "crowd_decision": null,
+    "photo_id": "761344677",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae18cb7895576f95cf2a9:3",
+    "crowd_decision": null,
+    "photo_id": "762612168",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae18cb7895576f95cf2a9:4",
+    "crowd_decision": null,
+    "photo_id": "762036277",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae19b27a75f4e4f4ec4ce:0",
+    "crowd_decision": null,
+    "photo_id": "761317246",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae19b27a75f4e4f4ec4ce:1",
+    "crowd_decision": null,
+    "photo_id": "761337785",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae19b27a75f4e4f4ec4ce:2",
+    "crowd_decision": null,
+    "photo_id": "762649359",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae19d8a82a107ce84aaf6:0",
+    "crowd_decision": null,
+    "photo_id": "761310047",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae19d8a82a107ce84aaf6:1",
+    "crowd_decision": null,
+    "photo_id": "762688897",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae19d8a82a107ce84aaf6:2",
+    "crowd_decision": null,
+    "photo_id": "762454619",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae19d8a82a107ce84aaf6:4",
+    "crowd_decision": null,
+    "photo_id": "762105008",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1a8b5e35b0d9cad483b:0",
+    "crowd_decision": null,
+    "photo_id": "761439932",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1a8b5e35b0d9cad483b:1",
+    "crowd_decision": null,
+    "photo_id": "762517553",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1a8b5e35b0d9cad483b:2",
+    "crowd_decision": null,
+    "photo_id": "762645146",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1a8b5e35b0d9cad483b:4",
+    "crowd_decision": null,
+    "photo_id": "761352364",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1ad27a75f4e4f4ec8b6:1",
+    "crowd_decision": null,
+    "photo_id": "762662719",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1ad27a75f4e4f4ec8b6:3",
+    "crowd_decision": null,
+    "photo_id": "762628762",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1ad27a75f4e4f4ec8b6:4",
+    "crowd_decision": null,
+    "photo_id": "762682727",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1b227a75f4e4f4ec958:0",
+    "crowd_decision": null,
+    "photo_id": "762076007",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1b227a75f4e4f4ec958:1",
+    "crowd_decision": null,
+    "photo_id": "761352310",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1b227a75f4e4f4ec958:2",
+    "crowd_decision": null,
+    "photo_id": "760842309",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1b227a75f4e4f4ec958:3",
+    "crowd_decision": null,
+    "photo_id": "761887706",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1c08a82a107ce84af87:0",
+    "crowd_decision": null,
+    "photo_id": "761781912",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1c08a82a107ce84af87:1",
+    "crowd_decision": null,
+    "photo_id": "762197093",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1c08a82a107ce84af87:2",
+    "crowd_decision": null,
+    "photo_id": "761939315",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1c08a82a107ce84af87:4",
+    "crowd_decision": null,
+    "photo_id": "761346784",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1cab7895576f95cfde5:1",
+    "crowd_decision": null,
+    "photo_id": "762697816",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1cab7895576f95cfde5:3",
+    "crowd_decision": null,
+    "photo_id": "761287455",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1cab7895576f95cfde5:4",
+    "crowd_decision": null,
+    "photo_id": "761336278",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1cd35e56c2ff8248d9b:0",
+    "crowd_decision": null,
+    "photo_id": "760488383",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1cd35e56c2ff8248d9b:2",
+    "crowd_decision": null,
+    "photo_id": "761739607",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1cd35e56c2ff8248d9b:3",
+    "crowd_decision": null,
+    "photo_id": "761317896",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1cd35e56c2ff8248d9b:4",
+    "crowd_decision": null,
+    "photo_id": "761200954",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1dd57179663f8b7d6b3:0",
+    "crowd_decision": null,
+    "photo_id": "762669638",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1dd57179663f8b7d6b3:1",
+    "crowd_decision": null,
+    "photo_id": "762517549",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1dd57179663f8b7d6b3:2",
+    "crowd_decision": null,
+    "photo_id": "762236966",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1dd57179663f8b7d6b3:3",
+    "crowd_decision": null,
+    "photo_id": "762674744",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1de8a82a107ce84ba3c:1",
+    "crowd_decision": null,
+    "photo_id": "762003352",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1de8a82a107ce84ba3c:3",
+    "crowd_decision": null,
+    "photo_id": "761383894",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1de8a82a107ce84ba3c:4",
+    "crowd_decision": null,
+    "photo_id": "761346884",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1de8ea2184b828a40fa:0",
+    "crowd_decision": null,
+    "photo_id": "761352436",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1de8ea2184b828a40fa:1",
+    "crowd_decision": null,
+    "photo_id": "761343221",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1de8ea2184b828a40fa:2",
+    "crowd_decision": null,
+    "photo_id": "762665997",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1de8ea2184b828a40fa:3",
+    "crowd_decision": null,
+    "photo_id": "761352384",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1dee8f3154fe866bb84:0",
+    "crowd_decision": null,
+    "photo_id": "761346875",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1dee8f3154fe866bb84:1",
+    "crowd_decision": null,
+    "photo_id": "762611763",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1dee8f3154fe866bb84:2",
+    "crowd_decision": null,
+    "photo_id": "762198233",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1dee8f3154fe866bb84:3",
+    "crowd_decision": null,
+    "photo_id": "761362746",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS",
+      "SOURCE_UNCERTAIN"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1e657179663f8b7d93f:0",
+    "crowd_decision": null,
+    "photo_id": "761325984",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1e657179663f8b7d93f:1",
+    "crowd_decision": null,
+    "photo_id": "761882531",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1e657179663f8b7d93f:2",
+    "crowd_decision": null,
+    "photo_id": "760675347",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1e657179663f8b7d93f:4",
+    "crowd_decision": null,
+    "photo_id": "761333301",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1e72676605b3c967e01:0",
+    "crowd_decision": null,
+    "photo_id": "761467572",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1e72676605b3c967e01:2",
+    "crowd_decision": null,
+    "photo_id": "761948349",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1e72676605b3c967e01:3",
+    "crowd_decision": null,
+    "photo_id": "762700102",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1e72676605b3c967e01:4",
+    "crowd_decision": null,
+    "photo_id": "761893599",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1ece989e73b4430309c:0",
+    "crowd_decision": null,
+    "photo_id": "761462696",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1ece989e73b4430309c:2",
+    "crowd_decision": null,
+    "photo_id": "762657076",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1ece989e73b4430309c:3",
+    "crowd_decision": null,
+    "photo_id": "762662248",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1ece989e73b4430309c:4",
+    "crowd_decision": null,
+    "photo_id": "762246815",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1eff006a13bf9ee05f8:0",
+    "crowd_decision": null,
+    "photo_id": "760492236",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1eff006a13bf9ee05f8:1",
+    "crowd_decision": null,
+    "photo_id": "761475790",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1eff006a13bf9ee05f8:2",
+    "crowd_decision": null,
+    "photo_id": "761927370",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1eff006a13bf9ee05f8:3",
+    "crowd_decision": null,
+    "photo_id": "760964946",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1f3e989e73b44303388:1",
+    "crowd_decision": null,
+    "photo_id": "761011559",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1f3e989e73b44303388:2",
+    "crowd_decision": null,
+    "photo_id": "761304760",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1f3e989e73b44303388:3",
+    "crowd_decision": null,
+    "photo_id": "760831616",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1f3e989e73b44303388:4",
+    "crowd_decision": null,
+    "photo_id": "762421186",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1f8e989e73b4430346e:1",
+    "crowd_decision": null,
+    "photo_id": "761346797",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1f8e989e73b4430346e:2",
+    "crowd_decision": null,
+    "photo_id": "762589512",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae1f8e989e73b4430346e:4",
+    "crowd_decision": null,
+    "photo_id": "762611680",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae208b5e35b0d9cad56e4:0",
+    "crowd_decision": null,
+    "photo_id": "762652811",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae208b5e35b0d9cad56e4:1",
+    "crowd_decision": null,
+    "photo_id": "762003190",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae208b5e35b0d9cad56e4:2",
+    "crowd_decision": null,
+    "photo_id": "762371978",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae208b5e35b0d9cad56e4:3",
+    "crowd_decision": null,
+    "photo_id": "762219853",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae21735e56c2ff8249931:0",
+    "crowd_decision": null,
+    "photo_id": "761665942",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae21735e56c2ff8249931:1",
+    "crowd_decision": null,
+    "photo_id": "761513354",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae21735e56c2ff8249931:3",
+    "crowd_decision": null,
+    "photo_id": "761352375",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae21d8a82a107ce84c3f4:1",
+    "crowd_decision": null,
+    "photo_id": "761834077",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae21d8a82a107ce84c3f4:2",
+    "crowd_decision": null,
+    "photo_id": "762707085",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae21d8a82a107ce84c3f4:3",
+    "crowd_decision": null,
+    "photo_id": "761195981",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae21d8a82a107ce84c3f4:4",
+    "crowd_decision": null,
+    "photo_id": "762098881",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae21eb7895576f95d0b85:1",
+    "crowd_decision": null,
+    "photo_id": "761272141",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae21eb7895576f95d0b85:2",
+    "crowd_decision": null,
+    "photo_id": "762129810",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae21eb7895576f95d0b85:3",
+    "crowd_decision": "ACCEPT",
+    "photo_id": "762153120",
+    "qa_flag_count": 1,
+    "reasons": [
+      "AI_QA_FLAG_REQUIRES_HUMAN_REVIEW"
+    ],
+    "requires_human_review": true,
+    "review_count": 2
+  },
+  {
+    "answer_id": "000068c652--6afae21eb7895576f95d0b85:4",
+    "crowd_decision": null,
+    "photo_id": "761284671",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae222b7895576f95d0bef:0",
+    "crowd_decision": null,
+    "photo_id": "762204082",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae222b7895576f95d0bef:1",
+    "crowd_decision": null,
+    "photo_id": "762513695",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae222b7895576f95d0bef:2",
+    "crowd_decision": null,
+    "photo_id": "761758536",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae222b7895576f95d0bef:3",
+    "crowd_decision": null,
+    "photo_id": "762663515",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae2232f8c38133612a65d:0",
+    "crowd_decision": null,
+    "photo_id": "761346789",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae2232f8c38133612a65d:2",
+    "crowd_decision": null,
+    "photo_id": "762123450",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae2232f8c38133612a65d:3",
+    "crowd_decision": null,
+    "photo_id": "762339108",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae2232f8c38133612a65d:4",
+    "crowd_decision": null,
+    "photo_id": "761335297",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae22eb5e35b0d9cad5cd3:0",
+    "crowd_decision": "MANUAL",
+    "photo_id": "762681240",
+    "qa_flag_count": 1,
+    "reasons": [
+      "CROWD_REVIEW_MANUAL",
+      "SOURCE_UNCERTAIN",
+      "AI_QA_FLAG_REQUIRES_HUMAN_REVIEW"
+    ],
+    "requires_human_review": true,
+    "review_count": 2
+  },
+  {
+    "answer_id": "000068c652--6afae22eb5e35b0d9cad5cd3:2",
+    "crowd_decision": null,
+    "photo_id": "761346872",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae22eb5e35b0d9cad5cd3:3",
+    "crowd_decision": null,
+    "photo_id": "762622553",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae23a27a75f4e4f4edec2:1",
+    "crowd_decision": null,
+    "photo_id": "761958522",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae23a27a75f4e4f4edec2:2",
+    "crowd_decision": null,
+    "photo_id": "761352252",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae23a27a75f4e4f4edec2:3",
+    "crowd_decision": null,
+    "photo_id": "761716911",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae23a27a75f4e4f4edec2:4",
+    "crowd_decision": null,
+    "photo_id": "762648094",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae23df006a13bf9ee10ec:1",
+    "crowd_decision": null,
+    "photo_id": "760496627",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae23df006a13bf9ee10ec:2",
+    "crowd_decision": null,
+    "photo_id": "762375772",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae23df006a13bf9ee10ec:3",
+    "crowd_decision": null,
+    "photo_id": "761337760",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae241e989e73b443040cc:0",
+    "crowd_decision": null,
+    "photo_id": "761494688",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae241e989e73b443040cc:1",
+    "crowd_decision": null,
+    "photo_id": "760529283",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae241e989e73b443040cc:3",
+    "crowd_decision": null,
+    "photo_id": "760887221",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae241e989e73b443040cc:4",
+    "crowd_decision": null,
+    "photo_id": "761311396",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae242f006a13bf9ee1168:1",
+    "crowd_decision": null,
+    "photo_id": "761706008",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae242f006a13bf9ee1168:2",
+    "crowd_decision": null,
+    "photo_id": "761781835",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae242f006a13bf9ee1168:3",
+    "crowd_decision": null,
+    "photo_id": "762240840",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae242f006a13bf9ee1168:4",
+    "crowd_decision": null,
+    "photo_id": "761442283",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae24c2676605b3c96903b:0",
+    "crowd_decision": null,
+    "photo_id": "761346891",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae24c2676605b3c96903b:1",
+    "crowd_decision": null,
+    "photo_id": "762560092",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae24c2676605b3c96903b:2",
+    "crowd_decision": null,
+    "photo_id": "762053527",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae24c2676605b3c96903b:4",
+    "crowd_decision": null,
+    "photo_id": "761033047",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae24ff006a13bf9ee13bf:0",
+    "crowd_decision": null,
+    "photo_id": "760654824",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae24ff006a13bf9ee13bf:2",
+    "crowd_decision": null,
+    "photo_id": "761833370",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae24ff006a13bf9ee13bf:3",
+    "crowd_decision": null,
+    "photo_id": "761325611",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae24ff006a13bf9ee13bf:4",
+    "crowd_decision": null,
+    "photo_id": "761180646",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae2632676605b3c969397:0",
+    "crowd_decision": null,
+    "photo_id": "761724006",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae2632676605b3c969397:2",
+    "crowd_decision": null,
+    "photo_id": "762566612",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae2632676605b3c969397:3",
+    "crowd_decision": null,
+    "photo_id": "761832731",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae2632676605b3c969397:4",
+    "crowd_decision": null,
+    "photo_id": "761460939",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae26cf006a13bf9ee18ca:0",
+    "crowd_decision": null,
+    "photo_id": "762100611",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae26cf006a13bf9ee18ca:1",
+    "crowd_decision": null,
+    "photo_id": "762373286",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae26cf006a13bf9ee18ca:3",
+    "crowd_decision": null,
+    "photo_id": "761701833",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  },
+  {
+    "answer_id": "000068c652--6afae26cf006a13bf9ee18ca:4",
+    "crowd_decision": null,
+    "photo_id": "762129706",
+    "qa_flag_count": 0,
+    "reasons": [
+      "MISSING_INDEPENDENT_REVIEWS"
+    ],
+    "requires_human_review": true,
+    "review_count": 0
+  }
+]

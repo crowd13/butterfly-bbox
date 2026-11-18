@@ -1,0 +1,67 @@
+{
+  "crowd_decisions": {
+    "ACCEPT": 37,
+    "MANUAL": 3
+  },
+  "effective_decisions": {
+    "ACCEPT": 33,
+    "MANUAL": 7,
+    "PENDING_REVIEW": 360
+  },
+  "expenses": {
+    "accepted_assignments": 16,
+    "actual_assignment_rewards_rub": "12.00",
+    "actual_commission_rub": null,
+    "actual_total_with_commission_rub": null,
+    "bonuses_included": false,
+    "commission_assumption": "0.40",
+    "commission_is_verified_actual": false,
+    "estimated_total_with_commission_rub": "16.80",
+    "exam_included": false,
+    "scope": "review_work_assignments_only"
+  },
+  "files_sha256": {
+    "README.md": "bb7d91599116264fe91d4a049cdda0ad90d3b4c0dbd0ea01aea8e50544bd5740",
+    "assignments.json": "434f1db6e09ed7cddb058d4512baa6b4dddacca7ae822ac713c815dfd5d24a82",
+    "pending.json": "a617010374910ab9f63d0b75f74c8d959b518f593ac95580447d1a11eeefbf28",
+    "photos.jsonl": "6aed5343da4f1db0f6f7cd1e999dc9388d5bd6067c8a6c2bb104ff55f7e48d46",
+    "qa-flags.json": "93c514eaa622ce061392998dbf2fc79befbfc1c03d3ec97d6be68d7f932a2826",
+    "report.json": "0dd1f8492ed6133c2d22890b5734e8e782ce4ac714acde326a2e52378893b9ea",
+    "reviewed-source.json": "ad5fee6f57012fc2a93acb7c9787c3799f328b3ec501ba60ba70ba979b826006",
+    "reviews.json": "c5dd24bc9073a3987c39ec08406f7a7c6b1b68c8dea75e300bf48cc14606ae82",
+    "source.json": "00220cd9cc71c3e41d76734b078354275edd5a26ea2d1df5db2cfc8f60a96da9"
+  },
+  "golden_ready": false,
+  "human_finalization_required": true,
+  "input_sha256": {
+    "assignments.json": "4dafbfa060eafae1bf3187227ec239a68e3660805bc7bef5aa01aaee7fb70254",
+    "snapshot.json": "bfa74db2932c2911c1f96d87be91cc9f8a8ddead505c6cf14d782df4fb2076e2",
+    "source.json": "402b8e44522d9aaca6abffbfe6922a954f6daa553850b594407cd7c404c06714",
+    "state.json": "f7f193c9fcd52e3689f2acf33701670eafc34ad573b6a345e2a9030773da0e37"
+  },
+  "is_golden_set": false,
+  "origin": {
+    "requester_id": "c0679b44b410eb6e54796efc1e573488",
+    "resources": {
+      "exam": "6869873",
+      "main": "6869875",
+      "pilot": "6869874",
+      "training": "6869872"
+    },
+    "review_project_id": "11912",
+    "run_id": "5c0a5a8c-1dad-4ff2-8381-7585e1de8480",
+    "source_pool_ids": [
+      "6866513",
+      "6866514"
+    ],
+    "source_project_id": "11779"
+  },
+  "pending_photos": 367,
+  "qa_input_sha256": {
+    "../known-qa-cases.json": "1faa9a8f3b1c1c6921ca8fe48f836dc1aa764c7ff36a2bb1c7f300962762c0e5"
+  },
+  "review_collection_complete": false,
+  "reviewed_photos": 40,
+  "schema_version": 1,
+  "source_photos": 400
+}
