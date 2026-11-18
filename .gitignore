@@ -26,4 +26,16 @@ crowd/bbox/token
 crowd/bbox/token2
 crowd/review/preview.html
 crowd/review/runs/*
+!crowd/review/runs/final/
+crowd/review/runs/final/*
+!crowd/review/runs/final/README.md
+!crowd/review/runs/final/manifest.json
+!crowd/review/runs/final/source.json
+!crowd/review/runs/final/reviewed-source.json
+!crowd/review/runs/final/reviews.json
+!crowd/review/runs/final/photos.jsonl
+!crowd/review/runs/final/pending.json
+!crowd/review/runs/final/assignments.json
+!crowd/review/runs/final/report.json
+!crowd/review/runs/final/qa-flags.json
 .ruff_cache/

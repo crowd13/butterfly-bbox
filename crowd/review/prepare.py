@@ -1,6 +1,8 @@
 """Build deterministic review pages from exported bbox answers."""
 
+import html
 import json
+import math
 import random
 from decimal import Decimal
 from pathlib import Path
@@ -24,15 +26,32 @@ def validate_answer(row):
     }
     if required - row.keys():
         raise ValueError(f"Incomplete bbox answer: {row.get('photo_id', '?')}")
+    for key in ("answer_id", "worker_id"):
+        if not isinstance(row[key], str) or not row[key].strip():
+            raise ValueError(f"Invalid {key}: {row['photo_id']}")
+    if type(row["photo_id"]) not in {str, int} or not str(row["photo_id"]).strip():
+        raise ValueError("Invalid photo_id")
+    if any(type(row[key]) is not int or row[key] <= 0 for key in ("width", "height")):
+        raise ValueError(f"Invalid image dimensions: {row['photo_id']}")
+    if not isinstance(row["image_url"], str) or not row["image_url"].startswith("https://"):
+        raise ValueError(f"Invalid image URL: {row['photo_id']}")
     solution = row["solution"]
-    if solution.get("status") not in {"boxes", "no_butterflies", "uncertain"}:
+    if not isinstance(solution, dict) or solution.get("status") not in {
+        "boxes", "no_butterflies", "uncertain"
+    }:
         raise ValueError(f"Unsupported bbox status: {row['photo_id']}")
     boxes = solution.get("boxes")
     if not isinstance(boxes, list):
         raise ValueError(f"Invalid boxes: {row['photo_id']}")
+    if (solution["status"] == "boxes" and not boxes) or (
+        solution["status"] == "no_butterflies" and boxes
+    ):
+        raise ValueError(f"Boxes contradict status: {row['photo_id']}")
     for box in boxes:
+        if not isinstance(box, dict):
+            raise ValueError(f"Invalid box: {row['photo_id']}")
         values = [box.get(key) for key in ("left", "top", "width", "height")]
-        if not all(isinstance(value, (int, float)) for value in values):
+        if not all(type(value) in {int, float} and math.isfinite(value) for value in values):
             raise ValueError(f"Invalid box: {row['photo_id']}")
         left, top, width, height = values
         if (
@@ -55,6 +74,22 @@ def public_input(row):
         "source_status": row["solution"]["status"],
         "source_boxes": row["solution"]["boxes"],
     }
+
+
+def training_tasks(plan):
+    return [
+        {
+            "input_values": {
+                key: value for key, value in row.items() if key not in {"verdict", "hint"}
+            },
+            "known_solutions": [
+                {"output_values": {"verdict": row["verdict"]}, "correctness_weight": 1.0}
+            ],
+            "message_on_unknown_solution": html.escape(row["hint"], quote=False),
+            "infinite_overlap": True,
+        }
+        for row in plan["examples"]["practice"]
+    ]
 
 
 def altered(solution, verdict):
@@ -83,7 +118,10 @@ def altered(solution, verdict):
 
 
 def fixtures(bank, specs):
-    rows = {str(row["photo_id"]): row for split in bank.values() for row in split}
+    sources = [row for split in bank.values() for row in split]
+    rows = {str(row["photo_id"]): row for row in sources}
+    if len(rows) != len(sources):
+        raise ValueError("Gold photo IDs must be unique")
     result = []
     for spec in specs:
         verdict = spec["verdict"]
@@ -99,6 +137,9 @@ def fixtures(bank, specs):
             worker_id="gold",
             solution={"status": status, "boxes": boxes},
         )
+        validate_answer(row)
+        if not isinstance(spec["hint"], str) or not spec["hint"].strip():
+            raise ValueError(f"Fixture needs an explanation: {spec['photo_id']}")
         result.append({**public_input(row), "verdict": verdict, "hint": spec["hint"]})
     if len({row["photo_id"] for row in result}) != len(result):
         raise ValueError("Fixture photos must be unique")
@@ -138,20 +179,31 @@ def control_specs(bank, excluded, count):
 def pages(rows, controls, config, seed=None):
     for row in rows:
         validate_answer(row)
-    if len(rows) != config["dataset_size"] or len({r["photo_id"] for r in rows}) != len(
-        rows
+    if (
+        len(rows) != config["dataset_size"]
+        or len({str(r["photo_id"]) for r in rows}) != len(rows)
+        or len({r["answer_id"] for r in rows}) != len(rows)
     ):
         raise ValueError("Expected unique answers for the complete dataset")
     shuffled = list(rows)
-    random.Random(config["seed"] if seed is None else seed).shuffle(shuffled)
+    rng = random.Random(config["seed"] if seed is None else seed)
+    rng.shuffle(shuffled)
     size = config["work_per_page"]
     if len(shuffled) % size:
         raise ValueError("Dataset must fill complete review pages")
+    page_count = len(shuffled) // size
+    if (
+        len(controls) < page_count
+        or len({str(row["photo_id"]) for row in controls}) != len(controls)
+    ):
+        raise ValueError("Each review page needs a unique control")
+    if {str(row["photo_id"]) for row in controls} & {str(row["photo_id"]) for row in rows}:
+        raise ValueError("Control photos overlap with the working dataset")
 
     result = []
     for index in range(0, len(shuffled), size):
         work = shuffled[index : index + size]
-        control = controls[(index // size) % len(controls)]
+        control = controls[index // size]
         tasks = [{"input_values": public_input(row)} for row in work]
         tasks.append(
             {
@@ -168,6 +220,7 @@ def pages(rows, controls, config, seed=None):
                 ],
             }
         )
+        rng.shuffle(tasks)
         result.append(
             {
                 "tasks": tasks,
