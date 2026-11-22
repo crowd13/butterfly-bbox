@@ -1,0 +1,10 @@
+{
+  "name": "butterfly-bbox-presentation",
+  "private": true,
+  "scripts": {
+    "build": "marp slides.md --html --theme theme.css --pdf --allow-local-files -o slides.pdf"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "4.5.1"
+  }
+}
